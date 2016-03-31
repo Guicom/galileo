@@ -1,6 +1,6 @@
 name = ga_dependencies
 core = 7.x
-package = Features
+package = Galileo : Settings
 version = 7.x-1.0
 dependencies[] = admin_menu
 dependencies[] = ckeditor
@@ -14,6 +14,7 @@ dependencies[] = entity
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = features_diff
+dependencies[] = ga_ct_evenement
 dependencies[] = ga_ct_intervenant
 dependencies[] = ga_field_base
 dependencies[] = module_filter
