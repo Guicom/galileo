@@ -8999,8 +8999,10 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   margin-top: 0;
+  width: 200px;
+  min-height: 48px;
 }
-/* line 36, ../sass/partials/components/_tesaer_int.scss */
+/* line 38, ../sass/partials/components/_tesaer_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser > .group-right .field-name-field-int-poste {
   font-size: 16px;
   line-height: 21px;
@@ -9010,7 +9012,7 @@ body {
   display: inline-block;
   width: 180px;
 }
-/* line 46, ../sass/partials/components/_tesaer_int.scss */
+/* line 48, ../sass/partials/components/_tesaer_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser > .group-right .field-name-node-link a {
   position: absolute;
   top: 0;
@@ -9019,7 +9021,7 @@ body {
   right: 0;
   color: transparent;
 }
-/* line 58, ../sass/partials/components/_tesaer_int.scss */
+/* line 60, ../sass/partials/components/_tesaer_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser:hover > .group-right {
   border-color: #ee9c1b;
   background: transparent;
@@ -9027,7 +9029,7 @@ body {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 63, ../sass/partials/components/_tesaer_int.scss */
+/* line 65, ../sass/partials/components/_tesaer_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser:hover > .group-right .field-name-title,
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser:hover > .group-right .field-name-field-int-poste {
   visibility: hidden;
@@ -9035,7 +9037,7 @@ body {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 68, ../sass/partials/components/_tesaer_int.scss */
+/* line 70, ../sass/partials/components/_tesaer_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser:hover > .group-right .field-name-node-link a {
   background: #ee9c1b;
   color: black;
