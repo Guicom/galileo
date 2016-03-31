@@ -19,6 +19,7 @@ dependencies[] = forum
 dependencies[] = ga_ct_evenement
 dependencies[] = ga_ct_intervenant
 dependencies[] = ga_field_base
+dependencies[] = ga_language
 dependencies[] = i18n_block
 dependencies[] = i18n_contact
 dependencies[] = i18n_field
