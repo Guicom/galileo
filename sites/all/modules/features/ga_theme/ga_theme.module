@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ga_theme feature.
+ */
+
+include_once 'ga_theme.features.inc';
