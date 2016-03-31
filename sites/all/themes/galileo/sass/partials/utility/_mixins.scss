@@ -41,13 +41,13 @@
 @mixin h2-title {
   color: $black;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
 
 }
 
 @mixin p-style {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 22px;
   font-weight: 500;
   color: $black;
 }
@@ -80,7 +80,7 @@
   background: $white;
   color: $black;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   @include custom-transition;
   @include box-sizing(border-box);
@@ -96,7 +96,7 @@
   color: $white;
   border: solid 1px $white;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   @include custom-transition;
 
@@ -138,7 +138,7 @@
   background: transparent;
   color: $black;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
   border: solid 1px $black;
 
@@ -152,7 +152,7 @@
   background: $black;
   color: $white;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
   border: solid 1px $black;
 

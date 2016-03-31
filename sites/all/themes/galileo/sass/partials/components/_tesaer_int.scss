@@ -1,0 +1,83 @@
+.view-intervenants {
+  .ds-2col-fluid.node-intervenant.node-teaser {
+    @include make-lg-column(4);
+    position: relative;
+    padding: 0;
+    > .group-left {
+      @include make-lg-column(12);
+      position: relative;
+      padding: 0;
+      img {
+        width: 100%;
+      }
+    }
+    > .group-right {
+      position: absolute;
+      left:0;
+      right: 0;
+      top:0;
+      bottom: 0;
+      background: rgba($black, .4);
+      width: initial;
+      padding: 20px;
+      border: solid 6px transparent;
+      @include custom-transition;
+
+      .field-name-title {
+        h2 {
+          font-size: 24px;
+          color: $white;
+          line-height: 24px;
+          font-weight: 600;
+          text-transform: uppercase;
+          margin-top: 0;
+        }
+      }
+      .field-name-field-int-poste {
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 300;
+        color: $white;
+        background: $black;
+        display: inline-block;
+        width: 180px;
+      }
+      .field-name-node-link {
+        a {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          color: transparent;
+        }
+      }
+    }
+
+    &:hover {
+      > .group-right {
+        border-color: $yellow;
+        background: transparent;
+        @include custom-transition;
+        .field-name-title,
+        .field-name-field-int-poste {
+          visibility: hidden;
+          @include custom-transition;
+        }
+        .field-name-node-link {
+          a {
+            @include yellow-button;
+            width: 202px;
+            height: 38px;
+            line-height: 38px;
+            text-indent: 0;
+            @include align-all;
+            position: absolute;
+            text-align: center;
+            @include transition(background .3s .1s, color .3s .1s);
+          }
+        }
+      }
+    }
+  }
+}

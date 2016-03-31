@@ -28,12 +28,14 @@
                 color: $white;
                 font-weight: 300;
                 text-transform: uppercase;
+                @include custom-transition;
               }
               &:hover {
                 background: transparent;
                 a {
                   background: transparent !important;
                   color: $yellow;
+                  @include custom-transition;
                 }
               }
             }

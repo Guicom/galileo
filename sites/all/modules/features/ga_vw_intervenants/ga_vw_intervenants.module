@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ga_vw_intervenants feature.
+ */
+
+include_once 'ga_vw_intervenants.features.inc';

@@ -1,3 +1,9 @@
 body {
   font-family: $font;
 }
+
+/*Reset boostrap styles*/
+
+.page-header {
+  border-bottom: none;
+}

@@ -1,0 +1,36 @@
+.node-type-intervenant {
+  .page-header {
+
+  }
+  #block-system-main {
+    .ds-2col-fluid.node-intervenant.view-mode-full {
+      background: $grey-light;
+      padding: 25px 10px;
+
+      .group-left{
+        @include make-lg-column(4);
+        @include make-xs-column(12);
+        .field-name-field-int-photo {
+        }
+      }
+
+      .group-right {
+        @include make-lg-column(8);
+        .field-name-title {
+          h2 {
+            @include h1-title;
+            color: $black;
+            font-weight: 300;
+            line-height: 34px;
+            margin-bottom: 10px;
+          }
+        }
+        .field-name-field-int-poste,
+        .field-name-body {
+          @include p-style;
+        }
+      }
+
+    }
+  }
+}

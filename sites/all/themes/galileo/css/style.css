@@ -8880,6 +8880,12 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+/*Reset boostrap styles*/
+/* line 7, ../sass/partials/components/_reset.scss */
+.page-header {
+  border-bottom: none;
+}
+
 /* line 1, ../sass/partials/components/_header.scss */
 #navbar {
   background: black;
@@ -8917,13 +8923,207 @@ body {
   color: white;
   font-weight: 300;
   text-transform: uppercase;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
 }
-/* line 32, ../sass/partials/components/_header.scss */
+/* line 33, ../sass/partials/components/_header.scss */
 #navbar .container .navbar-collapse nav #block-system-main-menu ul li:hover {
   background: transparent;
 }
-/* line 34, ../sass/partials/components/_header.scss */
+/* line 35, ../sass/partials/components/_header.scss */
 #navbar .container .navbar-collapse nav #block-system-main-menu ul li:hover a {
   background: transparent !important;
   color: #ee9c1b;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+/* line 2, ../sass/partials/components/_tesaer_int.scss */
+.view-intervenants .ds-2col-fluid.node-intervenant.node-teaser {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  padding: 0;
+}
+@media (min-width: 1200px) {
+  /* line 2, ../sass/partials/components/_tesaer_int.scss */
+  .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser {
+    float: left;
+    width: 33.33333%;
+  }
+}
+/* line 6, ../sass/partials/components/_tesaer_int.scss */
+.view-intervenants .ds-2col-fluid.node-intervenant.node-teaser > .group-left {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  padding: 0;
+}
+@media (min-width: 1200px) {
+  /* line 6, ../sass/partials/components/_tesaer_int.scss */
+  .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser > .group-left {
+    float: left;
+    width: 100%;
+  }
+}
+/* line 10, ../sass/partials/components/_tesaer_int.scss */
+.view-intervenants .ds-2col-fluid.node-intervenant.node-teaser > .group-left img {
+  width: 100%;
+}
+/* line 14, ../sass/partials/components/_tesaer_int.scss */
+.view-intervenants .ds-2col-fluid.node-intervenant.node-teaser > .group-right {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  width: initial;
+  padding: 20px;
+  border: solid 6px transparent;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+/* line 27, ../sass/partials/components/_tesaer_int.scss */
+.view-intervenants .ds-2col-fluid.node-intervenant.node-teaser > .group-right .field-name-title h2 {
+  font-size: 24px;
+  color: white;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+/* line 36, ../sass/partials/components/_tesaer_int.scss */
+.view-intervenants .ds-2col-fluid.node-intervenant.node-teaser > .group-right .field-name-field-int-poste {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 300;
+  color: white;
+  background: black;
+  display: inline-block;
+  width: 180px;
+}
+/* line 46, ../sass/partials/components/_tesaer_int.scss */
+.view-intervenants .ds-2col-fluid.node-intervenant.node-teaser > .group-right .field-name-node-link a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: transparent;
+}
+/* line 58, ../sass/partials/components/_tesaer_int.scss */
+.view-intervenants .ds-2col-fluid.node-intervenant.node-teaser:hover > .group-right {
+  border-color: #ee9c1b;
+  background: transparent;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+/* line 63, ../sass/partials/components/_tesaer_int.scss */
+.view-intervenants .ds-2col-fluid.node-intervenant.node-teaser:hover > .group-right .field-name-title,
+.view-intervenants .ds-2col-fluid.node-intervenant.node-teaser:hover > .group-right .field-name-field-int-poste {
+  visibility: hidden;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+/* line 68, ../sass/partials/components/_tesaer_int.scss */
+.view-intervenants .ds-2col-fluid.node-intervenant.node-teaser:hover > .group-right .field-name-node-link a {
+  background: #ee9c1b;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+  width: 202px;
+  height: 38px;
+  line-height: 38px;
+  text-indent: 0;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: background 0.3s 0.1s, color 0.3s 0.1s;
+  -o-transition: background 0.3s 0.1s, color 0.3s 0.1s;
+  transition: background 0.3s 0.1s, color 0.3s 0.1s;
+}
+/* line 131, ../sass/partials/utility/_mixins.scss */
+.view-intervenants .ds-2col-fluid.node-intervenant.node-teaser:hover > .group-right .field-name-node-link a:hover {
+  text-decoration: underline;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+/* line 6, ../sass/partials/pages/_intervants.scss */
+.node-type-intervenant #block-system-main .ds-2col-fluid.node-intervenant.view-mode-full {
+  background: #f2f2f2;
+  padding: 25px 10px;
+}
+/* line 10, ../sass/partials/pages/_intervants.scss */
+.node-type-intervenant #block-system-main .ds-2col-fluid.node-intervenant.view-mode-full .group-left {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  /* line 10, ../sass/partials/pages/_intervants.scss */
+  .node-type-intervenant #block-system-main .ds-2col-fluid.node-intervenant.view-mode-full .group-left {
+    float: left;
+    width: 33.33333%;
+  }
+}
+/* line 17, ../sass/partials/pages/_intervants.scss */
+.node-type-intervenant #block-system-main .ds-2col-fluid.node-intervenant.view-mode-full .group-right {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  /* line 17, ../sass/partials/pages/_intervants.scss */
+  .node-type-intervenant #block-system-main .ds-2col-fluid.node-intervenant.view-mode-full .group-right {
+    float: left;
+    width: 66.66667%;
+  }
+}
+/* line 20, ../sass/partials/pages/_intervants.scss */
+.node-type-intervenant #block-system-main .ds-2col-fluid.node-intervenant.view-mode-full .group-right .field-name-title h2 {
+  color: #ee9c1b;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: black;
+  font-weight: 300;
+  line-height: 34px;
+  margin-bottom: 10px;
+}
+/* line 29, ../sass/partials/pages/_intervants.scss */
+.node-type-intervenant #block-system-main .ds-2col-fluid.node-intervenant.view-mode-full .group-right .field-name-field-int-poste,
+.node-type-intervenant #block-system-main .ds-2col-fluid.node-intervenant.view-mode-full .group-right .field-name-body {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: black;
 }
