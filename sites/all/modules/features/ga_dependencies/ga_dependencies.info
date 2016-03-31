@@ -2,6 +2,7 @@ name = ga_dependencies
 core = 7.x
 package = Features
 dependencies[] = admin_menu
+dependencies[] = ckeditor
 dependencies[] = diff
 dependencies[] = features
 dependencies[] = features_diff
