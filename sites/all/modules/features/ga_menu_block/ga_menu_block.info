@@ -1,0 +1,7 @@
+name = ga_menu_block
+core = 7.x
+package = Galileo : Blocks
+dependencies[] = fe_block
+features[fe_block_settings][] = system-main-menu
+features[features_api][] = api:2
+project path = sites/all/modules/features

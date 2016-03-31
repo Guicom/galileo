@@ -1,0 +1,11 @@
+name = ga_disabled_blocks
+core = 7.x
+package = Galileo : Blocks
+dependencies[] = fe_block
+dependencies[] = search
+features[fe_block_settings][] = search-form
+features[fe_block_settings][] = system-help
+features[fe_block_settings][] = system-navigation
+features[fe_block_settings][] = user-login
+features[features_api][] = api:2
+project path = sites/all/modules/features

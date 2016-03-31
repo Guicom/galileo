@@ -32,20 +32,24 @@
 
 @mixin h1-title {
   color: $yellow;
-  font-size: 30px;
+  font-size: 36px;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 600;
   margin-bottom: 25px;
 }
 
 @mixin h2-title {
   color: $black;
+  font-size: 14px;
+  font-weight: 400;
 
 }
 
 @mixin p-style {
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $black;
 }
 
 /*custom handlers*/
@@ -66,87 +70,96 @@
 
 
 @mixin custom-transition {
-    @include transition(all, .3s);
+  @include transition(all, .3s);
 }
 
 
 /*Buttons*/
 
 @mixin white-button {
-    background: $white;
-    color: $black;
-    text-transform: uppercase;
-    font-weight: 400;
-    @include custom-transition;
+  background: $white;
+  color: $black;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  @include custom-transition;
+  @include box-sizing(border-box);
 
-    &:hover {
-        background: $yellow;
-        @include custom-transition;
-    }
+  &:hover {
+    background: $yellow;
+    @include custom-transition;
+  }
 }
 
 @mixin white-border-button {
-    background: transparent;
-    color: $white;
-    border: solid 1px $white;
-    text-transform: uppercase;
-    font-weight: 400;
-    @include custom-transition;
+  background: transparent;
+  color: $white;
+  border: solid 1px $white;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  @include custom-transition;
 
-    &:hover {
-        color: $yellow;
-        border-color: $yellow;
-        @include custom-transition;
-    }
+  &:hover {
+    color: $yellow;
+    border-color: $yellow;
+    @include custom-transition;
+  }
 }
 
 @mixin small-block-button {
-    background: $black;
-    color: $white;
-    @include custom-transition;
+  background: $black;
+  color: $white;
+  font-size: 14px;
+  @include custom-transition;
 
-    &:hover {
-        background: $yellow;
-        color: $black;
-        @include custom-transition;
-    }
+  &:hover {
+    background: $yellow;
+    color: $black;
+    @include custom-transition;
+  }
 }
 
 @mixin yellow-button {
-    background: $yellow;
-    color: $black;
-    text-transform: uppercase;
-    font-weight: 400;
-    @include custom-transition;
+  background: $yellow;
+  color: $black;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  @include custom-transition;
 
-    &:hover {
-        text-decoration: underline;
-        @include custom-transition;
-    }
+  &:hover {
+    text-decoration: underline;
+    @include custom-transition;
+  }
 }
 
 @mixin border-black-button {
-    background: transparent;
-    color: $black;
-    text-transform: uppercase;
-    border: solid 1px $black;
+  background: transparent;
+  color: $black;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: solid 1px $black;
 
-    &:hover {
-        background: $black;
-        color: $white;
-    }
+  &:hover {
+    background: $black;
+    color: $white;
+  }
 }
 
 @mixin plain-black-button {
-    background: $black;
-    color: $white;
-    text-transform: uppercase;
-    border: solid 1px $black;
+  background: $black;
+  color: $white;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: solid 1px $black;
 
-    &:hover {
-        background: transparent;
-        color: $black;
-    }
+  &:hover {
+    background: transparent;
+    color: $black;
+  }
 }
 
 @mixin submit-validate {
