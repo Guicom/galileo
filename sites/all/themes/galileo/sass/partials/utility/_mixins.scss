@@ -1,3 +1,4 @@
+/* align handlers*/
 
 @mixin vertical-align {
   position: relative;
@@ -27,18 +28,27 @@
   transform-style: preserve-3d;
 }
 
+/*typo*/
 
 @mixin h1-title {
+  color: $yellow;
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 300;
   margin-bottom: 25px;
 }
 
+@mixin h2-title {
+  color: $black;
+
+}
+
 @mixin p-style {
   font-size: 18px;
   font-weight: 300;
 }
+
+/*custom handlers*/
 
 @mixin make-container {
   @include container-fixed;
@@ -53,3 +63,97 @@
     width: $container-lg;
   }
 }
+
+
+@mixin custom-transition {
+    @include transition(all, .3s);
+}
+
+
+/*Buttons*/
+
+@mixin white-button {
+    background: $white;
+    color: $black;
+    text-transform: uppercase;
+    font-weight: 400;
+    @include custom-transition;
+
+    &:hover {
+        background: $yellow;
+        @include custom-transition;
+    }
+}
+
+@mixin white-border-button {
+    background: transparent;
+    color: $white;
+    border: solid 1px $white;
+    text-transform: uppercase;
+    font-weight: 400;
+    @include custom-transition;
+
+    &:hover {
+        color: $yellow;
+        border-color: $yellow;
+        @include custom-transition;
+    }
+}
+
+@mixin small-block-button {
+    background: $black;
+    color: $white;
+    @include custom-transition;
+
+    &:hover {
+        background: $yellow;
+        color: $black;
+        @include custom-transition;
+    }
+}
+
+@mixin yellow-button {
+    background: $yellow;
+    color: $black;
+    text-transform: uppercase;
+    font-weight: 400;
+    @include custom-transition;
+
+    &:hover {
+        text-decoration: underline;
+        @include custom-transition;
+    }
+}
+
+@mixin border-black-button {
+    background: transparent;
+    color: $black;
+    text-transform: uppercase;
+    border: solid 1px $black;
+
+    &:hover {
+        background: $black;
+        color: $white;
+    }
+}
+
+@mixin plain-black-button {
+    background: $black;
+    color: $white;
+    text-transform: uppercase;
+    border: solid 1px $black;
+
+    &:hover {
+        background: transparent;
+        color: $black;
+    }
+}
+
+@mixin submit-validate {
+
+}
+
+@mixin submit-cancel {
+
+}
+
