@@ -21,6 +21,7 @@ dependencies[] = ga_ct_intervenant
 dependencies[] = ga_field_base
 dependencies[] = ga_language
 dependencies[] = ga_theme
+dependencies[] = ga_vw_evenement
 dependencies[] = i18n_block
 dependencies[] = i18n_contact
 dependencies[] = i18n_field
