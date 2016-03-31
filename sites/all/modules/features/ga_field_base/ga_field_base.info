@@ -1,0 +1,16 @@
+name = ga_field_base
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = image
+dependencies[] = taxonomy
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = comment_body
+features[field_base][] = field_image
+features[field_base][] = field_int_photo
+features[field_base][] = field_int_poste
+features[field_base][] = field_tags
+features[taxonomy][] = tags
+project path = sites/all/modules/features
