@@ -316,7 +316,7 @@ function ga_ct_evenement_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_event_past',
     'label' => 'Evenement passé ?',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
