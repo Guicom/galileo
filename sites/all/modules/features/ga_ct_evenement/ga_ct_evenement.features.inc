@@ -74,9 +74,9 @@ function ga_ct_evenement_default_registration_type() {
     "label" : "Evenement",
     "locked" : "0",
     "default_state" : "complete",
+    "data" : null,
     "weight" : "0",
-    "rdf_mapping" : [],
-    "data" : { "held_expire" : "1", "held_expire_state" : "canceled" }
+    "rdf_mapping" : []
   }');
   return $items;
 }

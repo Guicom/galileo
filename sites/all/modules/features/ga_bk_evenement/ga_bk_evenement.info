@@ -1,0 +1,10 @@
+name = ga_bk_evenement
+core = 7.x
+package = Galileo : Blocks
+version = 7.x-1.0
+dependencies[] = fe_block
+dependencies[] = views
+features[fe_block_settings][] = views-evenements-block_1
+features[fe_block_settings][] = views-evenements-block_2
+features[features_api][] = api:2
+project path = sites/all/modules/features

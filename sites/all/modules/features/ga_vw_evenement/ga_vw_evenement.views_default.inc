@@ -27,7 +27,9 @@ function ga_vw_evenement_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['links'] = FALSE;
@@ -81,11 +83,11 @@ function ga_vw_evenement_views_default_views() {
     'image_style' => 'medium',
     'image_link' => '',
   );
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Content: Date (field_event_date) */
+  $handler->display->display_options['sorts']['field_event_date_value']['id'] = 'field_event_date_value';
+  $handler->display->display_options['sorts']['field_event_date_value']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['sorts']['field_event_date_value']['field'] = 'field_event_date_value';
+  $handler->display->display_options['sorts']['field_event_date_value']['order'] = 'DESC';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -111,6 +113,9 @@ function ga_vw_evenement_views_default_views() {
 
   /* Display: Liste evenement */
   $handler = $view->new_display('page', 'Liste evenement', 'page');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '';
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Content: Date (field_event_date) */
@@ -144,8 +149,16 @@ function ga_vw_evenement_views_default_views() {
   );
   $handler->display->display_options['path'] = 'evenements';
 
-  /* Display: evenement header */
-  $handler = $view->new_display('block', 'evenement header', 'block_1');
+  /* Display: banner */
+  $handler = $view->new_display('block', 'banner', 'block_1');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['row_options']['view_mode'] = 'banner';
+  $handler->display->display_options['row_options']['links'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -200,6 +213,17 @@ function ga_vw_evenement_views_default_views() {
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Details';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -217,8 +241,16 @@ function ga_vw_evenement_views_default_views() {
     'event' => 'event',
   );
 
-  /* Display: evenement home */
-  $handler = $view->new_display('block', 'evenement home', 'block_2');
+  /* Display: banner with buttons */
+  $handler = $view->new_display('block', 'banner with buttons', 'block_2');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['row_options']['view_mode'] = 'banner_with_buttons';
+  $handler->display->display_options['row_options']['links'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -289,6 +321,13 @@ function ga_vw_evenement_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'event' => 'event',
   );
+  /* Filter criterion: Content: Evenement passé ? (field_event_past) */
+  $handler->display->display_options['filters']['field_event_past_value']['id'] = 'field_event_past_value';
+  $handler->display->display_options['filters']['field_event_past_value']['table'] = 'field_data_field_event_past';
+  $handler->display->display_options['filters']['field_event_past_value']['field'] = 'field_event_past_value';
+  $handler->display->display_options['filters']['field_event_past_value']['value'] = array(
+    0 => '0',
+  );
   $translatables['evenements'] = array(
     t('Master'),
     t('more'),
@@ -299,9 +338,10 @@ function ga_vw_evenement_views_default_views() {
     t('Desc'),
     t('Field_event_intervenant'),
     t('Liste evenement'),
-    t('evenement header'),
+    t('banner'),
     t('Details'),
-    t('evenement home'),
+    t('All'),
+    t('banner with buttons'),
   );
   $export['evenements'] = $view;
 

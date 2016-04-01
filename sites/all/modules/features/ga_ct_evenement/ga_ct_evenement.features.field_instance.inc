@@ -19,10 +19,29 @@ function ga_ct_evenement_field_default_field_instances() {
     'display' => array(
       'banner' => array(
         'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
+      ),
+      'banner_event_next' => array(
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 0,
+      ),
+      'banner_event_old' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'banner_with_buttons' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -68,10 +87,29 @@ function ga_ct_evenement_field_default_field_instances() {
     'display' => array(
       'banner' => array(
         'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
+      'banner_event_next' => array(
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 3,
+      ),
+      'banner_event_old' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'banner_with_buttons' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
       ),
       'default' => array(
         'label' => 'above',
@@ -113,6 +151,20 @@ function ga_ct_evenement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'banner' => array(
+        'label' => 'hidden',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'evenement_complet_',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => 0,
+        ),
+        'type' => 'date_default',
+        'weight' => 1,
+      ),
+      'banner_event_next' => array(
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
@@ -122,6 +174,34 @@ function ga_ct_evenement_field_default_field_instances() {
           'multiple_number' => '',
           'multiple_to' => '',
           'show_remaining_days' => FALSE,
+        ),
+        'type' => 'date_default',
+        'weight' => 1,
+      ),
+      'banner_event_old' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => FALSE,
+        ),
+        'type' => 'date_default',
+        'weight' => 1,
+      ),
+      'banner_with_buttons' => array(
+        'label' => 'hidden',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'evenement_complet_',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => 0,
         ),
         'type' => 'date_default',
         'weight' => 1,
@@ -191,6 +271,12 @@ function ga_ct_evenement_field_default_field_instances() {
     'display' => array(
       'banner' => array(
         'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'banner_event_next' => array(
+        'label' => 'above',
         'module' => 'date',
         'settings' => array(
           'format_type' => 'long',
@@ -202,6 +288,26 @@ function ga_ct_evenement_field_default_field_instances() {
         ),
         'type' => 'date_default',
         'weight' => 4,
+      ),
+      'banner_event_old' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => FALSE,
+        ),
+        'type' => 'date_default',
+        'weight' => 4,
+      ),
+      'banner_with_buttons' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
       ),
       'default' => array(
         'label' => 'above',
@@ -267,14 +373,44 @@ function ga_ct_evenement_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 18,
       ),
-      'default' => array(
+      'banner_event_next' => array(
         'label' => 'above',
         'module' => 'registration',
         'settings' => array(
           'i18n_string_key' => NULL,
           'label' => NULL,
+        ),
+        'type' => 'registration_link',
+        'weight' => 10,
+      ),
+      'banner_event_old' => array(
+        'label' => 'above',
+        'module' => 'registration',
+        'settings' => array(
+          'i18n_string_key' => NULL,
+          'label' => NULL,
+        ),
+        'type' => 'registration_link',
+        'weight' => 10,
+      ),
+      'banner_with_buttons' => array(
+        'label' => 'hidden',
+        'module' => 'registration',
+        'settings' => array(
+          'i18n_string_key' => NULL,
+          'label' => NULL,
+        ),
+        'type' => 'registration_link',
+        'weight' => 6,
+      ),
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'registration',
+        'settings' => array(
+          'i18n_string_key' => 'node:event:default:field_event_inscription',
+          'label' => 'S\'INSCRIRE',
         ),
         'type' => 'registration_link',
         'weight' => 10,
@@ -341,6 +477,15 @@ function ga_ct_evenement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'banner' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 2,
+      ),
+      'banner_event_next' => array(
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
@@ -348,6 +493,24 @@ function ga_ct_evenement_field_default_field_instances() {
         ),
         'type' => 'entityreference_label',
         'weight' => 5,
+      ),
+      'banner_event_old' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 5,
+      ),
+      'banner_with_buttons' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 2,
       ),
       'default' => array(
         'label' => 'above',
@@ -397,10 +560,29 @@ function ga_ct_evenement_field_default_field_instances() {
     'display' => array(
       'banner' => array(
         'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+      'banner_event_next' => array(
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 2,
+      ),
+      'banner_event_old' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'banner_with_buttons' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
       ),
       'default' => array(
         'label' => 'above',
@@ -448,10 +630,29 @@ function ga_ct_evenement_field_default_field_instances() {
     'display' => array(
       'banner' => array(
         'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
+      'banner_event_next' => array(
+        'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
         'weight' => 7,
+      ),
+      'banner_event_old' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 7,
+      ),
+      'banner_with_buttons' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
       ),
       'default' => array(
         'label' => 'above',
@@ -493,6 +694,12 @@ function ga_ct_evenement_field_default_field_instances() {
     'display' => array(
       'banner' => array(
         'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+      'banner_event_next' => array(
+        'label' => 'above',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -500,6 +707,22 @@ function ga_ct_evenement_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 6,
+      ),
+      'banner_event_old' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 6,
+      ),
+      'banner_with_buttons' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 16,
       ),
       'default' => array(
         'label' => 'above',
@@ -552,6 +775,16 @@ function ga_ct_evenement_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'banner' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 3,
+      ),
+      'banner_event_next' => array(
         'label' => 'above',
         'module' => 'image',
         'settings' => array(
@@ -560,6 +793,26 @@ function ga_ct_evenement_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 9,
+      ),
+      'banner_event_old' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 9,
+      ),
+      'banner_with_buttons' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 3,
       ),
       'default' => array(
         'label' => 'above',
@@ -613,6 +866,12 @@ function ga_ct_evenement_field_default_field_instances() {
     'display' => array(
       'banner' => array(
         'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
+      ),
+      'banner_event_next' => array(
+        'label' => 'above',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -620,6 +879,22 @@ function ga_ct_evenement_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 8,
+      ),
+      'banner_event_old' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 8,
+      ),
+      'banner_with_buttons' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 18,
       ),
       'default' => array(
         'label' => 'above',

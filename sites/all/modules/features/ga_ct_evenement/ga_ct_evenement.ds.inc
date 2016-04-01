@@ -41,6 +41,80 @@ function ga_ct_evenement_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|event|banner';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'event';
+  $ds_layout->view_mode = 'banner';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'title',
+        1 => 'field_event_date',
+        2 => 'field_event_intervenant',
+        3 => 'field_event_photo_banniere',
+      ),
+    ),
+    'fields' => array(
+      'title' => 'ds_content',
+      'field_event_date' => 'ds_content',
+      'field_event_intervenant' => 'ds_content',
+      'field_event_photo_banniere' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
+  );
+  $export['node|event|banner'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|event|banner_with_buttons';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'event';
+  $ds_layout->view_mode = 'banner_with_buttons';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'title',
+        1 => 'field_event_date',
+        2 => 'field_event_intervenant',
+        3 => 'field_event_photo_banniere',
+        4 => 'node_link',
+        5 => 'field_event_inscription',
+      ),
+    ),
+    'fields' => array(
+      'title' => 'ds_content',
+      'field_event_date' => 'ds_content',
+      'field_event_intervenant' => 'ds_content',
+      'field_event_photo_banniere' => 'ds_content',
+      'node_link' => 'ds_content',
+      'field_event_inscription' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
+  );
+  $export['node|event|banner_with_buttons'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
   $ds_layout->id = 'node|event|default';
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'event';
@@ -141,11 +215,20 @@ function ga_ct_evenement_ds_view_modes_info() {
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;
   $ds_view_mode->view_mode = 'banner';
-  $ds_view_mode->label = 'Banner';
+  $ds_view_mode->label = 'banner';
   $ds_view_mode->entities = array(
     'node' => 'node',
   );
   $export['banner'] = $ds_view_mode;
+
+  $ds_view_mode = new stdClass();
+  $ds_view_mode->api_version = 1;
+  $ds_view_mode->view_mode = 'banner_with_buttons';
+  $ds_view_mode->label = 'banner_with_buttons';
+  $ds_view_mode->entities = array(
+    'node' => 'node',
+  );
+  $export['banner_with_buttons'] = $ds_view_mode;
 
   return $export;
 }
