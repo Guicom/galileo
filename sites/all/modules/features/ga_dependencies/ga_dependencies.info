@@ -22,6 +22,7 @@ dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = features_diff
 dependencies[] = forum
+dependencies[] = ga_bk_evenement
 dependencies[] = ga_bk_intervenant
 dependencies[] = ga_bk_menu_footer
 dependencies[] = ga_bk_menu_footer_second
