@@ -42,6 +42,7 @@ features[field_instance][] = registration-evenement-field_registration_remarque
 features[node][] = event
 features[registration_state][] = canceled
 features[registration_state][] = complete
+features[registration_type][] = evenement
 features[variable][] = comment_anonymous_event
 features[variable][] = comment_default_mode_event
 features[variable][] = comment_default_per_page_event
