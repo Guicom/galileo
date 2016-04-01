@@ -31,6 +31,7 @@
       @include custom-transition;
 
       .field-name-title {
+        @include opacity(1);
         h2 {
           font-size: 24px;
           color: $white;
@@ -50,6 +51,7 @@
         background: $black;
         display: inline-block;
         width: 180px;
+        @include opacity(1);
       }
       .field-name-node-link {
         a {
@@ -77,6 +79,7 @@
         .field-name-title,
         .field-name-field-int-poste {
           visibility: hidden;
+          @include opacity(0);
           @include custom-transition;
         }
         .field-name-node-link {
