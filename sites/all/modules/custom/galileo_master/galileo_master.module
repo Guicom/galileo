@@ -1,0 +1,16 @@
+<?php
+
+/*
+* CHANGE URL BEFORE NODE PRESAVE
+* CT : event & intervenant
+*/
+
+function galileo_master_node_presave($node){
+    if($node->type == "event"){
+        $path = array('source' => "node/$node->nid", 'alias' => "evenement/$node->title");
+    }
+    if($node->type == "intervenant"){
+        $path = array('source' => "node/$node->nid", 'alias' => "intervenant/$node->title");
+    }
+    path_save($path);
+}

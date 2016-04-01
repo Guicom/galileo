@@ -36,6 +36,7 @@ dependencies[] = ga_menu_block
 dependencies[] = ga_theme
 dependencies[] = ga_vw_evenement
 dependencies[] = ga_vw_intervenants
+dependencies[] = galileo_master
 dependencies[] = ge_bk_contact_footer
 dependencies[] = i18n_block
 dependencies[] = i18n_contact
