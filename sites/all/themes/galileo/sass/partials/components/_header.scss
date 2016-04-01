@@ -22,8 +22,9 @@
         #block-system-main-menu {
           ul {
             li {
+              display: inline-block;
               a {
-                padding: 0;
+                padding: 0 15px;
                 font-size: 18px;
                 color: $white;
                 font-weight: 300;
@@ -36,6 +37,16 @@
                   background: transparent !important;
                   color: $yellow;
                   @include custom-transition;
+                }
+              }
+              &.last {
+                a {
+                  padding: 0 0 0 15px;
+                }
+              }
+              &.active-trail {
+                a {
+                  color: $yellow;
                 }
               }
             }

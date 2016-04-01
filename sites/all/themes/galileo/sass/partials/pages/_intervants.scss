@@ -36,3 +36,11 @@
     }
   }
 }
+
+.page-intervenants {
+  .page-header {
+    @include h1-title;
+    color: $black;
+    font-weight: 300;
+  }
+}

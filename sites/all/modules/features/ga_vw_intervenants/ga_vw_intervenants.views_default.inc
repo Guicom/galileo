@@ -62,6 +62,16 @@ function ga_vw_intervenants_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['path'] = 'intervenants';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Intervenants';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'main-menu';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
   $translatables['intervenants'] = array(
     t('Master'),
     t('Intervenants'),
@@ -72,6 +82,7 @@ function ga_vw_intervenants_views_default_views() {
     t('Asc'),
     t('Desc'),
     t('Block'),
+    t('Page'),
   );
   $export['intervenants'] = $view;
 
