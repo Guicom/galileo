@@ -7,6 +7,7 @@ dependencies[] = date
 dependencies[] = ds
 dependencies[] = entity
 dependencies[] = entityreference
+dependencies[] = fancybox
 dependencies[] = features
 dependencies[] = ga_field_base
 dependencies[] = image

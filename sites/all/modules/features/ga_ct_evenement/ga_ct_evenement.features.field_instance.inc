@@ -726,12 +726,16 @@ function ga_ct_evenement_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'image',
+        'module' => 'fancybox',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'fancybox_caption' => 'auto',
+          'fancybox_caption_custom' => '',
+          'fancybox_gallery' => 'post',
+          'fancybox_gallery_custom' => '',
+          'fancybox_image_style_content' => 'thumbnail',
+          'fancybox_image_style_fancybox' => 'large',
         ),
-        'type' => 'image',
+        'type' => 'fancybox',
         'weight' => 6,
       ),
       'teaser' => array(
@@ -744,7 +748,7 @@ function ga_ct_evenement_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_event_photo',
     'label' => 'Galerie photos',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
