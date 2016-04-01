@@ -71,3 +71,12 @@ function galileo_preprocess_page(&$variables) {
     $variables['title'] = t('Evènements');
   }
 }
+
+
+function galileo_preprocess_node (&$variables) {
+  if($variables['type'] == 'intervenant') {
+    if ($variables['node'] == menu_get_object()) {
+      $variables['classes_array'][] = 'active';
+    }
+  }
+}

@@ -1,5 +1,6 @@
 .view-evenements {
   .ds-2col-fluid.node-event.node-teaser {
+    overflow: hidden;
     @include make-lg-column(4);
     position: relative;
     padding: 0;
@@ -9,6 +10,7 @@
       padding: 0;
       img {
         width: 100%;
+        @include custom-transition;
       }
     }
     > .group-right {
@@ -65,6 +67,12 @@
     }
 
     &:hover {
+      > .group-left {
+        img {
+          @include scale(1.05);
+          @include custom-transition;
+        }
+      }
       > .group-right {
         border-color: $yellow;
         background: transparent;

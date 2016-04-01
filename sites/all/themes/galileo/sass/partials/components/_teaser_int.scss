@@ -1,5 +1,6 @@
 .view-intervenants {
   .ds-2col-fluid.node-intervenant.node-teaser {
+    overflow: hidden;
     @include make-lg-column(4);
     position: relative;
     padding: 0;
@@ -9,6 +10,7 @@
       padding: 0;
       img {
         width: 100%;
+        @include custom-transition;
       }
     }
     > .group-right {
@@ -57,6 +59,12 @@
     }
 
     &:hover {
+      > .group-left {
+        img {
+          @include scale(1.05);
+          @include custom-transition;
+        }
+      }
       > .group-right {
         border-color: $yellow;
         background: transparent;
@@ -78,6 +86,32 @@
             text-align: center;
             @include transition(background .3s .1s, color .3s .1s);
           }
+        }
+      }
+    }
+    &.active {
+      > .group-left {
+        img {
+          @include scale(1.05);
+        }
+      }
+      > .group-right {
+        border-color: $yellow;
+        background: transparent;
+        @include custom-transition;
+        .field-name-title,
+        .field-name-field-int-poste {
+          visibility: hidden;
+        }
+      }
+      &:hover {
+        > .group-left {
+          img {
+            @include scale(1.05);
+          }
+        }
+        .field-name-node-link {
+          display: none;
         }
       }
     }
