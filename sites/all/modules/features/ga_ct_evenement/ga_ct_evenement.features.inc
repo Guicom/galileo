@@ -63,20 +63,3 @@ function ga_ct_evenement_default_registration_state() {
   }');
   return $items;
 }
-
-/**
- * Implements hook_default_registration_type().
- */
-function ga_ct_evenement_default_registration_type() {
-  $items = array();
-  $items['evenement'] = entity_import('registration_type', '{
-    "name" : "evenement",
-    "label" : "Evenement",
-    "locked" : "0",
-    "default_state" : "complete",
-    "weight" : "0",
-    "rdf_mapping" : [],
-    "data" : { "held_expire" : "1", "held_expire_state" : "canceled" }
-  }');
-  return $items;
-}
