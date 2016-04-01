@@ -3,6 +3,8 @@
   color: $white;
   height: 70px;
   line-height: 70px;
+  @include border-radius(0);
+  margin: 0;
   .container {
     height: 70px;
     .navbar-header {

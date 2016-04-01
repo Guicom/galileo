@@ -1,0 +1,7 @@
+name = ag_is_120x120
+core = 7.x
+package = Galileo : Image styles
+dependencies[] = image
+features[features_api][] = api:2
+features[image][] = 120x120
+project path = sites/all/modules/features

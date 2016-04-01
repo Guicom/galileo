@@ -30,6 +30,12 @@ function ga_ct_intervenant_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 11,
       ),
+      'teaser_slide' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'body',
@@ -77,6 +83,16 @@ function ga_ct_intervenant_field_default_field_instances() {
         'type' => 'image',
         'weight' => 0,
       ),
+      'teaser_slide' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '120x120',
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_int_photo',
@@ -120,6 +136,13 @@ function ga_ct_intervenant_field_default_field_instances() {
         'weight' => 2,
       ),
       'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'teaser_slide' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ag_is_120x120 feature.
+ */
+
+include_once 'ag_is_120x120.features.inc';

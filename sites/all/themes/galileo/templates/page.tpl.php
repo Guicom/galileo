@@ -114,7 +114,7 @@
   </div>
 </header>
 
-<div class="main-container <?php print $container_class; ?>">
+<div class="main-container">
 
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
@@ -124,18 +124,11 @@
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
 
-  <div class="row">
-
-    <?php if (!empty($page['sidebar_first'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
+  <section>
+    <?php if (!empty($page['highlighted'])): ?>
+      <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
     <?php endif; ?>
-
-    <section<?php print $content_column_class; ?>>
-      <?php if (!empty($page['highlighted'])): ?>
-        <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-      <?php endif; ?>
+    <div class="container">
       <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
@@ -153,16 +146,16 @@
       <?php if (!empty($action_links)): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-      <?php print render($page['content']); ?>
-    </section>
+      <div class="row">
+        <?php print render($page['content']); ?>
+      </div
+  </section>
 
-    <?php if (!empty($page['sidebar_second'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_second']); ?>
-      </aside>  <!-- /#sidebar-second -->
-    <?php endif; ?>
-
-  </div>
+  <?php if (!empty($page['sidebar_second'])): ?>
+    <aside class="col-sm-3" role="complementary">
+      <?php print render($page['sidebar_second']); ?>
+    </aside>  <!-- /#sidebar-second -->
+  <?php endif; ?>
 </div>
 
 <?php if (!empty($page['footer'])): ?>

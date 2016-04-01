@@ -89,6 +89,15 @@ function ga_ct_intervenant_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'teaser_slide' => array(
+        'custom_settings' => TRUE,
+      ),
+      'test' => array(
+        'custom_settings' => FALSE,
+      ),
+      'banner' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -104,6 +113,10 @@ function ga_ct_intervenant_strongarm() {
           ),
           'teaser' => array(
             'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'teaser_slide' => array(
+            'weight' => '11',
             'visible' => FALSE,
           ),
         ),

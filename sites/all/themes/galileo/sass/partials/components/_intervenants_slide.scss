@@ -1,0 +1,130 @@
+#block-views-intervenants-block-1 {
+  @include make-lg-column(6);
+  @include make-xs-column(12);
+  .block-title {
+    @include h1-title;
+    text-transform: none;
+    color: $black;
+    font-weight: 300;
+  }
+  .view-intervenants {
+    .view-header {
+      p {
+        @include p-style;
+      }
+    }
+    .view-content {
+      margin-top: 25px;
+      .jcarousel-container {
+        height: auto;
+        overflow: hidden;
+        padding: 0 50px;
+        margin: 0 auto;
+        .jcarousel-clip {
+          overflow: hidden;
+          .jcarousel {
+            li {
+              width: 140px;
+              height: auto;
+              overflow: hidden;
+              margin: 0 30px;
+              @include box-sizing(border-box);
+              .node-intervenant {
+                width: 140px;
+                @include box-sizing(border-box);
+                text-align: center;
+              }
+              .field-name-field-int-photo {
+                width: 120px;
+                height: 120px;
+                @include border-radius(60px);
+                overflow: hidden;
+                margin: 0 auto;
+              }
+              .field-name-title {
+                h2 {
+                  font-size: 14px;
+                  line-height: 14px;
+                  color: $black;
+                  font-weight: 600;
+                  margin: 10px 0 0 0;
+                }
+              }
+              .field-name-field-int-poste {
+                font-size: 14px;
+                line-height: 14px;
+                color: $grey;
+              }
+              .field-name-node-link {
+                a {
+                  @include small-black-button;
+                  margin: 10px 0 0;
+                  display: inline-block;
+                  line-height: 16px;
+                }
+              }
+            }
+          }
+        }
+        > a {
+          background: none;
+          height: 40px;
+          position: absolute;
+          top:50%;
+          @include translateY(-50%);
+          &:hover,
+          &:focus {
+            text-decoration: none;
+          }
+        }
+        .jcarousel-prev {
+          left: 10px;
+          &:before {
+            @include icons(previous);
+            font-size: 40px;
+            color: rgba($black, .2);
+          }
+          &:hover {
+            &:before {
+              color: rgba($black, .5);
+            }
+          }
+        }
+        .jcarousel-next {
+          right: 10px;
+          &:before {
+            @include icons(next);
+            font-size: 40px;
+            color: rgba($black, .2);
+          }
+          &:hover {
+            &:before {
+              color: rgba($black, .5);
+            }
+          }
+        }
+      }
+    }
+    .view-footer {
+      visibility: hidden;
+      @include custom-transition;
+      @include opacity(0);
+      a {
+        @include border-black-button;
+        width: 200px;
+        display: block;
+        text-align: center;
+        height: 38px;
+        line-height: 36px;
+        margin: 15px auto 0 auto;
+      }
+    }
+    &:hover {
+      .view-footer {
+        visibility: visible;
+        @include opacity(1);
+        @include custom-transition;
+      }
+    }
+  }
+}
