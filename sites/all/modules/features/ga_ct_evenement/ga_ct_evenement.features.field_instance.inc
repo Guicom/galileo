@@ -17,6 +17,13 @@ function ga_ct_evenement_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'banner' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -59,6 +66,13 @@ function ga_ct_evenement_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'banner' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'text',
@@ -98,6 +112,20 @@ function ga_ct_evenement_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'banner' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => FALSE,
+        ),
+        'type' => 'date_default',
+        'weight' => 1,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'date',
@@ -161,6 +189,20 @@ function ga_ct_evenement_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'banner' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => FALSE,
+        ),
+        'type' => 'date_default',
+        'weight' => 4,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'date',
@@ -217,6 +259,15 @@ function ga_ct_evenement_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'banner' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 5,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'entityreference',
@@ -263,6 +314,13 @@ function ga_ct_evenement_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'banner' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'text',
@@ -307,6 +365,13 @@ function ga_ct_evenement_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'banner' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 7,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'list',
@@ -345,6 +410,16 @@ function ga_ct_evenement_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'banner' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 6,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'image',
@@ -395,6 +470,16 @@ function ga_ct_evenement_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'banner' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 9,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'image',
@@ -445,6 +530,16 @@ function ga_ct_evenement_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'banner' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 8,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'image',
