@@ -9289,6 +9289,280 @@ body {
   transition: all, 0.3s;
 }
 
+/* line 1, ../sass/partials/components/_footer.scss */
+footer {
+  background: #262626;
+  border: none;
+  padding-top: 25px;
+}
+/* line 5, ../sass/partials/components/_footer.scss */
+footer .region-footer {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 15, ../bootstrap-sass/bootstrap/mixins/_clearfix.scss */
+footer .region-footer:before, footer .region-footer:after {
+  content: " ";
+  display: table;
+}
+/* line 19, ../bootstrap-sass/bootstrap/mixins/_clearfix.scss */
+footer .region-footer:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 5, ../sass/partials/components/_footer.scss */
+  footer .region-footer {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 5, ../sass/partials/components/_footer.scss */
+  footer .region-footer {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 5, ../sass/partials/components/_footer.scss */
+  footer .region-footer {
+    width: 1170px;
+  }
+}
+/* line 7, ../sass/partials/components/_footer.scss */
+footer .region-footer #block-menu-menu-menu-footer {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  /* line 7, ../sass/partials/components/_footer.scss */
+  footer .region-footer #block-menu-menu-menu-footer {
+    float: left;
+    width: 50%;
+  }
+}
+/* line 9, ../sass/partials/components/_footer.scss */
+footer .region-footer #block-menu-menu-menu-footer ul {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
+  -o-column-count: 2;
+  column-count: 2;
+}
+/* line 12, ../sass/partials/components/_footer.scss */
+footer .region-footer #block-menu-menu-menu-footer ul li a {
+  font-size: 14px;
+  line-height: 22px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0;
+}
+/* line 20, ../sass/partials/components/_footer.scss */
+footer .region-footer #block-menu-menu-menu-footer ul li:hover {
+  background: none;
+}
+/* line 22, ../sass/partials/components/_footer.scss */
+footer .region-footer #block-menu-menu-menu-footer ul li:hover a {
+  background: none;
+  text-decoration: underline;
+}
+/* line 30, ../sass/partials/components/_footer.scss */
+footer .region-footer .contact-footer-block {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  /* line 30, ../sass/partials/components/_footer.scss */
+  footer .region-footer .contact-footer-block {
+    float: left;
+    width: 25%;
+  }
+}
+/* line 32, ../sass/partials/components/_footer.scss */
+footer .region-footer .contact-footer-block .contact-footer {
+  background: transparent;
+  color: white;
+  border: solid 1px white;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+  width: 200px;
+  height: 38px;
+  line-height: 36px;
+  text-align: center;
+  display: block;
+  margin-top: 25px;
+}
+/* line 103, ../sass/partials/utility/_mixins.scss */
+footer .region-footer .contact-footer-block .contact-footer:hover {
+  color: #ee9c1b;
+  border-color: #ee9c1b;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+/* line 42, ../sass/partials/components/_footer.scss */
+footer .region-footer .social-footer-block {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  /* line 42, ../sass/partials/components/_footer.scss */
+  footer .region-footer .social-footer-block {
+    float: left;
+    width: 25%;
+  }
+}
+/* line 44, ../sass/partials/components/_footer.scss */
+footer .region-footer .social-footer-block .block-title {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+}
+/* line 50, ../sass/partials/components/_footer.scss */
+footer .region-footer .social-footer-block a {
+  display: inline-block;
+  text-indent: -6000px;
+  position: relative;
+  width: 25%;
+  height: 40px;
+}
+/* line 56, ../sass/partials/components/_footer.scss */
+footer .region-footer .social-footer-block a:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+  text-indent: 0;
+  font-size: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+/* line 68, ../sass/partials/components/_footer.scss */
+footer .region-footer .social-footer-block a.facebook:before {
+  font-family: 'galileo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  content: "\e902";
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+/* line 75, ../sass/partials/components/_footer.scss */
+footer .region-footer .social-footer-block a.linkedin:before {
+  font-family: 'galileo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  content: "\e904";
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+/* line 82, ../sass/partials/components/_footer.scss */
+footer .region-footer .social-footer-block a.viadeo:before {
+  font-family: 'galileo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  content: "\e90a";
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+/* line 89, ../sass/partials/components/_footer.scss */
+footer .region-footer .social-footer-block a.youtube:before {
+  font-family: 'galileo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  content: "\e90b";
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+/* line 96, ../sass/partials/components/_footer.scss */
+footer .region-footer .social-footer-block a:hover:before {
+  color: white;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+/* line 103, ../sass/partials/components/_footer.scss */
+footer .region-footer #block-menu-menu-footer-menu-second {
+  clear: both;
+  padding: 0 15px;
+}
+/* line 107, ../sass/partials/components/_footer.scss */
+footer .region-footer #block-menu-menu-footer-menu-second ul li {
+  display: inline-block;
+}
+/* line 109, ../sass/partials/components/_footer.scss */
+footer .region-footer #block-menu-menu-footer-menu-second ul li a {
+  font-size: 14px;
+  line-height: 22px;
+  color: gray;
+  text-decoration: underline;
+  display: inline-block;
+  padding: 10px;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+/* line 118, ../sass/partials/components/_footer.scss */
+footer .region-footer #block-menu-menu-footer-menu-second ul li:after {
+  content: ' | ';
+  display: inline-block;
+  font-size: 14px;
+  line-height: 22px;
+  color: gray;
+}
+/* line 126, ../sass/partials/components/_footer.scss */
+footer .region-footer #block-menu-menu-footer-menu-second ul li:first-child a {
+  padding-left: 0;
+}
+/* line 131, ../sass/partials/components/_footer.scss */
+footer .region-footer #block-menu-menu-footer-menu-second ul li:last-child:after {
+  content: '';
+}
+/* line 135, ../sass/partials/components/_footer.scss */
+footer .region-footer #block-menu-menu-footer-menu-second ul li:hover {
+  background: none;
+}
+/* line 137, ../sass/partials/components/_footer.scss */
+footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
+  background: none;
+  color: white;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
 /* line 2, ../sass/partials/pages/_intervants.scss */
 .node-type-intervenant .page-header {
   color: #ee9c1b;
@@ -9391,7 +9665,6 @@ body {
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  color: black;
   content: "\e907";
   color: rgba(0, 0, 0, 0.5);
 }
@@ -9403,7 +9676,6 @@ body {
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  color: black;
   content: "\e906";
   color: rgba(0, 0, 0, 0.5);
 }

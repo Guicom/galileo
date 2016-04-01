@@ -1,0 +1,147 @@
+footer {
+  background: $grey;
+  border: none;
+  padding-top: 25px;
+  .region-footer {
+    @include make-container;
+    #block-menu-menu-menu-footer {
+      @include make-lg-column(6);
+      ul {
+        @include column-count(2);
+        li {
+          a {
+            font-size: 14px;
+            line-height: 22px;
+            color: $white;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 0;
+          }
+          &:hover {
+            background: none;
+            a {
+              background: none;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+    .contact-footer-block {
+      @include make-lg-column(3);
+      .contact-footer {
+        @include white-border-button;
+        width: 200px;
+        height: 38px;
+        line-height: 36px;
+        text-align: center;
+        display: block;
+        margin-top: 25px;
+      }
+    }
+    .social-footer-block {
+      @include make-lg-column(3);
+      .block-title {
+        margin: 0 0 10px 0;
+        font-size: 14px;
+        color: $white;
+        text-transform: uppercase;
+      }
+      a {
+        display: inline-block;
+        text-indent: -6000px;
+        position: relative;
+        width: 25%;
+        height: 40px;
+        &:before {
+          position: absolute;
+          top:0;
+          left: 0;
+          color: rgba($white, .5);
+          display: block;
+          text-indent: 0;
+          font-size: 40px;
+          height: 40px;
+          line-height: 40px;
+        }
+        &.facebook {
+          &:before {
+            @include icons(facebook);
+            color: rgba($white, .5);
+            @include custom-transition;
+          }
+        }
+        &.linkedin {
+          &:before {
+            @include icons(linkedin);
+            color: rgba($white, .5);
+            @include custom-transition;
+          }
+        }
+        &.viadeo {
+          &:before {
+            @include icons(viadeo);
+            color: rgba($white, .5);
+            @include custom-transition;
+          }
+        }
+        &.youtube {
+          &:before {
+            @include icons(youtube);
+            color: rgba($white, .5);
+            @include custom-transition;
+          }
+        }
+        &:hover {
+          &:before {
+            color: rgba($white, 1);
+            @include custom-transition;
+          }
+        }
+      }
+    }
+    #block-menu-menu-footer-menu-second {
+      clear: both;
+      padding: 0 15px;
+      ul {
+        li {
+          display: inline-block;
+          a {
+            font-size: 14px;
+            line-height: 22px;
+            color: $grey-mid;
+            text-decoration: underline;
+            display: inline-block;
+            padding: 10px;
+            @include custom-transition;
+          }
+          &:after {
+            content: ' | ';
+            display: inline-block;
+            font-size: 14px;
+            line-height: 22px;
+            color: $grey-mid;
+          }
+          &:first-child {
+            a {
+              padding-left: 0;
+            }
+          }
+          &:last-child {
+            &:after {
+              content: '';
+            }
+          }
+          &:hover {
+            background: none;
+            a {
+              background: none;
+              color: $white;
+              @include custom-transition;
+            }
+          }
+        }
+      }
+    }
+  }
+}

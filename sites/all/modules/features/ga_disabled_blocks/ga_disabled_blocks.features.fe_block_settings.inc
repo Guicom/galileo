@@ -34,7 +34,7 @@ function ga_disabled_blocks_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'galileo',
-        'weight' => -11,
+        'weight' => 2,
       ),
       'seven' => array(
         'region' => 'dashboard_sidebar',
@@ -69,7 +69,7 @@ function ga_disabled_blocks_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'galileo',
-        'weight' => -9,
+        'weight' => 5,
       ),
       'seven' => array(
         'region' => 'help',
@@ -104,13 +104,48 @@ function ga_disabled_blocks_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'galileo',
-        'weight' => -10,
+        'weight' => -3,
       ),
       'seven' => array(
         'region' => '',
         'status' => 0,
         'theme' => 'seven',
         'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['system-powered-by'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'powered-by',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'module' => 'system',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => 'footer',
+        'status' => 1,
+        'theme' => 'bartik',
+        'weight' => 10,
+      ),
+      'galileo' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'galileo',
+        'weight' => -12,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 10,
       ),
     ),
     'title' => '',
@@ -139,7 +174,7 @@ function ga_disabled_blocks_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'galileo',
-        'weight' => -8,
+        'weight' => 6,
       ),
       'seven' => array(
         'region' => 'content',

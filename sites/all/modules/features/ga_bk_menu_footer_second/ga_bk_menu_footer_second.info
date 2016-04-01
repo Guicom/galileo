@@ -1,0 +1,14 @@
+name = ga_bk_menu_footer_second
+core = 7.x
+package = Galileo : Blocks
+dependencies[] = fe_block
+dependencies[] = features
+dependencies[] = menu
+features[fe_block_settings][] = menu-menu-footer-menu-second
+features[features_api][] = api:2
+features[menu_custom][] = menu-footer-menu-second
+features[menu_links][] = menu-footer-menu-second_accueil:<front>
+features[menu_links][] = menu-footer-menu-second_cgv:<front>
+features[menu_links][] = menu-footer-menu-second_contact:<front>
+features[menu_links][] = menu-footer-menu-second_informations-lgales:<front>
+project path = sites/all/modules/features

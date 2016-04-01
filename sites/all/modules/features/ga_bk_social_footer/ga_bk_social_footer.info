@@ -1,0 +1,8 @@
+name = ga_bk_social_footer
+core = 7.x
+package = Galileo : Blocks
+dependencies[] = fe_block
+features[fe_block_boxes][] = social_block_footer
+features[fe_block_settings][] = block-social_block_footer
+features[features_api][] = api:2
+project path = sites/all/modules/features

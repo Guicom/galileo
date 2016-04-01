@@ -1,0 +1,16 @@
+name = ga_bk_menu_footer
+core = 7.x
+package = Galileo : Blocks
+dependencies[] = fe_block
+dependencies[] = features
+dependencies[] = menu
+features[fe_block_settings][] = menu-menu-menu-footer
+features[features_api][] = api:2
+features[menu_custom][] = menu-menu-footer
+features[menu_links][] = menu-menu-footer_aurore:<front>
+features[menu_links][] = menu-menu-footer_le-club:<front>
+features[menu_links][] = menu-menu-footer_les-evnements:<front>
+features[menu_links][] = menu-menu-footer_les-intervenants:<front>
+features[menu_links][] = menu-menu-footer_prsentation:<front>
+features[menu_links][] = menu-menu-footer_tarifs:<front>
+project path = sites/all/modules/features

@@ -43,7 +43,6 @@ $font-icon: 'FontAwesome';
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  color: $black;
 
   @if $icon == 'ampoule' { content: "\e900"; }
   @if $icon == 'calendar' { content: "\e901"; }
