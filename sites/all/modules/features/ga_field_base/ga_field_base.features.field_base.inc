@@ -131,6 +131,25 @@ function ga_field_base_field_default_field_bases() {
     'type' => 'datetime',
   );
 
+  // Exported field_base: 'field_event_inscription'.
+  $field_bases['field_event_inscription'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_event_inscription',
+    'indexes' => array(
+      'registration_type' => array(
+        0 => 'registration_type',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'registration',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'registration',
+  );
+
   // Exported field_base: 'field_event_intervenant'.
   $field_bases['field_event_intervenant'] = array(
     'active' => 1,
@@ -341,6 +360,130 @@ function ga_field_base_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_registration_adresse'.
+  $field_bases['field_registration_adresse'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_registration_adresse',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_registration_nom'.
+  $field_bases['field_registration_nom'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_registration_nom',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_registration_num_adherent'.
+  $field_bases['field_registration_num_adherent'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_registration_num_adherent',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_registration_phone'.
+  $field_bases['field_registration_phone'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_registration_phone',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_registration_prenom'.
+  $field_bases['field_registration_prenom'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_registration_prenom',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_registration_remarque'.
+  $field_bases['field_registration_remarque'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_registration_remarque',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
   );
 
   // Exported field_base: 'field_tags'.
