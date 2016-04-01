@@ -18,6 +18,7 @@ features[ctools][] = strongarm:strongarm:1
 features[ds_field_settings][] = node|event|teaser
 features[ds_layout_settings][] = node|event|default
 features[ds_layout_settings][] = node|event|teaser
+features[ds_view_modes][] = banner
 features[features_api][] = api:2
 features[field_instance][] = node-event-body
 features[field_instance][] = node-event-field_event_adresse

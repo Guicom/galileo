@@ -89,6 +89,9 @@ function ga_ct_evenement_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'banner' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
