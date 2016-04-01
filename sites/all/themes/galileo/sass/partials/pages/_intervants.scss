@@ -8,6 +8,7 @@
     .ds-2col-fluid.node-intervenant.view-mode-full {
       background: $grey-light;
       padding: 25px 10px;
+      position: relative;
 
       .group-left{
         @include make-lg-column(4);
@@ -18,6 +19,7 @@
 
       .group-right {
         @include make-lg-column(8);
+        position: initial;
         .field-name-title {
           h2 {
             @include h1-title;
@@ -30,6 +32,53 @@
         .field-name-field-int-poste,
         .field-name-body {
           @include p-style;
+        }
+        .flippy {
+          position: absolute;
+          bottom: 20px;
+          right: 15px;
+          margin: 0;
+          padding: 0;
+          li {
+            height: 40px;
+            padding: 0;
+            width: 20px;
+            display: inline-block;
+            &.prev {
+              margin-right: 42px;
+              a{
+                margin-right: 42px;
+                &:before {
+                  @include icons(previous);
+                  color: rgba($black, .5);
+                }
+              }
+            }
+            &.next a{
+              &:before {
+                @include icons(next);
+                color: rgba($black, .5);
+              }
+            }
+            a {
+              display: block;
+              position: relative;
+              text-indent: -6000px;
+              height: 40px;
+              padding: 0;
+              width: 20px;
+              &:before {
+                text-indent: 0;
+                display: block;
+                position: absolute;
+                font-size: 40px;
+                color: rgba($black, .5);
+                top: 0;
+                left: 0;
+                line-height: 40px;
+              }
+            }
+          }
         }
       }
 

@@ -21,3 +21,40 @@ $font-icon: 'FontAwesome';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+@font-face {
+  font-family: 'galileo';
+  src:    url('../font/galileo.eot?e6lta9');
+  src:    url('../font/galileo.eot?e6lta9#iefix') format('embedded-opentype'),
+  url('../font/galileo.ttf?e6lta9') format('truetype'),
+  url('../font/galileo.woff?e6lta9') format('woff'),
+  url('../font/galileo.svg?e6lta9#galileo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@mixin icons($icon) {
+  font-family: 'galileo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  color: $black;
+
+  @if $icon == 'ampoule' { content: "\e900"; }
+  @if $icon == 'calendar' { content: "\e901"; }
+  @if $icon == 'facebook' { content: "\e902"; }
+  @if $icon == 'heart' { content: "\e903"; }
+  @if $icon == 'linkedin' { content: "\e904"; }
+  @if $icon == 'location' { content: "\e905"; }
+  @if $icon == 'next' { content: "\e906"; }
+  @if $icon == 'previous' { content: "\e907"; }
+  @if $icon == 'refresh' { content: "\e908"; }
+  @if $icon == 'select' { content: "\e909"; }
+  @if $icon == 'viadeo' { content: "\e90a"; }
+  @if $icon == 'youtube' { content: "\e90b"; }
+}
