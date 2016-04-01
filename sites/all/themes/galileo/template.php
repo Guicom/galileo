@@ -63,4 +63,8 @@ function galileo_preprocess_page(&$variables) {
   else {
     $variables['navbar_classes_array'][] = 'navbar-default';
   }
+
+  if($variables['node']->type == 'intervenant') {
+    $variables['title'] = t('Intervenants');
+  }
 }

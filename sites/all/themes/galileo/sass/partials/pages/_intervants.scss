@@ -1,6 +1,8 @@
 .node-type-intervenant {
   .page-header {
-
+    @include h1-title;
+    color: $black;
+    font-weight: 300;
   }
   #block-system-main {
     .ds-2col-fluid.node-intervenant.view-mode-full {

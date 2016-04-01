@@ -1,0 +1,7 @@
+name = ag_is_319x228
+core = 7.x
+package = Galileo : Image styles
+dependencies[] = image
+features[features_api][] = api:2
+features[image][] = 319x228
+project path = sites/all/modules/features

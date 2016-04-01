@@ -9070,12 +9070,22 @@ body {
   transition: all, 0.3s;
 }
 
-/* line 6, ../sass/partials/pages/_intervants.scss */
+/* line 2, ../sass/partials/pages/_intervants.scss */
+.node-type-intervenant .page-header {
+  color: #ee9c1b;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: black;
+  font-weight: 300;
+}
+/* line 8, ../sass/partials/pages/_intervants.scss */
 .node-type-intervenant #block-system-main .ds-2col-fluid.node-intervenant.view-mode-full {
   background: #f2f2f2;
   padding: 25px 10px;
 }
-/* line 10, ../sass/partials/pages/_intervants.scss */
+/* line 12, ../sass/partials/pages/_intervants.scss */
 .node-type-intervenant #block-system-main .ds-2col-fluid.node-intervenant.view-mode-full .group-left {
   position: relative;
   min-height: 1px;
@@ -9089,13 +9099,13 @@ body {
   padding-right: 15px;
 }
 @media (min-width: 1200px) {
-  /* line 10, ../sass/partials/pages/_intervants.scss */
+  /* line 12, ../sass/partials/pages/_intervants.scss */
   .node-type-intervenant #block-system-main .ds-2col-fluid.node-intervenant.view-mode-full .group-left {
     float: left;
     width: 33.33333%;
   }
 }
-/* line 17, ../sass/partials/pages/_intervants.scss */
+/* line 19, ../sass/partials/pages/_intervants.scss */
 .node-type-intervenant #block-system-main .ds-2col-fluid.node-intervenant.view-mode-full .group-right {
   position: relative;
   min-height: 1px;
@@ -9103,13 +9113,13 @@ body {
   padding-right: 15px;
 }
 @media (min-width: 1200px) {
-  /* line 17, ../sass/partials/pages/_intervants.scss */
+  /* line 19, ../sass/partials/pages/_intervants.scss */
   .node-type-intervenant #block-system-main .ds-2col-fluid.node-intervenant.view-mode-full .group-right {
     float: left;
     width: 66.66667%;
   }
 }
-/* line 20, ../sass/partials/pages/_intervants.scss */
+/* line 22, ../sass/partials/pages/_intervants.scss */
 .node-type-intervenant #block-system-main .ds-2col-fluid.node-intervenant.view-mode-full .group-right .field-name-title h2 {
   color: #ee9c1b;
   font-size: 36px;
@@ -9121,7 +9131,7 @@ body {
   line-height: 34px;
   margin-bottom: 10px;
 }
-/* line 29, ../sass/partials/pages/_intervants.scss */
+/* line 31, ../sass/partials/pages/_intervants.scss */
 .node-type-intervenant #block-system-main .ds-2col-fluid.node-intervenant.view-mode-full .group-right .field-name-field-int-poste,
 .node-type-intervenant #block-system-main .ds-2col-fluid.node-intervenant.view-mode-full .group-right .field-name-body {
   font-size: 16px;

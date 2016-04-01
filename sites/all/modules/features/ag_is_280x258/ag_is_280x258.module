@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ag_is_280x258 feature.
+ */
+
+include_once 'ag_is_280x258.features.inc';
