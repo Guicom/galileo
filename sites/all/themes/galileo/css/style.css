@@ -9610,30 +9610,32 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   text-transform: none;
   color: #000;
   font-weight: 300;
+  margin: 0 0 10px 0;
+  line-height: 20px;
 }
-/* line 12, ../sass/partials/components/_intervenants_slide.scss */
+/* line 14, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-header p {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   color: #000;
 }
-/* line 16, ../sass/partials/components/_intervenants_slide.scss */
+/* line 18, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content {
   margin-top: 25px;
 }
-/* line 18, ../sass/partials/components/_intervenants_slide.scss */
+/* line 20, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container {
   height: auto;
   overflow: hidden;
   padding: 0 50px;
   margin: 0 auto;
 }
-/* line 23, ../sass/partials/components/_intervenants_slide.scss */
+/* line 25, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container .jcarousel-clip {
   overflow: hidden;
 }
-/* line 26, ../sass/partials/components/_intervenants_slide.scss */
+/* line 28, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container .jcarousel-clip .jcarousel li {
   width: 140px;
   height: auto;
@@ -9643,7 +9645,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 32, ../sass/partials/components/_intervenants_slide.scss */
+/* line 34, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container .jcarousel-clip .jcarousel li .node-intervenant {
   width: 140px;
   -webkit-box-sizing: border-box;
@@ -9651,7 +9653,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   box-sizing: border-box;
   text-align: center;
 }
-/* line 37, ../sass/partials/components/_intervenants_slide.scss */
+/* line 39, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container .jcarousel-clip .jcarousel li .field-name-field-int-photo {
   width: 120px;
   height: 120px;
@@ -9661,7 +9663,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   overflow: hidden;
   margin: 0 auto;
 }
-/* line 45, ../sass/partials/components/_intervenants_slide.scss */
+/* line 47, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container .jcarousel-clip .jcarousel li .field-name-title h2 {
   font-size: 14px;
   line-height: 14px;
@@ -9669,13 +9671,13 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   font-weight: 600;
   margin: 10px 0 0 0;
 }
-/* line 53, ../sass/partials/components/_intervenants_slide.scss */
+/* line 55, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container .jcarousel-clip .jcarousel li .field-name-field-int-poste {
   font-size: 14px;
   line-height: 14px;
   color: #262626;
 }
-/* line 59, ../sass/partials/components/_intervenants_slide.scss */
+/* line 61, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container .jcarousel-clip .jcarousel li .field-name-node-link a {
   background: #000;
   color: #fff;
@@ -9697,7 +9699,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   transition: all, 0.3s;
   text-decoration: none;
 }
-/* line 69, ../sass/partials/components/_intervenants_slide.scss */
+/* line 71, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container > a {
   background: none;
   height: 40px;
@@ -9708,15 +9710,15 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 75, ../sass/partials/components/_intervenants_slide.scss */
+/* line 77, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container > a:hover, #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container > a:focus {
   text-decoration: none;
 }
-/* line 80, ../sass/partials/components/_intervenants_slide.scss */
+/* line 82, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container .jcarousel-prev {
   left: 10px;
 }
-/* line 82, ../sass/partials/components/_intervenants_slide.scss */
+/* line 84, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container .jcarousel-prev:before {
   font-family: 'galileo' !important;
   speak: none;
@@ -9728,15 +9730,15 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   font-size: 40px;
   color: rgba(0, 0, 0, 0.2);
 }
-/* line 88, ../sass/partials/components/_intervenants_slide.scss */
+/* line 90, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container .jcarousel-prev:hover:before {
   color: rgba(0, 0, 0, 0.5);
 }
-/* line 93, ../sass/partials/components/_intervenants_slide.scss */
+/* line 95, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container .jcarousel-next {
   right: 10px;
 }
-/* line 95, ../sass/partials/components/_intervenants_slide.scss */
+/* line 97, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container .jcarousel-next:before {
   font-family: 'galileo' !important;
   speak: none;
@@ -9748,11 +9750,11 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   font-size: 40px;
   color: rgba(0, 0, 0, 0.2);
 }
-/* line 101, ../sass/partials/components/_intervenants_slide.scss */
+/* line 103, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container .jcarousel-next:hover:before {
   color: rgba(0, 0, 0, 0.5);
 }
-/* line 108, ../sass/partials/components/_intervenants_slide.scss */
+/* line 110, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-footer {
   visibility: hidden;
   -webkit-transition: all, 0.3s;
@@ -9761,7 +9763,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-/* line 112, ../sass/partials/components/_intervenants_slide.scss */
+/* line 114, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-footer a {
   background: transparent;
   color: #000;
@@ -9782,7 +9784,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   color: #fff;
   text-decoration: none;
 }
-/* line 123, ../sass/partials/components/_intervenants_slide.scss */
+/* line 125, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants:hover .view-footer {
   visibility: visible;
   opacity: 1;
@@ -9804,7 +9806,8 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  height: 419px;
+  min-height: 419px;
+  margin-top: -73px;
 }
 @media (min-width: 1200px) {
   /* line 1, ../sass/partials/components/_aurore_block.scss */
@@ -9813,13 +9816,13 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
     width: 50%;
   }
 }
-/* line 6, ../sass/partials/components/_aurore_block.scss */
+/* line 7, ../sass/partials/components/_aurore_block.scss */
 .aurore-block .aurore-block-wrapper .aurore-top {
   background: #262626;
   height: auto;
   overflow: hidden;
 }
-/* line 11, ../sass/partials/components/_aurore_block.scss */
+/* line 12, ../sass/partials/components/_aurore_block.scss */
 .aurore-block .aurore-block-wrapper .aurore-top .aurore-title h2 {
   display: inline-block;
   background: #ee9c1b;
@@ -9834,7 +9837,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   color: #000;
   text-transform: none;
 }
-/* line 22, ../sass/partials/components/_aurore_block.scss */
+/* line 23, ../sass/partials/components/_aurore_block.scss */
 .aurore-block .aurore-block-wrapper .aurore-top h3 {
   font-size: 18px;
   line-height: 22px;
@@ -9842,7 +9845,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   text-transform: uppercase;
   padding: 0 45px 0 15px;
 }
-/* line 29, ../sass/partials/components/_aurore_block.scss */
+/* line 30, ../sass/partials/components/_aurore_block.scss */
 .aurore-block .aurore-block-wrapper .aurore-top p {
   font-size: 16px;
   line-height: 22px;
@@ -9852,7 +9855,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   padding: 0 45px 0 15px;
   margin-bottom: 18px;
 }
-/* line 37, ../sass/partials/components/_aurore_block.scss */
+/* line 38, ../sass/partials/components/_aurore_block.scss */
 .aurore-block .aurore-block-wrapper .aurore-link a {
   background: #ee9c1b;
   color: #000;
@@ -9879,7 +9882,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 50, ../sass/partials/components/_aurore_block.scss */
+/* line 51, ../sass/partials/components/_aurore_block.scss */
 .aurore-block .aurore-block-wrapper .aurore-bottom {
   background-position: center center;
   background-size: cover;
@@ -9892,8 +9895,9 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   background: #f2f2f2;
   height: auto;
   overflow: hidden;
+  margin-top: 15px;
 }
-/* line 6, ../sass/partials/components/_leclub.scss */
+/* line 7, ../sass/partials/components/_leclub.scss */
 .front .region-content-bottom .le-club-block {
   margin-right: auto;
   margin-left: auto;
@@ -9910,24 +9914,24 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 6, ../sass/partials/components/_leclub.scss */
+  /* line 7, ../sass/partials/components/_leclub.scss */
   .front .region-content-bottom .le-club-block {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 6, ../sass/partials/components/_leclub.scss */
+  /* line 7, ../sass/partials/components/_leclub.scss */
   .front .region-content-bottom .le-club-block {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 6, ../sass/partials/components/_leclub.scss */
+  /* line 7, ../sass/partials/components/_leclub.scss */
   .front .region-content-bottom .le-club-block {
     width: 1170px;
   }
 }
-/* line 9, ../sass/partials/components/_leclub.scss */
+/* line 10, ../sass/partials/components/_leclub.scss */
 .front .region-content-bottom .le-club-block .block-title {
   text-align: center;
   color: #ee9c1b;
@@ -9940,7 +9944,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   color: #000;
   margin-top: 35px;
 }
-/* line 17, ../sass/partials/components/_leclub.scss */
+/* line 18, ../sass/partials/components/_leclub.scss */
 .front .region-content-bottom .le-club-block .le-club {
   position: relative;
   min-height: 1px;
@@ -9951,13 +9955,13 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   text-align: center;
 }
 @media (min-width: 1200px) {
-  /* line 17, ../sass/partials/components/_leclub.scss */
+  /* line 18, ../sass/partials/components/_leclub.scss */
   .front .region-content-bottom .le-club-block .le-club {
     float: left;
     width: 83.33333%;
   }
 }
-/* line 23, ../sass/partials/components/_leclub.scss */
+/* line 24, ../sass/partials/components/_leclub.scss */
 .front .region-content-bottom .le-club-block .le-club .ampoule:before {
   font-family: 'galileo' !important;
   speak: none;
@@ -9968,7 +9972,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   content: "\e900";
   font-size: 40px;
 }
-/* line 29, ../sass/partials/components/_leclub.scss */
+/* line 30, ../sass/partials/components/_leclub.scss */
 .front .region-content-bottom .le-club-block .le-club .refrsh:before {
   font-family: 'galileo' !important;
   speak: none;
@@ -9979,7 +9983,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   content: "\e908";
   font-size: 40px;
 }
-/* line 35, ../sass/partials/components/_leclub.scss */
+/* line 36, ../sass/partials/components/_leclub.scss */
 .front .region-content-bottom .le-club-block .le-club .heart:before {
   font-family: 'galileo' !important;
   speak: none;
@@ -9990,20 +9994,20 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   content: "\e903";
   font-size: 40px;
 }
-/* line 40, ../sass/partials/components/_leclub.scss */
+/* line 41, ../sass/partials/components/_leclub.scss */
 .front .region-content-bottom .le-club-block .le-club h2 {
   margin: 5px 0;
   font-size: 26px;
   font-weight: 300;
 }
-/* line 45, ../sass/partials/components/_leclub.scss */
+/* line 46, ../sass/partials/components/_leclub.scss */
 .front .region-content-bottom .le-club-block .le-club p {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   color: #000;
 }
-/* line 49, ../sass/partials/components/_leclub.scss */
+/* line 50, ../sass/partials/components/_leclub.scss */
 .front .region-content-bottom .le-club-block .le-club .le-club-link a {
   background: transparent;
   color: #000;
