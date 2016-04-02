@@ -3,14 +3,14 @@
   background: none;
   .view-evenements.view-id-evenements{
     .views-row{
-      height: 354px;
+      height: 444px;
       width: 100%;
       position: relative;
       .group-left{
         width: 100%;
         .field-name-field-event-photo-banniere{
           width: 100%;
-          height: 354px;
+          height: 444px;
           background-position: center center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -18,7 +18,7 @@
         }
       }
       .group-right{
-        width: 100%;
+        //width: 100%;
         @include vertical-align;
         position: absolute;
         .leclub{
@@ -50,7 +50,7 @@
             text-transform: uppercase;
             color:$white;
             margin: 0;
-            width: 20%;
+            width: 300px;
           }
         }
         .field-name-field-event-intervenant {

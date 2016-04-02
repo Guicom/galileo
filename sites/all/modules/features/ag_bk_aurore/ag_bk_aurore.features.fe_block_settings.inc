@@ -1,29 +1,27 @@
 <?php
 /**
  * @file
- * ga_bk_intervenant.features.fe_block_settings.inc
+ * ag_bk_aurore.features.fe_block_settings.inc
  */
 
 /**
  * Implements hook_default_fe_block_settings().
  */
-function ga_bk_intervenant_default_fe_block_settings() {
+function ag_bk_aurore_default_fe_block_settings() {
   $export = array();
 
   $export['version'] = '2.0';
 
-  $export['views-intervenants-block'] = array(
+  $export['block-aurore_block'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'aurore-block',
     'custom' => 0,
-    'delta' => 'intervenants-block',
     'i18n_block_language' => array(),
     'i18n_mode' => 0,
-    'module' => 'views',
-    'node_types' => array(
-      0 => 'intervenant',
-    ),
-    'pages' => '',
+    'machine_name' => 'aurore_block',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
@@ -36,7 +34,7 @@ function ga_bk_intervenant_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'galileo',
-        'weight' => -16,
+        'weight' => -14,
       ),
       'seven' => array(
         'region' => '',
@@ -46,7 +44,7 @@ function ga_bk_intervenant_default_fe_block_settings() {
       ),
     ),
     'title' => '<none>',
-    'visibility' => 0,
+    'visibility' => 1,
   );
 
   return $export;

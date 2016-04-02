@@ -10031,7 +10031,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
 }
 /* line 5, ../sass/partials/components/_banner.scss */
 .highlighted .view-evenements.view-id-evenements .views-row {
-  height: 354px;
+  height: 444px;
   width: 100%;
   position: relative;
 }
@@ -10042,7 +10042,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
 /* line 11, ../sass/partials/components/_banner.scss */
 .highlighted .view-evenements.view-id-evenements .views-row .group-left .field-name-field-event-photo-banniere {
   width: 100%;
-  height: 354px;
+  height: 444px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10050,7 +10050,6 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
 }
 /* line 20, ../sass/partials/components/_banner.scss */
 .highlighted .view-evenements.view-id-evenements .views-row .group-right {
-  width: 100%;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -10088,7 +10087,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   text-transform: uppercase;
   color: #fff;
   margin: 0;
-  width: 20%;
+  width: 300px;
 }
 /* line 56, ../sass/partials/components/_banner.scss */
 .highlighted .view-evenements.view-id-evenements .views-row .group-right .field-name-field-event-intervenant {
@@ -10315,6 +10314,6 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
 }
 
 /* line 4, ../sass/partials/pages/_home.scss */
-body.front .node-page .field-name-title {
+body.front .node-page.view-mode-full .field-name-title {
   display: none;
 }

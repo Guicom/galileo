@@ -1,0 +1,8 @@
+name = ag_bk_le_club
+core = 7.x
+package = Galileo : Blocks
+dependencies[] = fe_block
+features[fe_block_boxes][] = le_club_block
+features[fe_block_settings][] = block-le_club_block
+features[features_api][] = api:2
+project path = site/all/modules/features
