@@ -10,6 +10,214 @@
 function ga_ct_evenement_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance:
+  // 'field_collection_item-field_registration_accompagnant-field_registration_fonction'.
+  $field_instances['field_collection_item-field_registration_accompagnant-field_registration_fonction'] = array(
+    'bundle' => 'field_registration_accompagnant',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_registration_fonction',
+    'label' => 'Fonction',
+    'required' => FALSE,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_registration_accompagnant-field_registration_mail'.
+  $field_instances['field_collection_item-field_registration_accompagnant-field_registration_mail'] = array(
+    'bundle' => 'field_registration_accompagnant',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'email',
+        'settings' => array(),
+        'type' => 'email_default',
+        'weight' => 6,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_registration_mail',
+    'label' => 'Email',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'email',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'email_textfield',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_registration_accompagnant-field_registration_nom'.
+  $field_instances['field_collection_item-field_registration_accompagnant-field_registration_nom'] = array(
+    'bundle' => 'field_registration_accompagnant',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_registration_nom',
+    'label' => 'Nom',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_registration_accompagnant-field_registration_phone'.
+  $field_instances['field_collection_item-field_registration_accompagnant-field_registration_phone'] = array(
+    'bundle' => 'field_registration_accompagnant',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_registration_phone',
+    'label' => 'Téléphone portable',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_registration_accompagnant-field_registration_prenom'.
+  $field_instances['field_collection_item-field_registration_accompagnant-field_registration_prenom'] = array(
+    'bundle' => 'field_registration_accompagnant',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_registration_prenom',
+    'label' => 'Prénom',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_registration_accompagnant-field_registration_societe'.
+  $field_instances['field_collection_item-field_registration_accompagnant-field_registration_societe'] = array(
+    'bundle' => 'field_registration_accompagnant',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_registration_societe',
+    'label' => 'Société ',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'node-event-body'.
   $field_instances['node-event-body'] = array(
     'bundle' => 'event',
@@ -942,6 +1150,44 @@ function ga_ct_evenement_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'registration-evenement-field_registration_accompagnant'.
+  $field_instances['registration-evenement-field_registration_accompagnant'] = array(
+    'bundle' => 'evenement',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 8,
+      ),
+    ),
+    'entity_type' => 'registration',
+    'field_name' => 'field_registration_accompagnant',
+    'label' => 'Participant(s)',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(),
+      'type' => 'field_collection_embed',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
   // 'registration-evenement-field_registration_adresse'.
   $field_instances['registration-evenement-field_registration_adresse'] = array(
     'bundle' => 'evenement',
@@ -959,146 +1205,8 @@ function ga_ct_evenement_field_default_field_instances() {
     ),
     'entity_type' => 'registration',
     'field_name' => 'field_registration_adresse',
-    'label' => 'Adresse',
+    'label' => 'Adresse de facturation',
     'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance: 'registration-evenement-field_registration_nom'.
-  $field_instances['registration-evenement-field_registration_nom'] = array(
-    'bundle' => 'evenement',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'registration',
-    'field_name' => 'field_registration_nom',
-    'label' => 'Nom',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'registration-evenement-field_registration_num_adherent'.
-  $field_instances['registration-evenement-field_registration_num_adherent'] = array(
-    'bundle' => 'evenement',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
-      ),
-    ),
-    'entity_type' => 'registration',
-    'field_name' => 'field_registration_num_adherent',
-    'label' => 'Numéro d\'adhérent',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 6,
-    ),
-  );
-
-  // Exported field_instance: 'registration-evenement-field_registration_phone'.
-  $field_instances['registration-evenement-field_registration_phone'] = array(
-    'bundle' => 'evenement',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 3,
-      ),
-    ),
-    'entity_type' => 'registration',
-    'field_name' => 'field_registration_phone',
-    'label' => 'Téléphone',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'registration-evenement-field_registration_prenom'.
-  $field_instances['registration-evenement-field_registration_prenom'] = array(
-    'bundle' => 'evenement',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'registration',
-    'field_name' => 'field_registration_prenom',
-    'label' => 'Prénom',
-    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -1114,59 +1222,27 @@ function ga_ct_evenement_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance:
-  // 'registration-evenement-field_registration_remarque'.
-  $field_instances['registration-evenement-field_registration_remarque'] = array(
-    'bundle' => 'evenement',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 5,
-      ),
-    ),
-    'entity_type' => 'registration',
-    'field_name' => 'field_registration_remarque',
-    'label' => 'Remarque',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 7,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Adresse');
+  t('Adresse de facturation');
   t('Date');
   t('Date limite d\'inscription');
   t('Description');
+  t('Email');
   t('Evenement passé ?');
+  t('Fonction');
   t('Galerie photos');
   t('Inscription');
   t('Intervenant');
   t('Lieu');
   t('Nom');
-  t('Numéro d\'adhérent');
+  t('Participant(s)');
   t('Photo bannière');
   t('Photo liste');
   t('Prénom');
-  t('Remarque');
-  t('Téléphone');
+  t('Société ');
+  t('Téléphone portable');
 
   return $field_instances;
 }

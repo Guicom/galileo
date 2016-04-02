@@ -362,6 +362,28 @@ function ga_field_base_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_registration_accompagnant'.
+  $field_bases['field_registration_accompagnant'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_registration_accompagnant',
+    'indexes' => array(
+      'revision_id' => array(
+        0 => 'revision_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'field_collection',
+    'settings' => array(
+      'hide_blank_items' => 1,
+      'path' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'field_collection',
+  );
+
   // Exported field_base: 'field_registration_adresse'.
   $field_bases['field_registration_adresse'] = array(
     'active' => 1,
@@ -383,13 +405,13 @@ function ga_field_base_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_registration_nom'.
-  $field_bases['field_registration_nom'] = array(
+  // Exported field_base: 'field_registration_fonction'.
+  $field_bases['field_registration_fonction'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_registration_nom',
+    'field_name' => 'field_registration_fonction',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -404,13 +426,28 @@ function ga_field_base_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_registration_num_adherent'.
-  $field_bases['field_registration_num_adherent'] = array(
+  // Exported field_base: 'field_registration_mail'.
+  $field_bases['field_registration_mail'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_registration_num_adherent',
+    'field_name' => 'field_registration_mail',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'email',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'email',
+  );
+
+  // Exported field_base: 'field_registration_nom'.
+  $field_bases['field_registration_nom'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_registration_nom',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -467,13 +504,13 @@ function ga_field_base_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_registration_remarque'.
-  $field_bases['field_registration_remarque'] = array(
+  // Exported field_base: 'field_registration_societe'.
+  $field_bases['field_registration_societe'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_registration_remarque',
+    'field_name' => 'field_registration_societe',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -481,9 +518,11 @@ function ga_field_base_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'text',
-    'settings' => array(),
+    'settings' => array(
+      'max_length' => 255,
+    ),
     'translatable' => 0,
-    'type' => 'text_long',
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_tags'.

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ga_vw_export feature.
+ */
+
+include_once 'ga_vw_export.features.inc';

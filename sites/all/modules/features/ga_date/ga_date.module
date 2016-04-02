@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ga_date feature.
+ */
+
+include_once 'ga_date.features.inc';
