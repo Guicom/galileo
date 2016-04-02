@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ga_ct_page_basic feature.
+ */
+
+include_once 'ga_ct_page_basic.features.inc';
