@@ -8890,35 +8890,36 @@ body {
   -webkit-border-radius: 0;
   border-radius: 0;
   margin: 0;
+  border: 0px;
 }
-/* line 8, ../sass/partials/components/_header.scss */
+/* line 9, ../sass/partials/components/_header.scss */
 #navbar .container {
   height: 70px;
 }
-/* line 10, ../sass/partials/components/_header.scss */
+/* line 11, ../sass/partials/components/_header.scss */
 #navbar .container .navbar-header {
   float: left;
 }
-/* line 12, ../sass/partials/components/_header.scss */
+/* line 13, ../sass/partials/components/_header.scss */
 #navbar .container .navbar-header .logo {
   margin: 0;
   height: 70px;
 }
-/* line 18, ../sass/partials/components/_header.scss */
+/* line 19, ../sass/partials/components/_header.scss */
 #navbar .container .navbar-collapse {
   float: right;
   border: none;
   height: 70px !important;
 }
-/* line 22, ../sass/partials/components/_header.scss */
+/* line 23, ../sass/partials/components/_header.scss */
 #navbar .container .navbar-collapse nav {
   height: 70px;
 }
-/* line 26, ../sass/partials/components/_header.scss */
+/* line 27, ../sass/partials/components/_header.scss */
 #navbar .container .navbar-collapse nav #block-system-main-menu ul li {
   display: inline-block;
 }
-/* line 28, ../sass/partials/components/_header.scss */
+/* line 29, ../sass/partials/components/_header.scss */
 #navbar .container .navbar-collapse nav #block-system-main-menu ul li a {
   padding: 0 15px;
   font-size: 18px;
@@ -8929,11 +8930,11 @@ body {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 36, ../sass/partials/components/_header.scss */
+/* line 37, ../sass/partials/components/_header.scss */
 #navbar .container .navbar-collapse nav #block-system-main-menu ul li:hover {
   background: transparent;
 }
-/* line 38, ../sass/partials/components/_header.scss */
+/* line 39, ../sass/partials/components/_header.scss */
 #navbar .container .navbar-collapse nav #block-system-main-menu ul li:hover a {
   background: transparent !important;
   color: #ee9c1b;
@@ -8941,11 +8942,11 @@ body {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 45, ../sass/partials/components/_header.scss */
+/* line 46, ../sass/partials/components/_header.scss */
 #navbar .container .navbar-collapse nav #block-system-main-menu ul li.last a {
   padding: 0 0 0 15px;
 }
-/* line 50, ../sass/partials/components/_header.scss */
+/* line 51, ../sass/partials/components/_header.scss */
 #navbar .container .navbar-collapse nav #block-system-main-menu ul li.active-trail a {
   color: #ee9c1b;
 }
