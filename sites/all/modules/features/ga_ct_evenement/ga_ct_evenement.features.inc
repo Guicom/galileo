@@ -71,12 +71,12 @@ function ga_ct_evenement_default_registration_type() {
   $items = array();
   $items['evenement'] = entity_import('registration_type', '{
     "name" : "evenement",
-    "label" : "Evenement",
+    "label" : "Inscription",
     "locked" : "0",
     "default_state" : "complete",
-    "data" : null,
     "weight" : "0",
-    "rdf_mapping" : []
+    "rdf_mapping" : [],
+    "data" : { "held_expire" : "1", "held_expire_state" : "canceled" }
   }');
   return $items;
 }

@@ -1,6 +1,9 @@
 .highlighted{
   padding: 0;
   background: none;
+  .ds-2col-fluid.contextual-links-region{
+    position: initial;
+  }
   .view-evenements.view-id-evenements{
     .views-row{
       height: 444px;

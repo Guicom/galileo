@@ -1,0 +1,23 @@
+form{
+  .field-type-text,
+  .form-type-textfield{
+    @include text-field;
+  }
+  .field-type-text-long{
+    @include textaera-field;
+  }
+
+  .form-actions{
+
+    .form-submit.btn-success{
+      .glyphicon{
+        display: none;
+      }
+      @include submit-validate;
+    }
+
+    #edit-cancel{
+      @include submit-cancel;
+    }
+  }
+}
