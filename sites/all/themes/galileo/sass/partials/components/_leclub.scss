@@ -1,0 +1,61 @@
+.front {
+  .region-content-bottom {
+    background: $grey-light;
+    height: auto;
+    overflow: hidden;
+    .le-club-block {
+      @include make-container;
+
+      .block-title {
+        text-align: center;
+        @include h1-title;
+        text-transform: none;
+        font-weight: 300;
+        color: $black;
+        margin-top: 35px;
+      }
+      .le-club {
+        @include make-lg-column(10);
+        float: none !important;
+        margin: 0 auto;
+        text-align: center;
+        .ampoule {
+          &:before {
+            @include icons(ampoule);
+            font-size: 40px;
+          }
+        }
+        .refrsh {
+          &:before {
+            @include icons(refresh);
+            font-size: 40px;
+          }
+        }
+        .heart {
+          &:before {
+            @include icons(heart);
+            font-size: 40px;
+          }
+        }
+        h2 {
+          margin: 5px 0;
+          font-size: 26px;
+          font-weight: 300;
+        }
+        p {
+          @include p-style;
+        }
+        .le-club-link {
+          a {
+            @include border-black-button;
+            width: 200px;
+            height: 38px;
+            line-height: 36px;
+            display: inline-block;
+            margin: 50px 0 60px 0;
+          }
+        }
+      }
+    }
+  }
+}

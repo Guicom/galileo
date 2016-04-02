@@ -1,9 +1,11 @@
 footer {
   background: $grey;
   border: none;
-  padding-top: 25px;
+  padding-top: 25px !important;
+  margin-top: 0 !important;
   .region-footer {
     @include make-container;
+      padding: 0;
     #block-menu-menu-menu-footer {
       @include make-lg-column(6);
       ul {

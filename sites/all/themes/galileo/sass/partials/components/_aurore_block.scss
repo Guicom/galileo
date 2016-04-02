@@ -1,0 +1,57 @@
+.aurore-block {
+    @include make-lg-column(6);
+    @include make-xs-column(12);
+    height: 419px;
+    .aurore-block-wrapper {
+        .aurore-top {
+            background: $grey;
+            height: auto;
+            overflow: hidden;
+            .aurore-title {
+                h2 {
+                    display: inline-block;
+                    background: $yellow;
+                    padding: 2px 5px;
+                    @include h1-title;
+                    margin: 0;
+                    font-weight: 300;
+                    color: $black;
+                    text-transform: none;
+                }
+            }
+            h3 {
+                font-size: 18px;
+                line-height: 22px;
+                color: $yellow;
+                text-transform: uppercase;
+                padding: 0 45px 0 15px;
+            }
+            p {
+                @include p-style;
+                color: $white;
+                padding: 0 45px 0 15px;
+                margin-bottom: 18px;
+            }
+        }
+        .aurore-link {
+            a {
+                @include yellow-button;
+                display: block;
+                width: 200px;
+                height: 38px;
+                line-height: 38px;
+                text-transform: uppercase;
+                text-align: center;
+                position: absolute;
+                right: 50px;
+                margin-top: -11px;
+            }
+        }
+        .aurore-bottom {
+            background-position: center center;
+            background-size: cover;
+            width: 100%;
+            height: 237px;
+        }
+    }
+}

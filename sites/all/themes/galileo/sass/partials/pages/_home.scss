@@ -1,0 +1,9 @@
+body {
+    &.front {
+        .node-page {
+            .field-name-title {
+                display: none;
+            }
+        }
+    }
+}
