@@ -1,6 +1,7 @@
 .node-event.view-mode-full.next-event,
 .node-event.view-mode-full.past-event {
   .right-side {
+    margin-bottom: 20px;
     .back-link {
       a {
         @include border-black-button;

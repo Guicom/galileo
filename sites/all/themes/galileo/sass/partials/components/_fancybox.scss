@@ -1,0 +1,88 @@
+.fancybox-overlay  {
+  background: rgba($black, .75);
+
+  .fancybox-wrap {
+    @include box-shadow(none);
+    .fancybox-skin {
+      padding: 4px !important;
+      @include box-shadow(none);
+      background: $white;
+    }
+
+    .fancybox-title {
+      position: initial;
+      margin-bottom: 0;
+      text-align: left;
+      border-left: 1px solid #ebeaeb;
+      border-bottom: 1px solid #ebeaeb;
+      border-right: 1px solid #ebeaeb;
+      height: 38px;
+      span {
+        color: $black;
+        background: none;
+        text-shadow: none;
+        padding: 0 0 0 9px;
+        @include border-radius(0);
+        margin: 0;
+        @include p-style;
+        line-height: 37px;
+      }
+    }
+
+    .fancybox-nav {
+      span {
+        visibility: visible;
+        display: block;
+        height: 60px;
+        width: 50px;
+        background: $white;
+        &:before {
+          font-size: 40px;
+          color: rgba($black, .2);
+          margin-left: 11px;
+          line-height: 60px;
+          @include custom-transition;
+        }
+      }
+      &.fancybox-prev {
+        span {
+          left: -25px;
+          &:before {
+            @include icons(previous);
+          }
+        }
+
+      }
+      &.fancybox-next {
+        span {
+          right: -25px;
+          &:before {
+            @include icons(next);
+            margin-left: 16px;
+          }
+        }
+      }
+      &:hover {
+        span {
+          &:before {
+            color: rgba($black, .8);
+            @include custom-transition;
+          }
+        }
+      }
+    }
+
+
+    .fancybox-close {
+      position: absolute;
+      top: initial;
+      right: 20px;
+      width: 22px;
+      height: 22px;
+      cursor: pointer;
+      z-index: 8040;
+      bottom: 11px;
+      background: url("../images/close.png") no-repeat center center;
+    }
+  }
+}

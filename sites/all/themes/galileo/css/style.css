@@ -8898,6 +8898,7 @@ body {
 
 /* line 28, ../sass/partials/components/_reset.scss */
 hr {
+  clear: both;
   border-color: #ccc;
   width: 100%;
   padding: 0 15px;
@@ -10205,6 +10206,115 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   text-decoration: none;
 }
 
+/* line 1, ../sass/partials/components/_fancybox.scss */
+.fancybox-overlay {
+  background: rgba(0, 0, 0, 0.75);
+}
+/* line 4, ../sass/partials/components/_fancybox.scss */
+.fancybox-overlay .fancybox-wrap {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 6, ../sass/partials/components/_fancybox.scss */
+.fancybox-overlay .fancybox-wrap .fancybox-skin {
+  padding: 4px !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #fff;
+}
+/* line 12, ../sass/partials/components/_fancybox.scss */
+.fancybox-overlay .fancybox-wrap .fancybox-title {
+  position: initial;
+  margin-bottom: 0;
+  text-align: left;
+  border-left: 1px solid #ebeaeb;
+  border-bottom: 1px solid #ebeaeb;
+  border-right: 1px solid #ebeaeb;
+  height: 38px;
+}
+/* line 20, ../sass/partials/components/_fancybox.scss */
+.fancybox-overlay .fancybox-wrap .fancybox-title span {
+  color: #000;
+  background: none;
+  text-shadow: none;
+  padding: 0 0 0 9px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #000;
+  line-height: 37px;
+}
+/* line 33, ../sass/partials/components/_fancybox.scss */
+.fancybox-overlay .fancybox-wrap .fancybox-nav span {
+  visibility: visible;
+  display: block;
+  height: 60px;
+  width: 50px;
+  background: #fff;
+}
+/* line 39, ../sass/partials/components/_fancybox.scss */
+.fancybox-overlay .fancybox-wrap .fancybox-nav span:before {
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.2);
+  margin-left: 11px;
+  line-height: 60px;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+/* line 48, ../sass/partials/components/_fancybox.scss */
+.fancybox-overlay .fancybox-wrap .fancybox-nav.fancybox-prev span {
+  left: -25px;
+}
+/* line 50, ../sass/partials/components/_fancybox.scss */
+.fancybox-overlay .fancybox-wrap .fancybox-nav.fancybox-prev span:before {
+  font-family: 'galileo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  content: "\e907";
+}
+/* line 57, ../sass/partials/components/_fancybox.scss */
+.fancybox-overlay .fancybox-wrap .fancybox-nav.fancybox-next span {
+  right: -25px;
+}
+/* line 59, ../sass/partials/components/_fancybox.scss */
+.fancybox-overlay .fancybox-wrap .fancybox-nav.fancybox-next span:before {
+  font-family: 'galileo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  content: "\e906";
+  margin-left: 16px;
+}
+/* line 67, ../sass/partials/components/_fancybox.scss */
+.fancybox-overlay .fancybox-wrap .fancybox-nav:hover span:before {
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+/* line 76, ../sass/partials/components/_fancybox.scss */
+.fancybox-overlay .fancybox-wrap .fancybox-close {
+  position: absolute;
+  top: initial;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 8040;
+  bottom: 11px;
+  background: url("../images/close.png") no-repeat center center;
+}
+
 /* line 2, ../sass/partials/pages/_intervants.scss */
 .node-type-intervenant .page-header {
   color: #ee9c1b;
@@ -10536,7 +10646,12 @@ body.front .node-page.view-mode-full .field-name-title {
   transition: all, 0.3s;
 }
 
-/* line 5, ../sass/partials/pages/_event_sidebar.scss */
+/* line 3, ../sass/partials/pages/_event_sidebar.scss */
+.node-event.view-mode-full.next-event .right-side,
+.node-event.view-mode-full.past-event .right-side {
+  margin-bottom: 20px;
+}
+/* line 6, ../sass/partials/pages/_event_sidebar.scss */
 .node-event.view-mode-full.next-event .right-side .back-link a,
 .node-event.view-mode-full.past-event .right-side .back-link a {
   background: transparent;
@@ -10567,7 +10682,7 @@ body.front .node-page.view-mode-full .field-name-title {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 15, ../sass/partials/pages/_event_sidebar.scss */
+/* line 16, ../sass/partials/pages/_event_sidebar.scss */
 .node-event.view-mode-full.next-event .right-side .back-link a:before,
 .node-event.view-mode-full.past-event .right-side .back-link a:before {
   font-family: 'galileo' !important;
@@ -10581,7 +10696,7 @@ body.front .node-page.view-mode-full .field-name-title {
   position: relative;
   top: 1px;
 }
-/* line 26, ../sass/partials/pages/_event_sidebar.scss */
+/* line 27, ../sass/partials/pages/_event_sidebar.scss */
 .node-event.view-mode-full.next-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-field-int-photo,
 .node-event.view-mode-full.past-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-field-int-photo {
   width: 120px;
@@ -10592,7 +10707,7 @@ body.front .node-page.view-mode-full .field-name-title {
   overflow: hidden;
   margin-bottom: 5px;
 }
-/* line 34, ../sass/partials/pages/_event_sidebar.scss */
+/* line 35, ../sass/partials/pages/_event_sidebar.scss */
 .node-event.view-mode-full.next-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-title h2,
 .node-event.view-mode-full.past-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-title h2 {
   font-size: 16px;
@@ -10602,7 +10717,7 @@ body.front .node-page.view-mode-full .field-name-title {
   font-weight: 700;
   margin: 0;
 }
-/* line 40, ../sass/partials/pages/_event_sidebar.scss */
+/* line 41, ../sass/partials/pages/_event_sidebar.scss */
 .node-event.view-mode-full.next-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-body,
 .node-event.view-mode-full.past-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-body {
   font-size: 16px;
@@ -10610,7 +10725,7 @@ body.front .node-page.view-mode-full .field-name-title {
   font-weight: 500;
   color: #000;
 }
-/* line 44, ../sass/partials/pages/_event_sidebar.scss */
+/* line 45, ../sass/partials/pages/_event_sidebar.scss */
 .node-event.view-mode-full.next-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-node-link a,
 .node-event.view-mode-full.past-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-node-link a {
   background: #000;
@@ -10636,37 +10751,36 @@ body.front .node-page.view-mode-full .field-name-title {
   text-decoration: none;
 }
 
-/* line 3, ../sass/partials/pages/_past_event.scss */
+/* line 2, ../sass/partials/pages/_past_event.scss */
+.node-event.view-mode-full.past-event .left-side {
+  margin-bottom: 20px;
+}
+/* line 4, ../sass/partials/pages/_past_event.scss */
 .node-event.view-mode-full.past-event .left-side .event-info {
   background: #000;
   min-height: 57px;
+  margin: 0 0 30px 0;
 }
 @media (max-width: 768px) {
-  /* line 3, ../sass/partials/pages/_past_event.scss */
+  /* line 4, ../sass/partials/pages/_past_event.scss */
   .node-event.view-mode-full.past-event .left-side .event-info {
     min-height: 114px;
   }
 }
-/* line 14, ../sass/partials/pages/_past_event.scss */
-.node-event.view-mode-full.past-event .left-side .field-name-field-event-date-limite {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 500;
-  color: #000;
-  margin: 20px 0 30px 0;
+/* line 11, ../sass/partials/pages/_past_event.scss */
+.node-event.view-mode-full.past-event .left-side .event-info p {
+  font-size: 20px;
+  text-align: center;
+  line-height: 57px;
 }
-/* line 17, ../sass/partials/pages/_past_event.scss */
-.node-event.view-mode-full.past-event .left-side .field-name-field-event-date-limite .field-label {
-  font-weight: 400;
-}
-/* line 22, ../sass/partials/pages/_past_event.scss */
+/* line 18, ../sass/partials/pages/_past_event.scss */
 .node-event.view-mode-full.past-event .left-side .field-name-body {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   color: #000;
 }
-/* line 26, ../sass/partials/pages/_past_event.scss */
+/* line 22, ../sass/partials/pages/_past_event.scss */
 .node-event.view-mode-full.past-event .left-side .tarif-link {
   background: transparent;
   color: #000;
@@ -10695,13 +10809,13 @@ body.front .node-page.view-mode-full .field-name-title {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 37, ../sass/partials/pages/_past_event.scss */
+/* line 33, ../sass/partials/pages/_past_event.scss */
 .node-event.view-mode-full.past-event .left-side .field-name-field-event-inscription {
   float: left;
   width: 240px;
   margin: 30px 40px 0 0;
 }
-/* line 41, ../sass/partials/pages/_past_event.scss */
+/* line 37, ../sass/partials/pages/_past_event.scss */
 .node-event.view-mode-full.past-event .left-side .field-name-field-event-inscription a {
   background: #000;
   color: #fff;
@@ -10729,12 +10843,17 @@ body.front .node-page.view-mode-full .field-name-title {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 57, ../sass/partials/pages/_past_event.scss */
+/* line 51, ../sass/partials/pages/_past_event.scss */
+.node-event.view-mode-full.past-event .bottom-side .field-name-field-event-photo {
+  height: auto;
+  overflow: hidden;
+}
+/* line 55, ../sass/partials/pages/_past_event.scss */
 .node-event.view-mode-full.past-event .bottom-side .field-name-field-event-photo .field-items .field-item {
   float: left;
   margin: 5px;
 }
-/* line 61, ../sass/partials/pages/_past_event.scss */
+/* line 59, ../sass/partials/pages/_past_event.scss */
 .node-event.view-mode-full.past-event .bottom-side .field-name-field-event-photo .field-items .field-item a img {
   height: 200px;
   width: auto;

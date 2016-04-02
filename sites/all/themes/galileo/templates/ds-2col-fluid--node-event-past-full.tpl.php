@@ -11,9 +11,9 @@
     </div>
     <?php print render($content['field_event_intervenant']); ?>
   </div>
-  <hr>
   <div class="bottom-side col-xs-12">
-    <?php print render($content['field_event_photo']); ?>
+    <hr>
+      <?php print render($content['field_event_photo']); ?>
+    <hr>
   </div>
-  <hr>
 </div>

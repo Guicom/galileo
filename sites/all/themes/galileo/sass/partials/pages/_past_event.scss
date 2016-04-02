@@ -1,21 +1,17 @@
 .node-event.view-mode-full.past-event {
   .left-side {
+    margin-bottom: 20px;
     .event-info {
       background: $black;
       min-height: 57px;
+      margin: 0 0 30px 0;
       @media (max-width: $screen-sm) {
         min-height: 114px;
       }
       p {
-
-      }
-    }
-
-    .field-name-field-event-date-limite {
-      @include p-style;
-      margin: 20px 0 30px 0;
-      .field-label {
-        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        line-height: 57px;
       }
     }
 
@@ -53,6 +49,8 @@
 
   .bottom-side {
     .field-name-field-event-photo {
+      height: auto;
+      overflow: hidden;
       .field-items {
         .field-item {
           float: left;
