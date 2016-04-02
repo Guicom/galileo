@@ -21,7 +21,7 @@ function ga_ct_evenement_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 17,
       ),
       'banner_event_next' => array(
         'label' => 'hidden',
@@ -89,7 +89,7 @@ function ga_ct_evenement_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 13,
       ),
       'banner_event_next' => array(
         'label' => 'above',
@@ -152,17 +152,9 @@ function ga_ct_evenement_field_default_field_instances() {
     'display' => array(
       'banner' => array(
         'label' => 'hidden',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'evenement_complet_',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-          'show_remaining_days' => 0,
-        ),
-        'type' => 'date_default',
-        'weight' => 1,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
       ),
       'banner_event_next' => array(
         'label' => 'above',
@@ -204,7 +196,7 @@ function ga_ct_evenement_field_default_field_instances() {
           'show_remaining_days' => 0,
         ),
         'type' => 'date_default',
-        'weight' => 1,
+        'weight' => 3,
       ),
       'default' => array(
         'label' => 'above',
@@ -273,7 +265,7 @@ function ga_ct_evenement_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 11,
       ),
       'banner_event_next' => array(
         'label' => 'above',
@@ -403,7 +395,7 @@ function ga_ct_evenement_field_default_field_instances() {
           'label' => NULL,
         ),
         'type' => 'registration_link',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -562,7 +554,7 @@ function ga_ct_evenement_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 12,
       ),
       'banner_event_next' => array(
         'label' => 'above',
@@ -632,7 +624,7 @@ function ga_ct_evenement_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 15,
       ),
       'banner_event_next' => array(
         'label' => 'above',
@@ -696,7 +688,7 @@ function ga_ct_evenement_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 14,
       ),
       'banner_event_next' => array(
         'label' => 'above',
@@ -786,7 +778,7 @@ function ga_ct_evenement_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 3,
+        'weight' => 0,
       ),
       'banner_event_next' => array(
         'label' => 'above',
@@ -816,7 +808,7 @@ function ga_ct_evenement_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 3,
+        'weight' => 0,
       ),
       'default' => array(
         'label' => 'above',
@@ -872,7 +864,7 @@ function ga_ct_evenement_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 16,
       ),
       'banner_event_next' => array(
         'label' => 'above',

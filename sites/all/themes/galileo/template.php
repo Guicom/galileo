@@ -67,9 +67,6 @@ function galileo_preprocess_page(&$variables) {
   if(isset($variables['node']) && $variables['node']->type == 'intervenant') {
     $variables['title'] = t('Intervenants');
   }
-  if(isset($variables['node']) && $variables['node']->type == 'event') {
-    $variables['title'] = t('Evènements');
-  }
 }
 
 
