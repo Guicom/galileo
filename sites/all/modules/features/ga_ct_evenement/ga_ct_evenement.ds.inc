@@ -45,32 +45,33 @@ function ga_ct_evenement_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'event';
   $ds_layout->view_mode = 'banner';
-  $ds_layout->layout = 'ds_1col';
+  $ds_layout->layout = 'ds_2col_fluid';
   $ds_layout->settings = array(
     'regions' => array(
-      'ds_content' => array(
-        0 => 'title',
-        1 => 'field_event_date',
+      'left' => array(
+        0 => 'field_event_photo_banniere',
+      ),
+      'right' => array(
+        1 => 'title',
         2 => 'field_event_intervenant',
-        3 => 'field_event_photo_banniere',
       ),
     ),
     'fields' => array(
-      'title' => 'ds_content',
-      'field_event_date' => 'ds_content',
-      'field_event_intervenant' => 'ds_content',
-      'field_event_photo_banniere' => 'ds_content',
+      'field_event_photo_banniere' => 'left',
+      'title' => 'right',
+      'field_event_intervenant' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
-      'ds_content' => 'div',
+      'left' => 'div',
+      'right' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
-    'layout_disable_css' => FALSE,
+    'layout_disable_css' => 0,
   );
   $export['node|event|banner'] = $ds_layout;
 
@@ -80,36 +81,39 @@ function ga_ct_evenement_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'event';
   $ds_layout->view_mode = 'banner_with_buttons';
-  $ds_layout->layout = 'ds_1col';
+  $ds_layout->layout = 'ds_2col_fluid';
   $ds_layout->settings = array(
     'regions' => array(
-      'ds_content' => array(
-        0 => 'title',
-        1 => 'field_event_date',
+      'left' => array(
+        0 => 'field_event_photo_banniere',
+      ),
+      'right' => array(
+        1 => 'title',
         2 => 'field_event_intervenant',
-        3 => 'field_event_photo_banniere',
+        3 => 'field_event_date',
         4 => 'node_link',
         5 => 'field_event_inscription',
       ),
     ),
     'fields' => array(
-      'title' => 'ds_content',
-      'field_event_date' => 'ds_content',
-      'field_event_intervenant' => 'ds_content',
-      'field_event_photo_banniere' => 'ds_content',
-      'node_link' => 'ds_content',
-      'field_event_inscription' => 'ds_content',
+      'field_event_photo_banniere' => 'left',
+      'title' => 'right',
+      'field_event_intervenant' => 'right',
+      'field_event_date' => 'right',
+      'node_link' => 'right',
+      'field_event_inscription' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
-      'ds_content' => 'div',
+      'left' => 'div',
+      'right' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
-    'layout_disable_css' => FALSE,
+    'layout_disable_css' => 0,
   );
   $export['node|event|banner_with_buttons'] = $ds_layout;
 
