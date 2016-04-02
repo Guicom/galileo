@@ -302,7 +302,7 @@ function ga_ct_evenement_field_default_field_instances() {
         'weight' => 15,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'date',
         'settings' => array(
           'format_type' => 'long',
@@ -505,12 +505,13 @@ function ga_ct_evenement_field_default_field_instances() {
         'weight' => 2,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => 1,
+          'view_mode' => 'teaser_sidebar',
         ),
-        'type' => 'entityreference_label',
+        'type' => 'entityreference_entity_view',
         'weight' => 5,
       ),
       'teaser' => array(
@@ -717,15 +718,15 @@ function ga_ct_evenement_field_default_field_instances() {
         'weight' => 16,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'fancybox',
         'settings' => array(
           'fancybox_caption' => 'auto',
           'fancybox_caption_custom' => '',
           'fancybox_gallery' => 'post',
           'fancybox_gallery_custom' => '',
-          'fancybox_image_style_content' => 'thumbnail',
-          'fancybox_image_style_fancybox' => 'large',
+          'fancybox_image_style_content' => '',
+          'fancybox_image_style_fancybox' => '',
         ),
         'type' => 'fancybox',
         'weight' => 6,

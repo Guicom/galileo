@@ -11,3 +11,23 @@ body {
 .container {
     padding: 0;
 }
+
+
+
+
+/*Global settings*/
+
+.yellow {
+  color: $yellow;
+}
+
+.white {
+  color: $white;
+}
+
+hr {
+  border-color: #ccc;
+  width: 100%;
+  padding: 0 15px;
+  @include box-sizing(border-box);
+}

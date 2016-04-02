@@ -53,6 +53,33 @@ function ga_ct_intervenant_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|intervenant|teaser_sidebar';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'intervenant';
+  $ds_fieldsetting->view_mode = 'teaser_sidebar';
+  $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '1',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+    'node_link' => array(
+      'weight' => '3',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link text' => 'Lire la suite',
+        'link class' => '',
+        'wrapper' => '',
+        'class' => '',
+        'ft' => array(),
+      ),
+    ),
+  );
+  $export['node|intervenant|teaser_sidebar'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|intervenant|teaser_slide';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'intervenant';
@@ -166,6 +193,41 @@ function ga_ct_intervenant_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|intervenant|teaser_sidebar';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'intervenant';
+  $ds_layout->view_mode = 'teaser_sidebar';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'field_int_photo',
+        1 => 'title',
+        2 => 'body',
+        3 => 'node_link',
+      ),
+    ),
+    'fields' => array(
+      'field_int_photo' => 'ds_content',
+      'title' => 'ds_content',
+      'body' => 'ds_content',
+      'node_link' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
+  );
+  $export['node|intervenant|teaser_sidebar'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
   $ds_layout->id = 'node|intervenant|teaser_slide';
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'intervenant';
@@ -207,6 +269,15 @@ function ga_ct_intervenant_ds_layout_settings_info() {
  */
 function ga_ct_intervenant_ds_view_modes_info() {
   $export = array();
+
+  $ds_view_mode = new stdClass();
+  $ds_view_mode->api_version = 1;
+  $ds_view_mode->view_mode = 'teaser_sidebar';
+  $ds_view_mode->label = 'teaser_sidebar';
+  $ds_view_mode->entities = array(
+    'node' => 'node',
+  );
+  $export['teaser_sidebar'] = $ds_view_mode;
 
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;

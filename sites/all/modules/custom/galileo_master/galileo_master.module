@@ -15,3 +15,14 @@ function galileo_master_node_presave($node){
         path_save($path);
     }
 }
+
+
+/**
+ * Implements hook_init().
+ */
+function galileo_master_init() {
+  global $theme_key;
+  if (strpos($theme_key, 'bootstrap') === FALSE) {
+    include_once(drupal_get_path('theme', 'bootstrap') . '/includes/process.inc');
+  }
+}

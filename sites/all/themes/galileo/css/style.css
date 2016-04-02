@@ -8885,6 +8885,27 @@ body {
   padding: 0;
 }
 
+/*Global settings*/
+/* line 20, ../sass/partials/components/_reset.scss */
+.yellow {
+  color: #ee9c1b;
+}
+
+/* line 24, ../sass/partials/components/_reset.scss */
+.white {
+  color: #fff;
+}
+
+/* line 28, ../sass/partials/components/_reset.scss */
+hr {
+  border-color: #ccc;
+  width: 100%;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* line 1, ../sass/partials/components/_header.scss */
 #navbar {
   background: #000;
@@ -9107,7 +9128,7 @@ body {
   -o-transition: background 0.3s 0.1s, color 0.3s 0.1s;
   transition: background 0.3s 0.1s, color 0.3s 0.1s;
 }
-/* line 133, ../sass/partials/utility/_mixins.scss */
+/* line 135, ../sass/partials/utility/_mixins.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser:hover > .group-right .field-name-node-link a:hover {
   text-decoration: underline;
   -webkit-transition: all, 0.3s;
@@ -9298,7 +9319,7 @@ body {
   -o-transition: background 0.3s 0.1s, color 0.3s 0.1s;
   transition: background 0.3s 0.1s, color 0.3s 0.1s;
 }
-/* line 133, ../sass/partials/utility/_mixins.scss */
+/* line 135, ../sass/partials/utility/_mixins.scss */
 .view-evenements .ds-2col-fluid.node-event.node-teaser:hover > .group-right .field-name-node-link a:hover {
   text-decoration: underline;
   -webkit-transition: all, 0.3s;
@@ -9418,13 +9439,14 @@ footer .region-footer .contact-footer-block .contact-footer {
   display: block;
   margin-top: 25px;
 }
-/* line 103, ../sass/partials/utility/_mixins.scss */
+/* line 104, ../sass/partials/utility/_mixins.scss */
 footer .region-footer .contact-footer-block .contact-footer:hover {
   color: #ee9c1b;
   border-color: #ee9c1b;
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
+  text-decoration: none;
 }
 /* line 44, ../sass/partials/components/_footer.scss */
 footer .region-footer .social-footer-block {
@@ -9690,7 +9712,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   display: inline-block;
   line-height: 16px;
 }
-/* line 117, ../sass/partials/utility/_mixins.scss */
+/* line 119, ../sass/partials/utility/_mixins.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-content .jcarousel-container .jcarousel-clip .jcarousel li .field-name-node-link a:hover {
   background: #ee9c1b;
   color: #000;
@@ -9771,6 +9793,9 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   font-weight: 300;
   text-transform: uppercase;
   border: solid 1px #000;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
   width: 200px;
   display: block;
   text-align: center;
@@ -9778,11 +9803,14 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   line-height: 36px;
   margin: 15px auto 0 auto;
 }
-/* line 147, ../sass/partials/utility/_mixins.scss */
+/* line 150, ../sass/partials/utility/_mixins.scss */
 #block-views-intervenants-block-1 .view-intervenants .view-footer a:hover {
   background: #000;
   color: #fff;
   text-decoration: none;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
 }
 /* line 125, ../sass/partials/components/_intervenants_slide.scss */
 #block-views-intervenants-block-1 .view-intervenants:hover .view-footer {
@@ -9875,7 +9903,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   right: 50px;
   margin-top: -11px;
 }
-/* line 133, ../sass/partials/utility/_mixins.scss */
+/* line 135, ../sass/partials/utility/_mixins.scss */
 .aurore-block .aurore-block-wrapper .aurore-link a:hover {
   text-decoration: underline;
   -webkit-transition: all, 0.3s;
@@ -10015,17 +10043,23 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   font-weight: 300;
   text-transform: uppercase;
   border: solid 1px #000;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
   width: 200px;
   height: 38px;
   line-height: 36px;
   display: inline-block;
   margin: 50px 0 60px 0;
 }
-/* line 147, ../sass/partials/utility/_mixins.scss */
+/* line 150, ../sass/partials/utility/_mixins.scss */
 .front .region-content-bottom .le-club-block .le-club .le-club-link a:hover {
   background: #000;
   color: #fff;
   text-decoration: none;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
 }
 
 /* line 1, ../sass/partials/components/_banner.scss */
@@ -10138,6 +10172,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
+  text-decoration: none;
 }
 /* line 81, ../sass/partials/components/_banner.scss */
 .highlighted .view-evenements.view-id-evenements .views-row .group-right .field-name-field-event-inscription {
@@ -10160,13 +10195,14 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   display: block;
   text-align: center;
 }
-/* line 103, ../sass/partials/utility/_mixins.scss */
+/* line 104, ../sass/partials/utility/_mixins.scss */
 .highlighted .view-evenements.view-id-evenements .views-row .group-right .field-name-field-event-inscription a:hover {
   color: #ee9c1b;
   border-color: #ee9c1b;
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
+  text-decoration: none;
 }
 
 /* line 2, ../sass/partials/pages/_intervants.scss */
@@ -10320,4 +10356,386 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
 /* line 4, ../sass/partials/pages/_home.scss */
 body.front .node-page.view-mode-full .field-name-title {
   display: none;
+}
+
+/* line 3, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .event-info {
+  background: #000;
+  min-height: 57px;
+}
+@media (max-width: 768px) {
+  /* line 3, ../sass/partials/pages/_next_event.scss */
+  .node-event.view-mode-full.next-event .left-side .event-info {
+    min-height: 114px;
+  }
+}
+/* line 9, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .event-info .event-date {
+  height: 57px;
+}
+/* line 11, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .event-info .event-date .calendar {
+  float: left;
+  width: 60px;
+}
+/* line 14, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .event-info .event-date .calendar:before {
+  font-family: 'galileo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  content: "\e901";
+  color: #fff;
+  font-size: 40px;
+}
+/* line 20, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .event-info .event-date .text-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  transform-style: preserve-3d;
+}
+/* line 22, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .event-info .event-date .text-wrapper p {
+  margin: 0;
+}
+/* line 24, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .event-info .event-date .text-wrapper p.date {
+  font-size: 18px;
+  line-height: 18px;
+}
+/* line 28, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .event-info .event-date .text-wrapper p.heure {
+  font-size: 16px;
+  line-height: 18px;
+}
+/* line 35, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .event-info .event-lieu {
+  height: 57px;
+}
+/* line 37, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .event-info .event-lieu .pin {
+  float: left;
+  width: 60px;
+}
+/* line 40, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .event-info .event-lieu .pin:before {
+  font-family: 'galileo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  content: "\e905";
+  color: #fff;
+  font-size: 40px;
+}
+/* line 46, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .event-info .event-lieu .text-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  transform-style: preserve-3d;
+}
+/* line 48, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .event-info .event-lieu .text-wrapper p {
+  margin: 0;
+}
+/* line 50, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .event-info .event-lieu .text-wrapper p.adresse {
+  font-size: 18px;
+  line-height: 18px;
+}
+/* line 54, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .event-info .event-lieu .text-wrapper p.lieu {
+  font-size: 16px;
+  line-height: 18px;
+}
+/* line 63, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .field-name-field-event-date-limite {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #000;
+  margin: 20px 0 30px 0;
+}
+/* line 66, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .field-name-field-event-date-limite .field-label {
+  font-weight: 400;
+}
+/* line 71, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .field-name-body {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #000;
+}
+/* line 75, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .tarif-link {
+  background: transparent;
+  color: #000;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: solid 1px #000;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+  width: 240px;
+  height: 48px;
+  text-align: center;
+  display: block;
+  float: left;
+  font-size: 24px;
+  line-height: 46px;
+  margin: 30px 40px 55px 0;
+}
+/* line 150, ../sass/partials/utility/_mixins.scss */
+.node-event.view-mode-full.next-event .left-side .tarif-link:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+/* line 86, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .field-name-field-event-inscription {
+  float: left;
+  width: 240px;
+  margin: 30px 40px 0 0;
+}
+/* line 90, ../sass/partials/pages/_next_event.scss */
+.node-event.view-mode-full.next-event .left-side .field-name-field-event-inscription a {
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: solid 1px #000;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+  width: 240px;
+  height: 48px;
+  text-align: center;
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 48px;
+}
+/* line 167, ../sass/partials/utility/_mixins.scss */
+.node-event.view-mode-full.next-event .left-side .field-name-field-event-inscription a:hover {
+  background: transparent;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+/* line 5, ../sass/partials/pages/_event_sidebar.scss */
+.node-event.view-mode-full.next-event .right-side .back-link a,
+.node-event.view-mode-full.past-event .right-side .back-link a {
+  background: transparent;
+  color: #000;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: solid 1px #000;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+  width: 100%;
+  height: 38px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 36px;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* line 150, ../sass/partials/utility/_mixins.scss */
+.node-event.view-mode-full.next-event .right-side .back-link a:hover,
+.node-event.view-mode-full.past-event .right-side .back-link a:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+/* line 15, ../sass/partials/pages/_event_sidebar.scss */
+.node-event.view-mode-full.next-event .right-side .back-link a:before,
+.node-event.view-mode-full.past-event .right-side .back-link a:before {
+  font-family: 'galileo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  content: "\e907";
+  margin-right: 15px;
+  position: relative;
+  top: 1px;
+}
+/* line 26, ../sass/partials/pages/_event_sidebar.scss */
+.node-event.view-mode-full.next-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-field-int-photo,
+.node-event.view-mode-full.past-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-field-int-photo {
+  width: 120px;
+  height: 120px;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+/* line 34, ../sass/partials/pages/_event_sidebar.scss */
+.node-event.view-mode-full.next-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-title h2,
+.node-event.view-mode-full.past-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-title h2 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #000;
+  font-weight: 700;
+  margin: 0;
+}
+/* line 40, ../sass/partials/pages/_event_sidebar.scss */
+.node-event.view-mode-full.next-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-body,
+.node-event.view-mode-full.past-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-body {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #000;
+}
+/* line 44, ../sass/partials/pages/_event_sidebar.scss */
+.node-event.view-mode-full.next-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-node-link a,
+.node-event.view-mode-full.past-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-node-link a {
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+  padding: 2px 10px;
+  font-size: 16px;
+  margin: 10px 0 0;
+  display: inline-block;
+  line-height: 22px;
+}
+/* line 119, ../sass/partials/utility/_mixins.scss */
+.node-event.view-mode-full.next-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-node-link a:hover,
+.node-event.view-mode-full.past-event .right-side .field-name-field-event-intervenant .view-mode-teaser_sidebar .field-name-node-link a:hover {
+  background: #ee9c1b;
+  color: #000;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+  text-decoration: none;
+}
+
+/* line 3, ../sass/partials/pages/_past_event.scss */
+.node-event.view-mode-full.past-event .left-side .event-info {
+  background: #000;
+  min-height: 57px;
+}
+@media (max-width: 768px) {
+  /* line 3, ../sass/partials/pages/_past_event.scss */
+  .node-event.view-mode-full.past-event .left-side .event-info {
+    min-height: 114px;
+  }
+}
+/* line 14, ../sass/partials/pages/_past_event.scss */
+.node-event.view-mode-full.past-event .left-side .field-name-field-event-date-limite {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #000;
+  margin: 20px 0 30px 0;
+}
+/* line 17, ../sass/partials/pages/_past_event.scss */
+.node-event.view-mode-full.past-event .left-side .field-name-field-event-date-limite .field-label {
+  font-weight: 400;
+}
+/* line 22, ../sass/partials/pages/_past_event.scss */
+.node-event.view-mode-full.past-event .left-side .field-name-body {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #000;
+}
+/* line 26, ../sass/partials/pages/_past_event.scss */
+.node-event.view-mode-full.past-event .left-side .tarif-link {
+  background: transparent;
+  color: #000;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: solid 1px #000;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+  width: 240px;
+  height: 48px;
+  text-align: center;
+  display: block;
+  float: left;
+  font-size: 24px;
+  line-height: 46px;
+  margin: 30px 40px 55px 0;
+}
+/* line 150, ../sass/partials/utility/_mixins.scss */
+.node-event.view-mode-full.past-event .left-side .tarif-link:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+/* line 37, ../sass/partials/pages/_past_event.scss */
+.node-event.view-mode-full.past-event .left-side .field-name-field-event-inscription {
+  float: left;
+  width: 240px;
+  margin: 30px 40px 0 0;
+}
+/* line 41, ../sass/partials/pages/_past_event.scss */
+.node-event.view-mode-full.past-event .left-side .field-name-field-event-inscription a {
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: solid 1px #000;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+  width: 240px;
+  height: 48px;
+  text-align: center;
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 48px;
+}
+/* line 167, ../sass/partials/utility/_mixins.scss */
+.node-event.view-mode-full.past-event .left-side .field-name-field-event-inscription a:hover {
+  background: transparent;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+/* line 57, ../sass/partials/pages/_past_event.scss */
+.node-event.view-mode-full.past-event .bottom-side .field-name-field-event-photo .field-items .field-item {
+  float: left;
+  margin: 5px;
+}
+/* line 61, ../sass/partials/pages/_past_event.scss */
+.node-event.view-mode-full.past-event .bottom-side .field-name-field-event-photo .field-items .field-item a img {
+  height: 200px;
+  width: auto;
 }

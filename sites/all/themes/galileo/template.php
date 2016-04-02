@@ -67,6 +67,9 @@ function galileo_preprocess_page(&$variables) {
   if(isset($variables['node']) && $variables['node']->type == 'intervenant') {
     $variables['title'] = t('Intervenants');
   }
+  if(isset($variables['node']) && $variables['node']->type == 'event') {
+    $variables['title'] = t('');
+  }
 }
 
 
@@ -74,6 +77,16 @@ function galileo_preprocess_node (&$variables) {
   if($variables['type'] == 'intervenant') {
     if ($variables['node'] == menu_get_object()) {
       $variables['classes_array'][] = 'active';
+    }
+  }
+  if ($variables['type'] == 'event' && $variables['view_mode'] == 'full') {
+    switch($variables['field_event_past'][0]['value']) {
+      case '0':
+        $variables['theme_hook_suggestions'][] = 'ds_2col_fluid__node_event_next_full';
+        break;
+      case '1':
+        $variables['theme_hook_suggestions'][] = 'ds_2col_fluid__node_event_past_full';
+        break;
     }
   }
 }

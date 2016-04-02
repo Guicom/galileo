@@ -88,6 +88,7 @@
   &:hover {
     background: $yellow;
     @include custom-transition;
+    text-decoration: none;
   }
 }
 
@@ -104,6 +105,7 @@
     color: $yellow;
     border-color: $yellow;
     @include custom-transition;
+    text-decoration: none;
   }
 }
 
@@ -143,11 +145,13 @@
   font-weight: 300;
   text-transform: uppercase;
   border: solid 1px $black;
+  @include custom-transition;
 
   &:hover {
     background: $black;
     color: $white;
     text-decoration: none;
+    @include custom-transition;
   }
 }
 
@@ -158,10 +162,13 @@
   font-weight: 300;
   text-transform: uppercase;
   border: solid 1px $black;
+  @include custom-transition;
 
   &:hover {
     background: transparent;
     color: $black;
+    text-decoration: none;
+    @include custom-transition;
   }
 }
 

@@ -98,6 +98,12 @@ function ga_ct_intervenant_strongarm() {
       'banner' => array(
         'custom_settings' => FALSE,
       ),
+      'teaser_sidebar' => array(
+        'custom_settings' => TRUE,
+      ),
+      'banner_with_buttons' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -116,6 +122,10 @@ function ga_ct_intervenant_strongarm() {
             'visible' => FALSE,
           ),
           'teaser_slide' => array(
+            'weight' => '11',
+            'visible' => FALSE,
+          ),
+          'teaser_sidebar' => array(
             'weight' => '11',
             'visible' => FALSE,
           ),
