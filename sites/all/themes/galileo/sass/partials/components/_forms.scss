@@ -1,14 +1,17 @@
 form{
+  .form-item,
   .field-type-text,
   .form-type-textfield{
     @include text-field;
   }
+  .form-item,
   .field-type-text-long{
     @include textaera-field;
   }
 
   .form-actions{
 
+    .form-submit,
     .form-submit.btn-success{
       .glyphicon{
         display: none;
