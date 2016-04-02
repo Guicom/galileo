@@ -26,3 +26,11 @@ function galileo_master_init() {
     include_once(drupal_get_path('theme', 'bootstrap') . '/includes/process.inc');
   }
 }
+
+/**
+ * Implements hook_form_alter().
+ */
+
+function galileo_master_form_alter(&$form, &$form_state, $form_id){
+$adrien = 1;
+}
