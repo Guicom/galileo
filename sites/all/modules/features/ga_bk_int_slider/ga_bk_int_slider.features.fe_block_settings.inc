@@ -34,7 +34,7 @@ function ga_bk_int_slider_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'galileo',
-        'weight' => -15,
+        'weight' => -16,
       ),
       'seven' => array(
         'region' => '',
