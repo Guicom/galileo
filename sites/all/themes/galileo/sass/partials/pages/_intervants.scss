@@ -11,14 +11,15 @@
       position: relative;
 
       .group-left{
-        @include make-lg-column(4);
+        @include make-sm-column(4);
         @include make-xs-column(12);
         .field-name-field-int-photo {
         }
       }
 
       .group-right {
-        @include make-lg-column(8);
+        @include make-sm-column(8);
+        @include make-xs-column(12);
         position: initial;
         .field-name-title {
           h2 {
@@ -27,11 +28,18 @@
             font-weight: 300;
             line-height: 34px;
             margin-bottom: 10px;
+            margin-top: 0;
+            @media (max-width: $screen-sm) {
+              margin-top: 20px;
+            }
           }
         }
         .field-name-field-int-poste,
         .field-name-body {
           @include p-style;
+        }
+        .field-name-body {
+          margin-bottom: 40px;
         }
         .flippy {
           position: absolute;

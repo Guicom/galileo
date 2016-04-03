@@ -1,5 +1,5 @@
 #block-views-intervenants-block-1 {
-  @include make-lg-column(6);
+  @include make-md-column(6);
   @include make-xs-column(12);
   .block-title {
     @include h1-title;
@@ -22,6 +22,10 @@
         overflow: hidden;
         padding: 0 50px;
         margin: 0 auto;
+        width: 500px !important;
+        @media (max-width: 560px) {
+          width: 300px !important;
+        }
         .jcarousel-clip {
           overflow: hidden;
           .jcarousel {

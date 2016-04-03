@@ -1,5 +1,5 @@
 .aurore-block {
-  @include make-lg-column(6);
+  @include make-md-column(6);
   @include make-xs-column(12);
   min-height: 419px;
   margin-top: -73px;

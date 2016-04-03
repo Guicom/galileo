@@ -8,6 +8,10 @@
   border:0px;
   .container {
     height: 70px;
+    @media (max-width:1024px) {
+    @include make-xs-column(12);
+    }
+
     .navbar-header {
       float: left;
       .logo {
@@ -33,6 +37,12 @@
                 font-weight: 300;
                 text-transform: uppercase;
                 @include custom-transition;
+                @media (max-width:1200px) {
+                  padding: 0 5px;
+                }
+                @media (max-width:935px) {
+                  font-size: 16px;
+                }
               }
               &:hover {
                 background: transparent;
@@ -45,6 +55,9 @@
               &.last {
                 a {
                   padding: 0 0 0 15px;
+                  @media (max-width:1200px) {
+                    padding: 0 0 0 5px;
+                  }
                 }
               }
               &.active-trail {
@@ -56,6 +69,118 @@
           }
         }
       }
+    }
+  }
+}
+
+
+@media (max-width: 870px) {
+  #navbar .container {
+    .navbar-header {
+      float: none;
+    }
+    .navbar-toggle {
+      display: block;
+      border: none;
+      margin-top: 18px;
+      width: 50px;
+      height: 35px;
+      position: relative;
+      @include rotate(0deg);
+      @include transition(.5s ease-in-out);
+      cursor: pointer;
+      .icon-bar {
+        display: block;
+        position: absolute;
+        height: 5px;
+        width: 100%;
+        background: $white;
+        border-radius: 9px;
+        margin: 0;
+        @include opacity(1);
+        left: 0;
+        @include rotate(0deg);
+        @include transition(.25s ease-in-out);
+        &:nth-child(2) {
+          top: 0px;
+        }
+        &:nth-child(3) {
+          top: 15px;
+        }
+        &:nth-child(4) {
+          top: 30px;
+        }
+      }
+      &.open {
+        span:nth-child(2) {
+          top: 15px;
+          @include rotate(135deg);
+        }
+        span:nth-child(3) {
+          opacity: 0;
+          left: -60px;
+        }
+        span:nth-child(4) {
+          top: 15px;
+          @include rotate(-135deg);
+        }
+      }
+      &:hover {
+        background: none;
+      }
+    }
+    .navbar-collapse {
+      background: $black;
+      position: absolute;
+      top:70px;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      @include opacity(0);
+      @include custom-transition;
+      nav {
+        #block-system-main-menu {
+          ul {
+            li {
+              display: block;
+              margin: 0 15px;
+              line-height: 50px;
+              border-bottom: 1px solid $grey-mid;
+              a {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .navbar-collapse.collapse {
+      display: none!important;
+    }
+    .navbar-nav {
+      float: none!important;
+      margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+      float: none;
+    }
+    .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .navbar-text {
+      float: none;
+      margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+      display: block!important;
+      height: 360px !important;
+      @include opacity(1);
+      @include custom-transition;
+    }
+    .collapsing {
+      overflow: hidden!important;
     }
   }
 }

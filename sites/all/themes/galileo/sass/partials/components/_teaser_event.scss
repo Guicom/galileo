@@ -3,14 +3,16 @@
     overflow: hidden;
     border-right: 1px solid $white;
     border-bottom: 1px solid $white;
-    @include make-lg-column(4);
+    @include make-md-column(4);
+    @include make-xs-column(6);
+    @include make-mobile-full;
     position: relative;
     padding: 0;
     &:nth-child(3n+3) {
       border-right: 0;
     }
     > .group-left {
-      @include make-lg-column(12);
+      @include make-xs-column(12);
       position: relative;
       padding: 0;
       img {
@@ -59,6 +61,19 @@
           bottom: 0;
           right: 0;
           color: transparent;
+          @media (max-width: $screen-sm) {
+            @include yellow-button;
+            width: 202px;
+            height: 38px;
+            line-height: 38px;
+            text-indent: 0;
+            @include horyzontal-align;
+            position: absolute;
+            text-align: center;
+            @include transition(background .3s .1s, color .3s .1s);
+            top:inherit;
+            bottom: 20px;
+          }
         }
       }
       .field-name-field-event-date {

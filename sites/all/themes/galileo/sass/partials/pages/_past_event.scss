@@ -93,6 +93,9 @@
   #block-views-evenements-block-3 {
     @include make-md-column(6);
     padding-left: 0;
+    @media (max-width: $screen-md) {
+      padding: 0 15px;
+    }
   }
 
   .block-title {
@@ -193,6 +196,10 @@
     @include make-md-column(6);
     margin-top: 54px;
     padding-right: 0;
+    @media (max-width: $screen-md) {
+      padding: 0 15px;
+      margin-top: 15px;
+    }
     .aurore-image {
       height: 160px;
       width: 100%;

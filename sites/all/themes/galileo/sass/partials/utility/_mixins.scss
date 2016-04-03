@@ -68,6 +68,12 @@
   }
 }
 
+@mixin make-mobile-full {
+  @media (max-width: $screen-xs) {
+    width: 100%;
+  }
+}
+
 
 @mixin custom-transition {
   @include transition(all, .3s);

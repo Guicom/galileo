@@ -17,15 +17,20 @@ form{
         display: none;
       }
       @include submit-validate;
+      margin-bottom: 15px;
     }
 
     #edit-cancel{
       @include submit-cancel;
+      margin-bottom: 15px;
     }
   }
   .form-item-anon-mail.form-group,
   .form-wrapper.form-group{
-    @include make-md-column(6);
+    @include make-sm-column(6);
+  }
+  #edit-actions {
+    @include make-sm-column(12);
   }
 
   .field-multiple-drag,

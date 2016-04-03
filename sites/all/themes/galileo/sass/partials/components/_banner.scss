@@ -54,6 +54,9 @@
             color:$white;
             margin: 0;
             width: 300px;
+            @media (max-width:$screen-xs) {
+              font-size: 39px;
+            }
           }
         }
         .field-name-field-event-intervenant {
@@ -62,6 +65,9 @@
           color: $white;
           font-weight: 200;
           line-height: 39px;
+          @media (max-width:$screen-xs) {
+            font-size: 29px;
+          }
         }
         .field-name-field-event-date{
           font-family: $font;
@@ -73,6 +79,7 @@
         .field-name-node-link{
           float:left;
           margin-right:20px;
+          margin-bottom: 20px;
           a{
             @include white-button;
             padding:6px 11px;

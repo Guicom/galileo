@@ -20,6 +20,9 @@
         float: none !important;
         margin: 0 auto;
         text-align: center;
+        > div {
+          margin-bottom: 15px;
+        }
         .ampoule {
           &:before {
             @include icons(ampoule);
