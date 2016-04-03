@@ -14,6 +14,7 @@ function ga_menu_block_default_fe_block_settings() {
 
   $export['system-main-menu'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'main-menu',
     'i18n_block_language' => array(),

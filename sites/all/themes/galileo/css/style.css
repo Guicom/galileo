@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
-/* line 5, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,45 +23,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -10319,31 +10319,36 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   background: url("../images/close.png") no-repeat center center;
 }
 
-/* line 215, ../sass/partials/utility/_mixins.scss */
+/* line 232, ../sass/partials/utility/_mixins.scss */
+form .form-item label,
 form .field-type-text label,
 form .form-type-textfield label {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
-/* line 220, ../sass/partials/utility/_mixins.scss */
+/* line 237, ../sass/partials/utility/_mixins.scss */
+form .form-item input,
 form .field-type-text input,
 form .form-type-textfield input {
   border: 1px solid #1A1A1A;
   border-radius: 0px;
 }
-/* line 227, ../sass/partials/utility/_mixins.scss */
+/* line 244, ../sass/partials/utility/_mixins.scss */
+form .form-item label,
 form .field-type-text-long label {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
-/* line 232, ../sass/partials/utility/_mixins.scss */
+/* line 249, ../sass/partials/utility/_mixins.scss */
+form .form-item textarea,
 form .field-type-text-long textarea {
   border: 1px solid #1A1A1A;
   border-radius: 0px;
 }
-/* line 12, ../sass/partials/components/_forms.scss */
+/* line 14, ../sass/partials/components/_forms.scss */
+form .form-actions .form-submit,
 form .form-actions .form-submit.btn-success {
   background: #262626;
   color: #fff;
@@ -10359,16 +10364,18 @@ form .form-actions .form-submit.btn-success {
   min-height: 35px;
   padding: 9px 0;
 }
-/* line 13, ../sass/partials/components/_forms.scss */
+/* line 16, ../sass/partials/components/_forms.scss */
+form .form-actions .form-submit .glyphicon,
 form .form-actions .form-submit.btn-success .glyphicon {
   display: none;
 }
-/* line 189, ../sass/partials/utility/_mixins.scss */
+/* line 206, ../sass/partials/utility/_mixins.scss */
+form .form-actions .form-submit:hover,
 form .form-actions .form-submit.btn-success:hover {
   text-decoration: underline;
   background: #262626;
 }
-/* line 19, ../sass/partials/components/_forms.scss */
+/* line 22, ../sass/partials/components/_forms.scss */
 form .form-actions #edit-cancel {
   background: #808080;
   color: #fff;
@@ -10384,9 +10391,74 @@ form .form-actions #edit-cancel {
   min-height: 35px;
   padding: 9px 0;
 }
-/* line 209, ../sass/partials/utility/_mixins.scss */
+/* line 226, ../sass/partials/utility/_mixins.scss */
 form .form-actions #edit-cancel:hover {
   text-decoration: underline;
+}
+/* line 26, ../sass/partials/components/_forms.scss */
+form .form-item-anon-mail.form-group,
+form .form-wrapper.form-group {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  /* line 26, ../sass/partials/components/_forms.scss */
+  form .form-item-anon-mail.form-group,
+  form .form-wrapper.form-group {
+    float: left;
+    width: 50%;
+  }
+}
+/* line 31, ../sass/partials/components/_forms.scss */
+form .field-multiple-drag,
+form .tabledrag-toggle-weight-wrapper {
+  display: none;
+}
+/* line 35, ../sass/partials/components/_forms.scss */
+form #edit-field-registration-accompagnant {
+  width: 100%;
+}
+/* line 41, ../sass/partials/components/_forms.scss */
+form .field-name-field-registration-accompagnant .field-multiple-table button.form-submit.btn-danger {
+  background: #808080;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  border: 0px;
+  border-radius: 0px;
+  width: 205px;
+  text-align: center;
+  float: left;
+  margin: 0 20px 0 0;
+  min-height: 35px;
+  padding: 9px 0;
+  width: 100px;
+  padding: 0;
+}
+/* line 226, ../sass/partials/utility/_mixins.scss */
+form .field-name-field-registration-accompagnant .field-multiple-table button.form-submit.btn-danger:hover {
+  text-decoration: underline;
+}
+/* line 47, ../sass/partials/components/_forms.scss */
+form .field-name-field-registration-accompagnant button.form-submit.field-add-more-submit {
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: underline;
+  border: 0px;
+}
+/* line 182, ../sass/partials/utility/_mixins.scss */
+form .field-name-field-registration-accompagnant button.form-submit.field-add-more-submit:before {
+  background: url("../images/add_more.png") no-repeat;
+  float: left;
+  width: 16px;
+  height: 16px;
+  content: '';
+  margin: 5px 5px 0 0;
 }
 
 /* line 2, ../sass/partials/pages/_intervants.scss */

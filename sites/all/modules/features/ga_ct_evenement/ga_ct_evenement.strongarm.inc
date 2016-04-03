@@ -134,7 +134,7 @@ function ga_ct_evenement_strongarm() {
           'weight' => '0',
         ),
         'anon_mail' => array(
-          'weight' => '5',
+          'weight' => '3',
         ),
       ),
       'display' => array(),

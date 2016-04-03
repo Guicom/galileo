@@ -32,5 +32,9 @@ function galileo_master_init() {
  */
 
 function galileo_master_form_alter(&$form, &$form_state, $form_id){
-$adrien = 1;
+    switch($form_id){
+        case 'registration_form':
+            $form['field_registration_accompagnant']['und']['add_more']['#value'] = "Ajouter un participants";
+        break;
+    }
 }

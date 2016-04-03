@@ -172,6 +172,23 @@
   }
 }
 
+@mixin add-more-button {
+  background: $white;
+  color: $black;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: underline;
+  border:0px;
+  &:before {
+    background: url('../images/add_more.png') no-repeat;
+    float:left;
+    width:16px;
+    height:16px;
+    content: '';
+    margin: 5px 5px 0 0;
+  }
+}
+
 @mixin submit-validate {
   background: $grey;
   color: $white;

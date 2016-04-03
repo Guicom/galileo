@@ -1,0 +1,11 @@
+name = ga_date
+core = 7.x
+package = Galileo : Settings
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[variable][] = date_format_evenement
+features[variable][] = date_format_evenement_complet_
+project path = sites/all/modules/features

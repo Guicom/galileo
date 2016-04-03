@@ -69,9 +69,25 @@ function galileo_preprocess_page(&$variables) {
   }
   if(isset($variables['node']) && $variables['node']->type == 'event') {
     $variables['title'] = t('');
+  }
+  if(arg(0) == 'node' &&  arg(2) == 'register') {
+    if(arg(1)){
+      $node = node_load(arg(1));
+      $variables['title'] = t('Inscription à ').$node->title;
+    }else{
+      $variables['title'] = t('Inscription à l\'évènement');
+    }
+  }
+
+  if(isset($variables['node']) && $variables['node']->type == 'intervenant') {
+    $variables['title'] = t('Intervenants');
+  }
+  if(isset($variables['node']) && $variables['node']->type == 'event') {
+    $variables['title'] = t('');
     $variables['past'] = $variables['node']->field_event_past['und'][0]['value'] == '1' ? 'past' : 'next';
   }
 }
+
 
 
 function galileo_preprocess_node (&$variables) {

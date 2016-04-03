@@ -1,14 +1,17 @@
 form{
+  .form-item,
   .field-type-text,
   .form-type-textfield{
     @include text-field;
   }
+  .form-item,
   .field-type-text-long{
     @include textaera-field;
   }
 
   .form-actions{
 
+    .form-submit,
     .form-submit.btn-success{
       .glyphicon{
         display: none;
@@ -20,4 +23,32 @@ form{
       @include submit-cancel;
     }
   }
+  .form-item-anon-mail.form-group,
+  .form-wrapper.form-group{
+    @include make-md-column(6);
+  }
+
+  .field-multiple-drag,
+  .tabledrag-toggle-weight-wrapper{
+    display: none;
+  }
+  #edit-field-registration-accompagnant{
+    width: 100%;
+  }
+
+  .field-name-field-registration-accompagnant{
+    .field-multiple-table{
+      button.form-submit.btn-danger{
+        @include submit-cancel;
+        width: 100px;
+        padding: 0;
+      }
+    }
+    button.form-submit.field-add-more-submit{
+      @include add-more-button;
+    }
+  }
+
+
 }
+
