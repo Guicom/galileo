@@ -69,6 +69,7 @@ function galileo_preprocess_page(&$variables) {
   }
   if(isset($variables['node']) && $variables['node']->type == 'event') {
     $variables['title'] = t('');
+    $variables['past'] = $variables['node']->field_event_past['und'][0]['value'] == '1' ? 'past' : 'next';
   }
 }
 

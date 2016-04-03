@@ -165,6 +165,7 @@ function ga_ct_evenement_ds_layout_settings_info() {
         8 => 'field_event_photo_liste',
         9 => 'field_event_photo_banniere',
         10 => 'field_event_inscription',
+        11 => 'field_event_videos',
       ),
     ),
     'fields' => array(
@@ -179,6 +180,7 @@ function ga_ct_evenement_ds_layout_settings_info() {
       'field_event_photo_liste' => 'left',
       'field_event_photo_banniere' => 'left',
       'field_event_inscription' => 'left',
+      'field_event_videos' => 'left',
     ),
     'classes' => array(),
     'wrappers' => array(

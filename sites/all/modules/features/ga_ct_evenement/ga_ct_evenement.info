@@ -38,6 +38,7 @@ features[field_instance][] = node-event-field_event_past
 features[field_instance][] = node-event-field_event_photo
 features[field_instance][] = node-event-field_event_photo_banniere
 features[field_instance][] = node-event-field_event_photo_liste
+features[field_instance][] = node-event-field_event_videos
 features[field_instance][] = registration-evenement-field_registration_adresse
 features[field_instance][] = registration-evenement-field_registration_nom
 features[field_instance][] = registration-evenement-field_registration_num_adherent

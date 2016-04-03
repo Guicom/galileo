@@ -48,9 +48,29 @@
   }
 
   .bottom-side {
+    .field-name-field-event-videos {
+      .field-label {
+        @include h1-title;
+        color: $black;
+        font-weight: 300;
+        margin-bottom: 15px;
+      }
+      .field-items {
+        .description {
+          @include p-style;
+          margin-top: 15px;
+        }
+      }
+    }
     .field-name-field-event-photo {
       height: auto;
       overflow: hidden;
+      .field-label {
+        @include h1-title;
+        color: $black;
+        font-weight: 300;
+        margin-bottom: 15px;
+      }
       .field-items {
         .field-item {
           float: left;
@@ -63,6 +83,162 @@
           }
         }
       }
+    }
+  }
+}
+
+.region-banner-bottom {
+  @include make-container;
+
+  #block-views-evenements-block-3 {
+    @include make-md-column(6);
+    padding-left: 0;
+  }
+
+  .block-title {
+    @include h1-title;
+    color: $black;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+
+  .view-id-evenements.view-display-id-block_3 {
+    .views-row {
+      height: 160px;
+      position: relative;
+
+      .group-left {
+        width: 100%;
+        .field-name-field-event-photo-banniere {
+          height: 160px;
+          width: 100%;
+          background-position: center center;
+          background-size: cover;
+        }
+      }
+
+      .container {
+        width: 100%;
+      }
+
+      .group-right{
+        width: 95%;
+        top: 5px;
+        position: absolute;
+        margin-left: 2%;
+        .leclub{
+          background:$yellow;
+          padding:0 5px;
+          font-family: $font;
+          font-size: 36px;
+          color: $black;
+          font-weight: 200;
+          display: inline-block;
+          line-height: 34px;
+        }
+        .past-value{
+          background: $black;
+          padding: 0 5px 2px 5px;
+          font-family: $font;
+          font-size: 20px;
+          color: $yellow;
+          font-weight: 600;
+          display: inline-block;
+          line-height: 20px;
+          text-transform: uppercase;
+        }
+        .field-name-title{
+          h2{
+            font-family: $font;
+            font-size: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color:$white;
+            margin: 0;
+            width: 300px;
+          }
+        }
+        .field-name-field-event-intervenant {
+          font-family: $font;
+          font-size: 20px;
+          color: $white;
+          font-weight: 300;
+          line-height: 17px;
+        }
+        .field-name-field-event-date{
+          font-family: $font;
+          font-size: 15px;
+          color: $white;
+          font-weight: 600;
+        }
+        .field-name-node-link {
+          a {
+            text-indent: -6000px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+          }
+        }
+        .field-name-field-event-inscription{
+          display: none;
+        }
+      }
+    }
+  }
+
+
+  .aurore-bottom-block {
+    @include make-md-column(6);
+    margin-top: 54px;
+    padding-right: 0;
+    .aurore-image {
+      height: 160px;
+      width: 100%;
+      background-position: center center;
+      background-size: cover;
+      margin-bottom: 15px;
+    }
+    .aurore-top {
+      width: 95%;
+      top: 5px;
+      position: absolute;
+      margin-left: 2%;
+      .aurore-title {
+        h2 {
+          background:$yellow;
+          padding:0 5px;
+          font-family: $font;
+          font-size: 36px;
+          color: $black;
+          font-weight: 200;
+          display: inline-block;
+          line-height: 34px;
+          margin: 0;
+        }
+      }
+      h3 {
+        background: $black;
+        padding: 0 5px 2px 5px;
+        font-family: $font;
+        font-size: 20px;
+        color: $yellow;
+        font-weight: 600;
+        display: inline-block;
+        line-height: 20px;
+        text-transform: uppercase;
+        margin: 0;
+        width: 245px;
+      }
+    }
+    .aurore-link-yellow {
+      text-indent: -6000px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
     }
   }
 

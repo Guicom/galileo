@@ -35,11 +35,11 @@
           line-height: 39px;
         }
         .past-value{
-          background: #000;
+          background: $black;
           padding: 0 5px 2px 5px;
           font-family: "Source Sans Pro", sans-serif;
           font-size: 20px;
-          color: #ee9c1b;
+          color: $yellow;
           font-weight: 600;
           display: inline-block;
           line-height: 20px;
@@ -93,7 +93,6 @@
           }
         }
       }
-
     }
   }
 }

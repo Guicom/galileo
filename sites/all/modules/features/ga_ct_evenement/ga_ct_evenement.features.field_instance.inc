@@ -457,7 +457,7 @@ function ga_ct_evenement_field_default_field_instances() {
       'module' => 'registration',
       'settings' => array(),
       'type' => 'registration_select',
-      'weight' => 11,
+      'weight' => 12,
     ),
   );
 
@@ -718,7 +718,7 @@ function ga_ct_evenement_field_default_field_instances() {
         'weight' => 16,
       ),
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'fancybox',
         'settings' => array(
           'fancybox_caption' => 'auto',
@@ -761,7 +761,7 @@ function ga_ct_evenement_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -938,6 +938,78 @@ function ga_ct_evenement_field_default_field_instances() {
       ),
       'type' => 'image_image',
       'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-event-field_event_videos'.
+  $field_instances['node-event-field_event_videos'] = array(
+    'bundle' => 'event',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'banner' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'banner_with_buttons' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'default',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_event_videos',
+    'label' => 'Vidéos',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 1,
+      'file_directory' => '',
+      'file_extensions' => 'txt',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+          'youtube' => 'youtube',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 0,
+          'video' => 'video',
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 'media_internet',
+          'upload' => 0,
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 10,
     ),
   );
 
@@ -1167,6 +1239,7 @@ function ga_ct_evenement_field_default_field_instances() {
   t('Prénom');
   t('Remarque');
   t('Téléphone');
+  t('Vidéos');
 
   return $field_instances;
 }
