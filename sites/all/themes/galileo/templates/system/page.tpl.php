@@ -149,7 +149,7 @@
         <?php print render($page['content']); ?>
       </div>
     </div>
-    <?php if ($past == 'past'): ?>
+    <?php if (isset($past) && $past == 'past'): ?>
     <?php print render($page['banner_bottom']); ?>
     <?php endif; ?>
     <?php if (!empty($page['content_bottom'])): ?>
