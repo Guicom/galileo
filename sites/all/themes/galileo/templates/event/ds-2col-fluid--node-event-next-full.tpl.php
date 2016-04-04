@@ -4,8 +4,8 @@
       <div class="event-date col-sm-6 col-xs-12">
         <div class="calendar icon"></div>
         <div class="text-wrapper">
-          <p class="date white"><?php print $field_event_date[0]['value']; ?></p>
-          <p class="heure yellow">à <?php print $field_event_date[0]['value']; ?></p>
+          <p class="date white"><?php print $date_mois; ?></p>
+          <p class="heure yellow">à <?php print $date_heure; ?></p>
         </div>
       </div>
       <div class="event-lieu col-sm-6 col-xs-12">

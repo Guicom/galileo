@@ -7,8 +7,8 @@ footer {
     @include make-container;
       padding: 0;
     #block-menu-menu-menu-footer {
-      @include make-md-column(6);
       @include make-sm-column(12);
+      @include make-md-column(6);
       ul {
         @include column-count(2);
         li {
@@ -31,8 +31,8 @@ footer {
       }
     }
     .contact-footer-block {
-      @include make-md-column(3);
       @include make-sm-column(6);
+      @include make-md-column(3);
       @media (max-width: $screen-sm) {
         margin-top: 20px;
       }
@@ -47,8 +47,8 @@ footer {
       }
     }
     .social-footer-block {
-      @include make-md-column(3);
       @include make-sm-column(6);
+      @include make-md-column(3);
       @media (max-width: $screen-sm) {
         margin-top: 20px;
       }
