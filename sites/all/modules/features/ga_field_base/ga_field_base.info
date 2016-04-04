@@ -21,6 +21,7 @@ dependencies[] = text
 features[features_api][] = api:2
 features[field_base][] = body
 features[field_base][] = comment_body
+features[field_base][] = field_basic_image_banniere
 features[field_base][] = field_event_adresse
 features[field_base][] = field_event_date
 features[field_base][] = field_event_date_limite
