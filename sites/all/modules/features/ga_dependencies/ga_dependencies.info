@@ -25,6 +25,7 @@ dependencies[] = email
 dependencies[] = entity
 dependencies[] = entityreference
 dependencies[] = fancybox
+dependencies[] = fe_date
 dependencies[] = features
 dependencies[] = features_diff
 dependencies[] = field_collection
