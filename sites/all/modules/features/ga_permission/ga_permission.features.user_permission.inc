@@ -15,6 +15,7 @@ function ga_permission_user_default_permissions() {
     'name' => 'access administration menu',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'admin_menu',
   );
@@ -24,6 +25,7 @@ function ga_permission_user_default_permissions() {
     'name' => 'access administration pages',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'system',
   );
@@ -42,6 +44,7 @@ function ga_permission_user_default_permissions() {
     'name' => 'access all webform results',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'webform',
   );
@@ -73,6 +76,7 @@ function ga_permission_user_default_permissions() {
     'name' => 'access content overview',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -104,6 +108,15 @@ function ga_permission_user_default_permissions() {
     'module' => 'media',
   );
 
+  // Exported permission: 'access overlay'.
+  $permissions['access overlay'] = array(
+    'name' => 'access overlay',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'overlay',
+  );
+
   // Exported permission: 'access own webform results'.
   $permissions['access own webform results'] = array(
     'name' => 'access own webform results',
@@ -118,6 +131,7 @@ function ga_permission_user_default_permissions() {
     'name' => 'access own webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'webform',
   );
@@ -318,6 +332,15 @@ function ga_permission_user_default_permissions() {
     'module' => 'features',
   );
 
+  // Exported permission: 'administer field collections'.
+  $permissions['administer field collections'] = array(
+    'name' => 'administer field collections',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'field_collection',
+  );
+
   // Exported permission: 'administer file types'.
   $permissions['administer file types'] = array(
     'name' => 'administer file types',
@@ -422,6 +445,7 @@ function ga_permission_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -632,6 +656,7 @@ function ga_permission_user_default_permissions() {
     'name' => 'create evenement registration self',
     'roles' => array(
       'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'registration',
   );
@@ -639,7 +664,9 @@ function ga_permission_user_default_permissions() {
   // Exported permission: 'create event content'.
   $permissions['create event content'] = array(
     'name' => 'create event content',
-    'roles' => array(),
+    'roles' => array(
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'node',
   );
 
@@ -662,7 +689,9 @@ function ga_permission_user_default_permissions() {
   // Exported permission: 'create intervenant content'.
   $permissions['create intervenant content'] = array(
     'name' => 'create intervenant content',
-    'roles' => array(),
+    'roles' => array(
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'node',
   );
 
@@ -671,6 +700,7 @@ function ga_permission_user_default_permissions() {
     'name' => 'create page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -755,7 +785,9 @@ function ga_permission_user_default_permissions() {
   // Exported permission: 'delete any event content'.
   $permissions['delete any event content'] = array(
     'name' => 'delete any event content',
-    'roles' => array(),
+    'roles' => array(
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'node',
   );
 
@@ -778,7 +810,9 @@ function ga_permission_user_default_permissions() {
   // Exported permission: 'delete any intervenant content'.
   $permissions['delete any intervenant content'] = array(
     'name' => 'delete any intervenant content',
-    'roles' => array(),
+    'roles' => array(
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'node',
   );
 
@@ -787,6 +821,7 @@ function ga_permission_user_default_permissions() {
     'name' => 'delete any page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -844,7 +879,9 @@ function ga_permission_user_default_permissions() {
   // Exported permission: 'delete own event content'.
   $permissions['delete own event content'] = array(
     'name' => 'delete own event content',
-    'roles' => array(),
+    'roles' => array(
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'node',
   );
 
@@ -867,7 +904,9 @@ function ga_permission_user_default_permissions() {
   // Exported permission: 'delete own intervenant content'.
   $permissions['delete own intervenant content'] = array(
     'name' => 'delete own intervenant content',
-    'roles' => array(),
+    'roles' => array(
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'node',
   );
 
@@ -876,6 +915,7 @@ function ga_permission_user_default_permissions() {
     'name' => 'delete own page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -910,6 +950,7 @@ function ga_permission_user_default_permissions() {
     'name' => 'delete revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -1050,7 +1091,9 @@ function ga_permission_user_default_permissions() {
   // Exported permission: 'edit any event content'.
   $permissions['edit any event content'] = array(
     'name' => 'edit any event content',
-    'roles' => array(),
+    'roles' => array(
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'node',
   );
 
@@ -1073,7 +1116,9 @@ function ga_permission_user_default_permissions() {
   // Exported permission: 'edit any intervenant content'.
   $permissions['edit any intervenant content'] = array(
     'name' => 'edit any intervenant content',
-    'roles' => array(),
+    'roles' => array(
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'node',
   );
 
@@ -1082,6 +1127,7 @@ function ga_permission_user_default_permissions() {
     'name' => 'edit any page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -1148,7 +1194,9 @@ function ga_permission_user_default_permissions() {
   // Exported permission: 'edit own event content'.
   $permissions['edit own event content'] = array(
     'name' => 'edit own event content',
-    'roles' => array(),
+    'roles' => array(
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'node',
   );
 
@@ -1171,7 +1219,9 @@ function ga_permission_user_default_permissions() {
   // Exported permission: 'edit own intervenant content'.
   $permissions['edit own intervenant content'] = array(
     'name' => 'edit own intervenant content',
-    'roles' => array(),
+    'roles' => array(
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'node',
   );
 
@@ -1180,6 +1230,7 @@ function ga_permission_user_default_permissions() {
     'name' => 'edit own page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -1303,6 +1354,7 @@ function ga_permission_user_default_permissions() {
     'name' => 'revert revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -1403,6 +1455,15 @@ function ga_permission_user_default_permissions() {
     'module' => 'search',
   );
 
+  // Exported permission: 'use bulk exporter'.
+  $permissions['use bulk exporter'] = array(
+    'name' => 'use bulk exporter',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'bulk_export',
+  );
+
   // Exported permission: 'use ctools import'.
   $permissions['use ctools import'] = array(
     'name' => 'use ctools import',
@@ -1480,6 +1541,7 @@ function ga_permission_user_default_permissions() {
     'name' => 'view own unpublished content',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -1498,6 +1560,7 @@ function ga_permission_user_default_permissions() {
     'name' => 'view revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
