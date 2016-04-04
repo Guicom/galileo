@@ -133,10 +133,39 @@ function ga_vw_export_views_default_views() {
   $handler->display->display_options['fields']['registration_id']['table'] = 'registration';
   $handler->display->display_options['fields']['registration_id']['field'] = 'registration_id';
   $handler->display->display_options['fields']['registration_id']['label'] = 'Numéro d\'enregistrements';
-  /* Field: Registration: Adresse de facturation */
+  /* Field: Registration: Adresse  */
   $handler->display->display_options['fields']['field_registration_adresse']['id'] = 'field_registration_adresse';
   $handler->display->display_options['fields']['field_registration_adresse']['table'] = 'field_data_field_registration_adresse';
   $handler->display->display_options['fields']['field_registration_adresse']['field'] = 'field_registration_adresse';
+  $handler->display->display_options['fields']['field_registration_adresse']['label'] = 'Adresse';
+  $handler->display->display_options['fields']['field_registration_adresse']['exclude'] = TRUE;
+  /* Field: Registration: Adresse 2 */
+  $handler->display->display_options['fields']['field_registration_adresse_2']['id'] = 'field_registration_adresse_2';
+  $handler->display->display_options['fields']['field_registration_adresse_2']['table'] = 'field_data_field_registration_adresse_2';
+  $handler->display->display_options['fields']['field_registration_adresse_2']['field'] = 'field_registration_adresse_2';
+  $handler->display->display_options['fields']['field_registration_adresse_2']['exclude'] = TRUE;
+  /* Field: Registration: Code postal */
+  $handler->display->display_options['fields']['field_registration_postal']['id'] = 'field_registration_postal';
+  $handler->display->display_options['fields']['field_registration_postal']['table'] = 'field_data_field_registration_postal';
+  $handler->display->display_options['fields']['field_registration_postal']['field'] = 'field_registration_postal';
+  $handler->display->display_options['fields']['field_registration_postal']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_registration_postal']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Registration: Ville */
+  $handler->display->display_options['fields']['field_registration_ville']['id'] = 'field_registration_ville';
+  $handler->display->display_options['fields']['field_registration_ville']['table'] = 'field_data_field_registration_ville';
+  $handler->display->display_options['fields']['field_registration_ville']['field'] = 'field_registration_ville';
+  $handler->display->display_options['fields']['field_registration_ville']['exclude'] = TRUE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = 'Adresse de facturation';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_registration_adresse]<br>
+[field_registration_adresse_2]<br>
+[field_registration_postal] [field_registration_ville]';
   /* Field: Field collection item: Nom */
   $handler->display->display_options['fields']['field_registration_nom']['id'] = 'field_registration_nom';
   $handler->display->display_options['fields']['field_registration_nom']['table'] = 'field_data_field_registration_nom';
@@ -262,7 +291,14 @@ function ga_vw_export_views_default_views() {
     t('Numéro d\'enregistrements'),
     t('.'),
     t(','),
+    t('Adresse'),
+    t('Adresse 2'),
+    t('Code postal'),
+    t('Ville'),
     t('Adresse de facturation'),
+    t('[field_registration_adresse]<br>
+[field_registration_adresse_2]<br>
+[field_registration_postal] [field_registration_ville]'),
     t('Nom'),
     t('Prénom'),
     t('Fonction'),
