@@ -101,15 +101,6 @@ function ga_ct_evenement_strongarm() {
       'banner_with_buttons' => array(
         'custom_settings' => TRUE,
       ),
-      'teaser_slide' => array(
-        'custom_settings' => FALSE,
-      ),
-      'test' => array(
-        'custom_settings' => FALSE,
-      ),
-      'teaser_sidebar' => array(
-        'custom_settings' => FALSE,
-      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -134,7 +125,7 @@ function ga_ct_evenement_strongarm() {
           'weight' => '0',
         ),
         'anon_mail' => array(
-          'weight' => '3',
+          'weight' => '1',
         ),
       ),
       'display' => array(),
