@@ -25,10 +25,12 @@ form{
       margin-bottom: 15px;
     }
   }
+  .webform-component.form-group,
   .form-item-anon-mail.form-group,
   .form-wrapper.form-group{
     @include make-sm-column(6);
   }
+  .webform-component.form-group.webform-component-textarea,
   #edit-actions {
     @include make-sm-column(12);
   }
@@ -53,7 +55,5 @@ form{
       @include add-more-button;
     }
   }
-
-
 }
 
