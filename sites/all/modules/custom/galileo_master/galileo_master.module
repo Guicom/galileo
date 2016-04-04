@@ -35,6 +35,8 @@ function galileo_master_form_alter(&$form, &$form_state, $form_id){
     switch($form_id){
         case 'registration_form':
             $form['field_registration_accompagnant']['und']['add_more']['#value'] = "Ajouter un participants";
+            $form['anon_mail']['#access'] = false;
+            $form['anon_mail']['#default_value'] = time()."@actency.fr";
         break;
     }
 }
