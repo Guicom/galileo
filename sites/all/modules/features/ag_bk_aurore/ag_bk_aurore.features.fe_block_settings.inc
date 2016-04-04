@@ -34,7 +34,7 @@ function ag_bk_aurore_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'galileo',
-        'weight' => -15,
+        'weight' => -14,
       ),
       'seven' => array(
         'region' => '',

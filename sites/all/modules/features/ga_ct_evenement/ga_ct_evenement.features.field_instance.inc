@@ -1259,45 +1259,9 @@ function ga_ct_evenement_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance:
-  // 'registration-evenement-field_registration_adresse'.
-  $field_instances['registration-evenement-field_registration_adresse'] = array(
-    'bundle' => 'evenement',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'registration',
-    'field_name' => 'field_registration_adresse',
-    'label' => 'Adresse de facturation',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 2,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Adresse');
-  t('Adresse de facturation');
   t('Date');
   t('Date limite d\'inscription');
   t('Description');
@@ -1313,11 +1277,9 @@ function ga_ct_evenement_field_default_field_instances() {
   t('Photo bannière');
   t('Photo liste');
   t('Prénom');
-  t('Remarque');
-  t('Téléphone');
-  t('Vidéos');
   t('Société ');
   t('Téléphone portable');
+  t('Vidéos');
 
   return $field_instances;
 }

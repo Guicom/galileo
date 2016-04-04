@@ -59,6 +59,9 @@ function ga_ct_page_basic_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'teaser_sidebar' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),

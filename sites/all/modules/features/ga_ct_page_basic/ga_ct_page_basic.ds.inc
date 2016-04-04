@@ -44,12 +44,10 @@ function ga_ct_page_basic_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'title',
-        1 => 'body',
+        0 => 'body',
       ),
     ),
     'fields' => array(
-      'title' => 'ds_content',
       'body' => 'ds_content',
     ),
     'classes' => array(),

@@ -36,7 +36,7 @@ function ga_bk_intervenant_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'galileo',
-        'weight' => -17,
+        'weight' => -16,
       ),
       'seven' => array(
         'region' => '',

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ga_ct_webform feature.
+ */
+
+include_once 'ga_ct_webform.features.inc';

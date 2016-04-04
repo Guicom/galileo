@@ -1,16 +1,13 @@
 <?php
 /**
  * @file
- * ga_ct_intervenant.features.inc
+ * ga_ct_webform.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function ga_ct_intervenant_ctools_plugin_api($module = NULL, $api = NULL) {
-  if ($module == "ds" && $api == "ds") {
-    return array("version" => "1");
-  }
+function ga_ct_webform_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -19,12 +16,12 @@ function ga_ct_intervenant_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_node_info().
  */
-function ga_ct_intervenant_node_info() {
+function ga_ct_webform_node_info() {
   $items = array(
-    'intervenant' => array(
-      'name' => t('Intervenant'),
+    'webform' => array(
+      'name' => t('Webform'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Create a new form or questionnaire accessible to users. Submission results and statistics are recorded and accessible to privileged users.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
