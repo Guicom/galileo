@@ -83,7 +83,7 @@ function galileo_preprocess_page(&$variables) {
     $variables['title'] = t('Intervenants');
   }
   if(isset($variables['node']) && $variables['node']->type == 'event') {
-    $variables['title'] = t('');
+    //$variables['title'] = t('');
     $variables['past'] = $variables['node']->field_event_past['und'][0]['value'] == '1' ? 'past' : 'next';
   }
 }
@@ -97,12 +97,16 @@ function galileo_preprocess_node (&$variables) {
     }
   }
   if ($variables['type'] == 'event' && $variables['view_mode'] == 'full') {
+    $date_timestamp = strtotime($variables['field_event_date'][0]['value']);
     switch($variables['field_event_past'][0]['value']) {
       case '0':
         $variables['theme_hook_suggestions'][] = 'ds_2col_fluid__node_event_next_full';
+        $variables['date_mois'] = format_date($date_timestamp, 'evenement_complet_');
+        $variables['date_heure'] = format_date($date_timestamp, 'custom', 'H:i');
         break;
       case '1':
         $variables['theme_hook_suggestions'][] = 'ds_2col_fluid__node_event_past_full';
+        $variables['custom_date'] = format_date($date_timestamp, 'evenement');
         break;
     }
   }

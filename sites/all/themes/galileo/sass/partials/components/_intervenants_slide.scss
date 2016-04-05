@@ -132,5 +132,12 @@
         @include custom-transition;
       }
     }
+    @media (max-width: $screen-sm) {
+      .view-footer {
+        visibility: visible;
+        @include opacity(1);
+        @include custom-transition;
+      }
+    }
   }
 }
