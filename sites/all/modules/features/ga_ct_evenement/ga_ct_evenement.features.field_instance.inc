@@ -29,12 +29,13 @@ function ga_ct_evenement_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_registration_fonction',
     'label' => 'Fonction',
-    'required' => FALSE,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'size' => 60,
@@ -97,7 +98,7 @@ function ga_ct_evenement_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_registration_nom',
     'label' => 'Nom',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -132,7 +133,7 @@ function ga_ct_evenement_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_registration_phone',
     'label' => 'Téléphone portable',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -167,7 +168,7 @@ function ga_ct_evenement_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_registration_prenom',
     'label' => 'Prénom',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -202,7 +203,7 @@ function ga_ct_evenement_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_registration_societe',
     'label' => 'Société ',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -1246,7 +1247,7 @@ function ga_ct_evenement_field_default_field_instances() {
     'entity_type' => 'registration',
     'field_name' => 'field_registration_accompagnant',
     'label' => 'Participant(s)',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -1278,7 +1279,7 @@ function ga_ct_evenement_field_default_field_instances() {
     'entity_type' => 'registration',
     'field_name' => 'field_registration_adresse',
     'label' => 'Adresse ',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -1313,7 +1314,7 @@ function ga_ct_evenement_field_default_field_instances() {
     'entity_type' => 'registration',
     'field_name' => 'field_registration_adresse_2',
     'label' => 'Adresse 2',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -1353,7 +1354,7 @@ function ga_ct_evenement_field_default_field_instances() {
     'entity_type' => 'registration',
     'field_name' => 'field_registration_postal',
     'label' => 'Code postal',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'max' => '',
       'min' => '',
@@ -1388,7 +1389,7 @@ function ga_ct_evenement_field_default_field_instances() {
     'entity_type' => 'registration',
     'field_name' => 'field_registration_ville',
     'label' => 'Ville',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
