@@ -9,6 +9,7 @@ function galileo_master_node_presave($node){
     if($node->type == "event"){
         $path = array('source' => "node/$node->nid", 'alias' => "evenement/$node->title");
         path_save($path);
+
     }
     if($node->type == "intervenant"){
         $path = array('source' => "node/$node->nid", 'alias' => "intervenant/$node->title");
@@ -37,6 +38,39 @@ function galileo_master_form_alter(&$form, &$form_state, $form_id){
             $form['field_registration_accompagnant']['und']['add_more']['#value'] = "Ajouter un participants";
             $form['anon_mail']['#access'] = false;
             $form['anon_mail']['#default_value'] = time()."@actency.fr";
+            $form['#submit'][] = 'galileo_master_form_alter_submit';
+
         break;
+    }
+}
+
+function  galileo_master_form_alter_submit($form, &$form_state) {
+    $form_state['values']['anon_mail'] = $form_state['values']['field_registration_accompagnant']['und'][0]['field_registration_mail']['und'][0]['email'];
+    $data['accompagnants'] = $form_state['values']['field_registration_accompagnant']['und'];
+    $data['adresse']['adresse1'] = $form_state['values']['field_registration_adresse']['und'][0]['value'];
+    $data['adresse']['adresse2'] = $form_state['values']['field_registration_adresse_2']['und'][0]['value'];
+    $data['adresse']['field_registration_postal'] = $form_state['values']['field_registration_postal']['und'][0]['value'];
+    $data['adresse']['field_registration_ville'] = $form_state['values']['field_registration_ville']['und'][0]['value'];
+    unset($data['accompagnants']['add_more']);
+    _galileo_master_send_notification($data);
+}
+
+function _galileo_master_send_notification($data){
+    foreach($data['accompagnants'] as $key => $accompagnant){
+        $mail = $accompagnant['field_registration_mail']['und'][0]['email'];
+        drupal_mail('galileo_master','registration_notification', $mail, 'fr',array('adresse' => $data['adresse'],'accompagnant' => $accompagnant));
+    }
+}
+
+function galileo_master_mail($key, &$message, $params) {
+    if ($key == 'registration_notification') {
+
+        $adresse = $params['adresse'];
+        $accompagnant = $params['accompagnant'];
+
+        $message['subject'] = 'Galileo : Votre participation';
+        $message['body'][] = "Votre participation à la soirée du club est enregistrée. Au plaisir de vous y accueillir.
+
+        L'équipe de GALILEO";
     }
 }
