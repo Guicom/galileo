@@ -11407,8 +11407,9 @@ body.front .node-page.view-mode-full .field-name-title {
   color: #000;
   font-weight: 300;
   margin-bottom: 15px;
+  text-transform: none;
 }
-/* line 59, ../sass/partials/pages/_past_event.scss */
+/* line 60, ../sass/partials/pages/_past_event.scss */
 .node-event.view-mode-full.past-event .bottom-side .field-name-field-event-videos .field-items .description {
   font-size: 16px;
   line-height: 22px;
@@ -11416,12 +11417,12 @@ body.front .node-page.view-mode-full .field-name-title {
   color: #000;
   margin-top: 15px;
 }
-/* line 65, ../sass/partials/pages/_past_event.scss */
+/* line 66, ../sass/partials/pages/_past_event.scss */
 .node-event.view-mode-full.past-event .bottom-side .field-name-field-event-photo {
   height: auto;
   overflow: hidden;
 }
-/* line 68, ../sass/partials/pages/_past_event.scss */
+/* line 69, ../sass/partials/pages/_past_event.scss */
 .node-event.view-mode-full.past-event .bottom-side .field-name-field-event-photo .field-label {
   color: #ee9c1b;
   font-size: 36px;
@@ -11431,19 +11432,20 @@ body.front .node-page.view-mode-full .field-name-title {
   color: #000;
   font-weight: 300;
   margin-bottom: 15px;
+  text-transform: none;
 }
-/* line 75, ../sass/partials/pages/_past_event.scss */
+/* line 77, ../sass/partials/pages/_past_event.scss */
 .node-event.view-mode-full.past-event .bottom-side .field-name-field-event-photo .field-items .field-item {
   float: left;
   margin: 5px;
 }
-/* line 79, ../sass/partials/pages/_past_event.scss */
+/* line 81, ../sass/partials/pages/_past_event.scss */
 .node-event.view-mode-full.past-event .bottom-side .field-name-field-event-photo .field-items .field-item a img {
   height: 200px;
   width: auto;
 }
 
-/* line 90, ../sass/partials/pages/_past_event.scss */
+/* line 92, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom {
   margin-right: auto;
   margin-left: auto;
@@ -11460,24 +11462,24 @@ body.front .node-page.view-mode-full .field-name-title {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 90, ../sass/partials/pages/_past_event.scss */
+  /* line 92, ../sass/partials/pages/_past_event.scss */
   .region-banner-bottom {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 90, ../sass/partials/pages/_past_event.scss */
+  /* line 92, ../sass/partials/pages/_past_event.scss */
   .region-banner-bottom {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 90, ../sass/partials/pages/_past_event.scss */
+  /* line 92, ../sass/partials/pages/_past_event.scss */
   .region-banner-bottom {
     width: 1170px;
   }
 }
-/* line 93, ../sass/partials/pages/_past_event.scss */
+/* line 95, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom #block-views-evenements-block-3 {
   position: relative;
   min-height: 1px;
@@ -11486,19 +11488,19 @@ body.front .node-page.view-mode-full .field-name-title {
   padding-left: 0;
 }
 @media (min-width: 992px) {
-  /* line 93, ../sass/partials/pages/_past_event.scss */
+  /* line 95, ../sass/partials/pages/_past_event.scss */
   .region-banner-bottom #block-views-evenements-block-3 {
     float: left;
     width: 50%;
   }
 }
 @media (max-width: 992px) {
-  /* line 93, ../sass/partials/pages/_past_event.scss */
+  /* line 95, ../sass/partials/pages/_past_event.scss */
   .region-banner-bottom #block-views-evenements-block-3 {
     padding: 0 15px;
   }
 }
-/* line 101, ../sass/partials/pages/_past_event.scss */
+/* line 103, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .block-title {
   color: #ee9c1b;
   font-size: 36px;
@@ -11508,35 +11510,36 @@ body.front .node-page.view-mode-full .field-name-title {
   color: #000;
   font-weight: 300;
   margin-bottom: 15px;
+  text-transform: none;
 }
-/* line 109, ../sass/partials/pages/_past_event.scss */
+/* line 112, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .view-id-evenements.view-display-id-block_3 .views-row {
   height: 160px;
   position: relative;
 }
-/* line 113, ../sass/partials/pages/_past_event.scss */
+/* line 116, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .view-id-evenements.view-display-id-block_3 .views-row .group-left {
   width: 100%;
 }
-/* line 115, ../sass/partials/pages/_past_event.scss */
+/* line 118, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .view-id-evenements.view-display-id-block_3 .views-row .group-left .field-name-field-event-photo-banniere {
   height: 160px;
   width: 100%;
   background-position: center center;
   background-size: cover;
 }
-/* line 123, ../sass/partials/pages/_past_event.scss */
+/* line 126, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .view-id-evenements.view-display-id-block_3 .views-row .container {
   width: 100%;
 }
-/* line 127, ../sass/partials/pages/_past_event.scss */
+/* line 130, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .view-id-evenements.view-display-id-block_3 .views-row .group-right {
   width: 95%;
   top: 5px;
   position: absolute;
   margin-left: 2%;
 }
-/* line 132, ../sass/partials/pages/_past_event.scss */
+/* line 135, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .view-id-evenements.view-display-id-block_3 .views-row .group-right .leclub {
   background: #ee9c1b;
   padding: 0 5px;
@@ -11547,7 +11550,7 @@ body.front .node-page.view-mode-full .field-name-title {
   display: inline-block;
   line-height: 34px;
 }
-/* line 142, ../sass/partials/pages/_past_event.scss */
+/* line 145, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .view-id-evenements.view-display-id-block_3 .views-row .group-right .past-value {
   background: #000;
   padding: 0 5px 2px 5px;
@@ -11559,7 +11562,7 @@ body.front .node-page.view-mode-full .field-name-title {
   line-height: 20px;
   text-transform: uppercase;
 }
-/* line 154, ../sass/partials/pages/_past_event.scss */
+/* line 157, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .view-id-evenements.view-display-id-block_3 .views-row .group-right .field-name-title h2 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 25px;
@@ -11569,7 +11572,7 @@ body.front .node-page.view-mode-full .field-name-title {
   margin: 0;
   width: 300px;
 }
-/* line 164, ../sass/partials/pages/_past_event.scss */
+/* line 167, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .view-id-evenements.view-display-id-block_3 .views-row .group-right .field-name-field-event-intervenant {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
@@ -11577,14 +11580,14 @@ body.front .node-page.view-mode-full .field-name-title {
   font-weight: 300;
   line-height: 17px;
 }
-/* line 171, ../sass/partials/pages/_past_event.scss */
+/* line 174, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .view-id-evenements.view-display-id-block_3 .views-row .group-right .field-name-field-event-date {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 15px;
   color: #fff;
   font-weight: 600;
 }
-/* line 178, ../sass/partials/pages/_past_event.scss */
+/* line 181, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .view-id-evenements.view-display-id-block_3 .views-row .group-right .field-name-node-link a {
   text-indent: -6000px;
   position: absolute;
@@ -11593,11 +11596,11 @@ body.front .node-page.view-mode-full .field-name-title {
   bottom: 0;
   right: 0;
 }
-/* line 187, ../sass/partials/pages/_past_event.scss */
+/* line 190, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .view-id-evenements.view-display-id-block_3 .views-row .group-right .field-name-field-event-inscription {
   display: none;
 }
-/* line 195, ../sass/partials/pages/_past_event.scss */
+/* line 198, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .aurore-bottom-block {
   position: relative;
   min-height: 1px;
@@ -11607,20 +11610,20 @@ body.front .node-page.view-mode-full .field-name-title {
   padding-right: 0;
 }
 @media (min-width: 992px) {
-  /* line 195, ../sass/partials/pages/_past_event.scss */
+  /* line 198, ../sass/partials/pages/_past_event.scss */
   .region-banner-bottom .aurore-bottom-block {
     float: left;
     width: 50%;
   }
 }
 @media (max-width: 992px) {
-  /* line 195, ../sass/partials/pages/_past_event.scss */
+  /* line 198, ../sass/partials/pages/_past_event.scss */
   .region-banner-bottom .aurore-bottom-block {
     padding: 0 15px;
     margin-top: 15px;
   }
 }
-/* line 203, ../sass/partials/pages/_past_event.scss */
+/* line 206, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .aurore-bottom-block .aurore-image {
   height: 160px;
   width: 100%;
@@ -11628,14 +11631,14 @@ body.front .node-page.view-mode-full .field-name-title {
   background-size: cover;
   margin-bottom: 15px;
 }
-/* line 210, ../sass/partials/pages/_past_event.scss */
+/* line 213, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .aurore-bottom-block .aurore-top {
   width: 95%;
   top: 5px;
   position: absolute;
   margin-left: 2%;
 }
-/* line 216, ../sass/partials/pages/_past_event.scss */
+/* line 219, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .aurore-bottom-block .aurore-top .aurore-title h2 {
   background: #ee9c1b;
   padding: 0 5px;
@@ -11647,7 +11650,7 @@ body.front .node-page.view-mode-full .field-name-title {
   line-height: 34px;
   margin: 0;
 }
-/* line 228, ../sass/partials/pages/_past_event.scss */
+/* line 231, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .aurore-bottom-block .aurore-top h3 {
   background: #000;
   padding: 0 5px 2px 5px;
@@ -11661,7 +11664,7 @@ body.front .node-page.view-mode-full .field-name-title {
   margin: 0;
   width: 245px;
 }
-/* line 242, ../sass/partials/pages/_past_event.scss */
+/* line 245, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .aurore-bottom-block .aurore-link-yellow {
   text-indent: -6000px;
   position: absolute;
