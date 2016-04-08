@@ -9880,23 +9880,27 @@ footer .region-footer .social-footer-block a.youtube:before {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 107, ../sass/partials/components/_footer.scss */
+/* line 106, ../sass/partials/components/_footer.scss */
+footer .region-footer .social-footer-block a:hover {
+  text-decoration: none;
+}
+/* line 108, ../sass/partials/components/_footer.scss */
 footer .region-footer .social-footer-block a:hover:before {
   color: white;
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 114, ../sass/partials/components/_footer.scss */
+/* line 115, ../sass/partials/components/_footer.scss */
 footer .region-footer #block-menu-menu-footer-menu-second {
   clear: both;
   padding: 0 15px;
 }
-/* line 118, ../sass/partials/components/_footer.scss */
+/* line 119, ../sass/partials/components/_footer.scss */
 footer .region-footer #block-menu-menu-footer-menu-second ul li {
   display: inline-block;
 }
-/* line 120, ../sass/partials/components/_footer.scss */
+/* line 121, ../sass/partials/components/_footer.scss */
 footer .region-footer #block-menu-menu-footer-menu-second ul li a {
   font-size: 14px;
   line-height: 22px;
@@ -9908,7 +9912,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li a {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 129, ../sass/partials/components/_footer.scss */
+/* line 130, ../sass/partials/components/_footer.scss */
 footer .region-footer #block-menu-menu-footer-menu-second ul li:after {
   content: ' | ';
   display: inline-block;
@@ -9916,19 +9920,19 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:after {
   line-height: 22px;
   color: #808080;
 }
-/* line 137, ../sass/partials/components/_footer.scss */
+/* line 138, ../sass/partials/components/_footer.scss */
 footer .region-footer #block-menu-menu-footer-menu-second ul li:first-child a {
   padding-left: 0;
 }
-/* line 142, ../sass/partials/components/_footer.scss */
+/* line 143, ../sass/partials/components/_footer.scss */
 footer .region-footer #block-menu-menu-footer-menu-second ul li:last-child:after {
   content: '';
 }
-/* line 146, ../sass/partials/components/_footer.scss */
+/* line 147, ../sass/partials/components/_footer.scss */
 footer .region-footer #block-menu-menu-footer-menu-second ul li:hover {
   background: none;
 }
-/* line 148, ../sass/partials/components/_footer.scss */
+/* line 149, ../sass/partials/components/_footer.scss */
 footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   background: none;
   color: #fff;
@@ -9937,7 +9941,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   transition: all, 0.3s;
 }
 
-/* line 159, ../sass/partials/components/_footer.scss */
+/* line 160, ../sass/partials/components/_footer.scss */
 .node-webform footer {
   display: none;
 }

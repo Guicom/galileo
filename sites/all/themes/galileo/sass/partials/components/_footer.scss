@@ -104,6 +104,7 @@ footer {
           }
         }
         &:hover {
+          text-decoration: none;
           &:before {
             color: rgba($white, 1);
             @include custom-transition;
