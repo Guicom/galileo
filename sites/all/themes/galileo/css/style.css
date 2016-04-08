@@ -11197,7 +11197,7 @@ body.front .node-page.view-mode-full .field-name-title {
   display: block;
   font-size: 24px;
   font-weight: 600;
-  line-height: 48px;
+  line-height: 46px;
 }
 /* line 173, ../sass/partials/utility/_mixins.scss */
 .node-event.view-mode-full.next-event .left-side .field-name-field-event-inscription a:hover {
@@ -11392,7 +11392,7 @@ body.front .node-page.view-mode-full .field-name-title {
   display: block;
   font-size: 24px;
   font-weight: 600;
-  line-height: 48px;
+  line-height: 46px;
 }
 /* line 173, ../sass/partials/utility/_mixins.scss */
 .node-event.view-mode-full.past-event .left-side .field-name-field-event-inscription a:hover {
