@@ -11026,12 +11026,9 @@ body.front .node-page.view-mode-full .field-name-title {
 .node-event.view-mode-full.next-event .left-side .event-info {
   background: #000;
   min-height: 57px;
-}
-@media (max-width: 768px) {
-  /* line 3, ../sass/partials/pages/_next_event.scss */
-  .node-event.view-mode-full.next-event .left-side .event-info {
-    /*min-height: 114px;*/
-  }
+  /*@media (max-width: $screen-sm) {
+    min-height: 114px;
+  }*/
 }
 /* line 9, ../sass/partials/pages/_next_event.scss */
 .node-event.view-mode-full.next-event .left-side .event-info .event-date {
@@ -11314,12 +11311,9 @@ body.front .node-page.view-mode-full .field-name-title {
   background: #000;
   min-height: 57px;
   margin: 0 0 30px 0;
-}
-@media (max-width: 768px) {
-  /* line 4, ../sass/partials/pages/_past_event.scss */
-  .node-event.view-mode-full.past-event .left-side .event-info {
+  /*@media (max-width: $screen-sm) {
     min-height: 114px;
-  }
+  }*/
 }
 /* line 11, ../sass/partials/pages/_past_event.scss */
 .node-event.view-mode-full.past-event .left-side .event-info p {
