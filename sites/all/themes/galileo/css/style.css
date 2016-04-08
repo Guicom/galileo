@@ -11030,7 +11030,7 @@ body.front .node-page.view-mode-full .field-name-title {
 @media (max-width: 768px) {
   /* line 3, ../sass/partials/pages/_next_event.scss */
   .node-event.view-mode-full.next-event .left-side .event-info {
-    min-height: 114px;
+    /*min-height: 114px;*/
   }
 }
 /* line 9, ../sass/partials/pages/_next_event.scss */
