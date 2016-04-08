@@ -50,8 +50,8 @@
         font-weight: 300;
         color: $white;
         background: $black;
-        display: inline-block;
-        width: 180px;
+        display: table;
+        padding: 0px 2px;
       }
       .field-name-node-link {
         a {
