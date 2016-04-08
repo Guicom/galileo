@@ -9474,7 +9474,12 @@ hr {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 36, ../sass/partials/components/_teaser_event.scss */
+/* line 35, ../sass/partials/components/_teaser_event.scss */
+.view-evenements .ds-2col-fluid.node-event.node-teaser > .group-right .field-name-title {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* line 37, ../sass/partials/components/_teaser_event.scss */
 .view-evenements .ds-2col-fluid.node-event.node-teaser > .group-right .field-name-title h2 {
   font-size: 24px;
   color: #fff;
@@ -9485,7 +9490,7 @@ hr {
   width: 200px;
   min-height: 48px;
 }
-/* line 47, ../sass/partials/components/_teaser_event.scss */
+/* line 48, ../sass/partials/components/_teaser_event.scss */
 .view-evenements .ds-2col-fluid.node-event.node-teaser > .group-right .field-name-field-event-intervenant {
   font-size: 16px;
   line-height: 21px;
@@ -9494,8 +9499,10 @@ hr {
   background: #000;
   display: table;
   padding: 0px 2px;
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
-/* line 57, ../sass/partials/components/_teaser_event.scss */
+/* line 59, ../sass/partials/components/_teaser_event.scss */
 .view-evenements .ds-2col-fluid.node-event.node-teaser > .group-right .field-name-node-link a {
   position: absolute;
   top: 0;
@@ -9505,7 +9512,7 @@ hr {
   color: transparent;
 }
 @media (max-width: 768px) {
-  /* line 57, ../sass/partials/components/_teaser_event.scss */
+  /* line 59, ../sass/partials/components/_teaser_event.scss */
   .view-evenements .ds-2col-fluid.node-event.node-teaser > .group-right .field-name-node-link a {
     background: #ee9c1b;
     color: #000;
@@ -9539,7 +9546,7 @@ hr {
     transition: all, 0.3s;
   }
 }
-/* line 79, ../sass/partials/components/_teaser_event.scss */
+/* line 81, ../sass/partials/components/_teaser_event.scss */
 .view-evenements .ds-2col-fluid.node-event.node-teaser > .group-right .field-name-field-event-date {
   font-size: 16px;
   line-height: 21px;
@@ -9548,7 +9555,7 @@ hr {
   display: inline-block;
   width: 180px;
 }
-/* line 91, ../sass/partials/components/_teaser_event.scss */
+/* line 93, ../sass/partials/components/_teaser_event.scss */
 .view-evenements .ds-2col-fluid.node-event.node-teaser:hover > .group-left img {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -9558,7 +9565,7 @@ hr {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 96, ../sass/partials/components/_teaser_event.scss */
+/* line 98, ../sass/partials/components/_teaser_event.scss */
 .view-evenements .ds-2col-fluid.node-event.node-teaser:hover > .group-right {
   border-color: #ee9c1b;
   background: transparent;
@@ -9566,16 +9573,18 @@ hr {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 100, ../sass/partials/components/_teaser_event.scss */
+/* line 102, ../sass/partials/components/_teaser_event.scss */
 .view-evenements .ds-2col-fluid.node-event.node-teaser:hover > .group-right .field-name-title,
 .view-evenements .ds-2col-fluid.node-event.node-teaser:hover > .group-right .field-name-field-event-date,
 .view-evenements .ds-2col-fluid.node-event.node-teaser:hover > .group-right .field-name-field-event-intervenant {
   visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 107, ../sass/partials/components/_teaser_event.scss */
+/* line 110, ../sass/partials/components/_teaser_event.scss */
 .view-evenements .ds-2col-fluid.node-event.node-teaser:hover > .group-right .field-name-node-link a {
   background: #ee9c1b;
   color: #000;

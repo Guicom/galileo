@@ -33,6 +33,7 @@
       @include custom-transition;
 
       .field-name-title {
+        @include opacity(1);
         h2 {
           font-size: 24px;
           color: $white;
@@ -52,6 +53,7 @@
         background: $black;
         display: table;
         padding: 0px 2px;
+        @include opacity(1);
       }
       .field-name-node-link {
         a {
@@ -101,6 +103,7 @@
         .field-name-field-event-date,
         .field-name-field-event-intervenant {
           visibility: hidden;
+          @include opacity(0);
           @include custom-transition;
         }
         .field-name-node-link {
