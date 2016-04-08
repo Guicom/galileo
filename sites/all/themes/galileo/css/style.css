@@ -10497,7 +10497,6 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   text-transform: uppercase;
   color: #fff;
   margin: 0;
-  width: 300px;
 }
 @media (max-width: 480px) {
   /* line 49, ../sass/partials/components/_banner.scss */
@@ -10505,7 +10504,7 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
     font-size: 39px;
   }
 }
-/* line 62, ../sass/partials/components/_banner.scss */
+/* line 61, ../sass/partials/components/_banner.scss */
 .highlighted .view-evenements.view-id-evenements .views-row .group-right .field-name-field-event-intervenant {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 39px;
@@ -10514,12 +10513,12 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   line-height: 39px;
 }
 @media (max-width: 480px) {
-  /* line 62, ../sass/partials/components/_banner.scss */
+  /* line 61, ../sass/partials/components/_banner.scss */
   .highlighted .view-evenements.view-id-evenements .views-row .group-right .field-name-field-event-intervenant {
     font-size: 29px;
   }
 }
-/* line 72, ../sass/partials/components/_banner.scss */
+/* line 71, ../sass/partials/components/_banner.scss */
 .highlighted .view-evenements.view-id-evenements .views-row .group-right .field-name-field-event-date {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 15px;
@@ -10527,13 +10526,13 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   font-weight: 600;
   margin-bottom: 15px;
 }
-/* line 79, ../sass/partials/components/_banner.scss */
+/* line 78, ../sass/partials/components/_banner.scss */
 .highlighted .view-evenements.view-id-evenements .views-row .group-right .field-name-node-link {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
 }
-/* line 83, ../sass/partials/components/_banner.scss */
+/* line 82, ../sass/partials/components/_banner.scss */
 .highlighted .view-evenements.view-id-evenements .views-row .group-right .field-name-node-link a {
   background: #fff;
   color: #000;
@@ -10559,12 +10558,12 @@ footer .region-footer #block-menu-menu-footer-menu-second ul li:hover a {
   transition: all, 0.3s;
   text-decoration: none;
 }
-/* line 91, ../sass/partials/components/_banner.scss */
+/* line 90, ../sass/partials/components/_banner.scss */
 .highlighted .view-evenements.view-id-evenements .views-row .group-right .field-name-field-event-inscription {
   float: left;
   margin-right: 20px;
 }
-/* line 94, ../sass/partials/components/_banner.scss */
+/* line 93, ../sass/partials/components/_banner.scss */
 .highlighted .view-evenements.view-id-evenements .views-row .group-right .field-name-field-event-inscription a {
   background: transparent;
   color: #fff;
@@ -11573,9 +11572,8 @@ body.front .node-page.view-mode-full .field-name-title {
   text-transform: uppercase;
   color: #fff;
   margin: 0;
-  width: 300px;
 }
-/* line 167, ../sass/partials/pages/_past_event.scss */
+/* line 166, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .view-id-evenements.view-display-id-block_3 .views-row .group-right .field-name-field-event-intervenant {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
@@ -11583,14 +11581,14 @@ body.front .node-page.view-mode-full .field-name-title {
   font-weight: 300;
   line-height: 17px;
 }
-/* line 174, ../sass/partials/pages/_past_event.scss */
+/* line 173, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .view-id-evenements.view-display-id-block_3 .views-row .group-right .field-name-field-event-date {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 15px;
   color: #fff;
   font-weight: 600;
 }
-/* line 181, ../sass/partials/pages/_past_event.scss */
+/* line 180, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .view-id-evenements.view-display-id-block_3 .views-row .group-right .field-name-node-link a {
   text-indent: -6000px;
   position: absolute;
@@ -11599,11 +11597,11 @@ body.front .node-page.view-mode-full .field-name-title {
   bottom: 0;
   right: 0;
 }
-/* line 190, ../sass/partials/pages/_past_event.scss */
+/* line 189, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .view-id-evenements.view-display-id-block_3 .views-row .group-right .field-name-field-event-inscription {
   display: none;
 }
-/* line 198, ../sass/partials/pages/_past_event.scss */
+/* line 197, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .aurore-bottom-block {
   position: relative;
   min-height: 1px;
@@ -11613,20 +11611,20 @@ body.front .node-page.view-mode-full .field-name-title {
   padding-right: 0;
 }
 @media (min-width: 992px) {
-  /* line 198, ../sass/partials/pages/_past_event.scss */
+  /* line 197, ../sass/partials/pages/_past_event.scss */
   .region-banner-bottom .aurore-bottom-block {
     float: left;
     width: 50%;
   }
 }
 @media (max-width: 992px) {
-  /* line 198, ../sass/partials/pages/_past_event.scss */
+  /* line 197, ../sass/partials/pages/_past_event.scss */
   .region-banner-bottom .aurore-bottom-block {
     padding: 0 15px;
     margin-top: 15px;
   }
 }
-/* line 206, ../sass/partials/pages/_past_event.scss */
+/* line 205, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .aurore-bottom-block .aurore-image {
   height: 160px;
   width: 100%;
@@ -11634,14 +11632,14 @@ body.front .node-page.view-mode-full .field-name-title {
   background-size: cover;
   margin-bottom: 15px;
 }
-/* line 213, ../sass/partials/pages/_past_event.scss */
+/* line 212, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .aurore-bottom-block .aurore-top {
   width: 95%;
   top: 5px;
   position: absolute;
   margin-left: 2%;
 }
-/* line 219, ../sass/partials/pages/_past_event.scss */
+/* line 218, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .aurore-bottom-block .aurore-top .aurore-title h2 {
   background: #ee9c1b;
   padding: 0 5px;
@@ -11653,7 +11651,7 @@ body.front .node-page.view-mode-full .field-name-title {
   line-height: 34px;
   margin: 0;
 }
-/* line 231, ../sass/partials/pages/_past_event.scss */
+/* line 230, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .aurore-bottom-block .aurore-top h3 {
   background: #000;
   padding: 0 5px 2px 5px;
@@ -11667,7 +11665,7 @@ body.front .node-page.view-mode-full .field-name-title {
   margin: 0;
   width: 245px;
 }
-/* line 245, ../sass/partials/pages/_past_event.scss */
+/* line 244, ../sass/partials/pages/_past_event.scss */
 .region-banner-bottom .aurore-bottom-block .aurore-link-yellow {
   text-indent: -6000px;
   position: absolute;
