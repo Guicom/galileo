@@ -34,6 +34,11 @@ function ga_ct_evenement_ds_field_settings_info() {
         'ft' => array(),
       ),
     ),
+    'field_event_date' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
   );
   $export['node|event|banner_with_buttons'] = $ds_fieldsetting;
 

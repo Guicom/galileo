@@ -36,6 +36,16 @@ function galileo_master_form_alter(&$form, &$form_state, $form_id){
     switch($form_id){
         case 'registration_form':
             $form['field_registration_accompagnant']['und']['add_more']['#value'] = "Ajouter un participants";
+            $form['field_registration_accompagnant']['und'][0]['field_registration_invite_statut']['und']['#default_value'] = 0;
+            $form['field_registration_accompagnant']['und'][0]['field_registration_invite_statut']['und']['#access'] = 0;
+            $form['field_registration_accompagnant']['und'][0]['field_registration_invite_statut']['und']['#disabled'] = 1;
+
+            foreach($form['field_registration_accompagnant']['und'] as $key => $accompagnant){
+                if($key >= 1){
+                  $form['field_registration_accompagnant']['und'][$key]['field_registration_invite_statut']['und']['#access'] = 0;
+                  $form['field_registration_accompagnant']['und'][$key]['field_registration_invite_statut']['und']['#disabled'] = 1;
+                }
+            }
             $form['anon_mail']['#access'] = false;
             $form['anon_mail']['#default_value'] = time()."@actency.fr";
             $form['#submit'][] = 'galileo_master_form_alter_submit';
@@ -44,6 +54,7 @@ function galileo_master_form_alter(&$form, &$form_state, $form_id){
     }
 }
 
+
 function  galileo_master_form_alter_submit($form, &$form_state) {
     $form_state['values']['anon_mail'] = $form_state['values']['field_registration_accompagnant']['und'][0]['field_registration_mail']['und'][0]['email'];
     $data['accompagnants'] = $form_state['values']['field_registration_accompagnant']['und'];
@@ -51,7 +62,9 @@ function  galileo_master_form_alter_submit($form, &$form_state) {
     $data['adresse']['adresse2'] = $form_state['values']['field_registration_adresse_2']['und'][0]['value'];
     $data['adresse']['field_registration_postal'] = $form_state['values']['field_registration_postal']['und'][0]['value'];
     $data['adresse']['field_registration_ville'] = $form_state['values']['field_registration_ville']['und'][0]['value'];
+
     unset($data['accompagnants']['add_more']);
+
     _galileo_master_send_notification($data);
 }
 

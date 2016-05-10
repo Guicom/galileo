@@ -46,6 +46,45 @@ function ga_ct_evenement_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'field_collection_item-field_registration_accompagnant-field_registration_invite_statut'.
+  $field_instances['field_collection_item-field_registration_accompagnant-field_registration_invite_statut'] = array(
+    'bundle' => 'field_registration_accompagnant',
+    'default_value' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 7,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_registration_invite_statut',
+    'label' => 'Utilisateur invité',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance:
   // 'field_collection_item-field_registration_accompagnant-field_registration_mail'.
   $field_instances['field_collection_item-field_registration_accompagnant-field_registration_mail'] = array(
     'bundle' => 'field_registration_accompagnant',
@@ -75,7 +114,7 @@ function ga_ct_evenement_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -145,7 +184,7 @@ function ga_ct_evenement_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -1428,6 +1467,7 @@ function ga_ct_evenement_field_default_field_instances() {
   t('Prénom');
   t('Société ');
   t('Téléphone portable');
+  t('Utilisateur invité');
   t('Vidéos');
   t('Ville');
 

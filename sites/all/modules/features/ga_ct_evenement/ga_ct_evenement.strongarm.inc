@@ -101,6 +101,15 @@ function ga_ct_evenement_strongarm() {
       'banner_with_buttons' => array(
         'custom_settings' => TRUE,
       ),
+      'teaser_sidebar' => array(
+        'custom_settings' => FALSE,
+      ),
+      'teaser_slide' => array(
+        'custom_settings' => FALSE,
+      ),
+      'test' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

@@ -534,6 +534,31 @@ function ga_field_base_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_registration_invite_statut'.
+  $field_bases['field_registration_invite_statut'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_registration_invite_statut',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => 'non',
+        1 => 'oui',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_boolean',
+  );
+
   // Exported field_base: 'field_registration_mail'.
   $field_bases['field_registration_mail'] = array(
     'active' => 1,
