@@ -87,3 +87,4 @@ function galileo_master_mail($key, &$message, $params) {
         L'équipe de GALILEO";
     }
 }
+
