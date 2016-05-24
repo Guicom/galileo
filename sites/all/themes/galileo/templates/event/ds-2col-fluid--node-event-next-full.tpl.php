@@ -18,7 +18,7 @@
     </div>
     <?php print render($content['field_event_date_limite']); ?>
     <?php print render($content['body']); ?>
-    <a class="tarif-link" href="tarifs">Voir les tarifs</a>
+    <a class="tarif-link" href="/tarifs">Voir les tarifs</a>
     <?php print render($content['field_event_inscription']); ?>
   </div>
   <div class="right-side col-md-4 col-xs-12">
