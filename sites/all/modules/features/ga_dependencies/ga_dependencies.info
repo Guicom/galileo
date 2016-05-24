@@ -55,6 +55,7 @@ dependencies[] = ga_vw_export
 dependencies[] = ga_vw_intervenants
 dependencies[] = galileo_master
 dependencies[] = ge_bk_contact_footer
+dependencies[] = ga_pathauto
 dependencies[] = i18n
 dependencies[] = i18n_block
 dependencies[] = i18n_contact
