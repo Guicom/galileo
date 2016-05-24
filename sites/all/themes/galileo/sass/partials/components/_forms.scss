@@ -63,3 +63,22 @@ form{
   display: none;
 }
 
+.page-node-add {
+  form {
+    .form-wrapper.form-group{
+      clear: both;
+      width: 100%;
+    }
+    .form-wrapper.field-type-image,
+    .form-wrapper.field-type-file,
+    .form-wrapper.field-type-entityreference,
+    .tabbable{
+      clear: both;
+      width: 60%;
+    }
+    .field-type-registration {
+      visibility: hidden;
+    }
+  }
+}
+
