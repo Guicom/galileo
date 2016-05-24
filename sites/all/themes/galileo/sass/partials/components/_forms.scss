@@ -1,7 +1,8 @@
 form{
   .form-item,
   .field-type-text,
-  .form-type-textfield{
+  .form-type-textfield,
+  .field-type-list-text {
     @include text-field;
   }
   .form-item,
@@ -46,6 +47,7 @@ form{
   .field-name-field-registration-accompagnant{
     .field-multiple-table{
       button.form-submit.btn-danger{
+        clear: both;
         @include submit-cancel;
         width: 100px;
         padding: 0;
@@ -55,5 +57,9 @@ form{
       @include add-more-button;
     }
   }
+}
+
+.field-name-field-registration-invite-statut {
+  display: none;
 }
 

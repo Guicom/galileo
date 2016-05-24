@@ -35,7 +35,7 @@ function galileo_master_init() {
 function galileo_master_form_alter(&$form, &$form_state, $form_id){
     switch($form_id){
         case 'registration_form':
-            $form['field_registration_accompagnant']['und']['add_more']['#value'] = "Ajouter un participants";
+            $form['field_registration_accompagnant']['und']['add_more']['#value'] = "Ajouter un invité";
             $form['field_registration_accompagnant']['und'][0]['field_registration_invite_statut']['und']['#default_value'] = 0;
             $form['field_registration_accompagnant']['und'][0]['field_registration_invite_statut']['und']['#access'] = 0;
             $form['field_registration_accompagnant']['und'][0]['field_registration_invite_statut']['und']['#disabled'] = 1;

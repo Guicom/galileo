@@ -11,6 +11,39 @@ function ga_ct_evenement_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
+  // 'field_collection_item-field_registration_accompagnant-field_adhesion'.
+  $field_instances['field_collection_item-field_registration_accompagnant-field_adhesion'] = array(
+    'bundle' => 'field_registration_accompagnant',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 8,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_adhesion',
+    'label' => 'Adhésion',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance:
   // 'field_collection_item-field_registration_accompagnant-field_registration_fonction'.
   $field_instances['field_collection_item-field_registration_accompagnant-field_registration_fonction'] = array(
     'bundle' => 'field_registration_accompagnant',
@@ -1366,10 +1399,11 @@ function ga_ct_evenement_field_default_field_instances() {
         'weight' => 11,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'registration',
     'field_name' => 'field_registration_adresse_2',
-    'label' => 'Adresse 2',
-    'required' => 1,
+    'label' => 'Adresse ligne 2',
+    'required' => 0,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -1462,9 +1496,10 @@ function ga_ct_evenement_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Adhésion');
   t('Adresse');
   t('Adresse ');
-  t('Adresse 2');
+  t('Adresse ligne 2');
   t('Code postal');
   t('Date');
   t('Date limite d\'inscription');

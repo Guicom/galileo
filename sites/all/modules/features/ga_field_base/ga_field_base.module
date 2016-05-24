@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the ga_field_base feature.
  */
+
+include_once 'ga_field_base.features.inc';
