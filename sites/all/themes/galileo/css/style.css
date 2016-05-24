@@ -10899,6 +10899,24 @@ form .field-name-field-registration-accompagnant button.form-submit.field-add-mo
   display: none;
 }
 
+/* line 68, ../sass/partials/components/_forms.scss */
+.page-node-add form .form-wrapper.form-group {
+  clear: both;
+  width: 100%;
+}
+/* line 75, ../sass/partials/components/_forms.scss */
+.page-node-add form .form-wrapper.field-type-image,
+.page-node-add form .form-wrapper.field-type-file,
+.page-node-add form .form-wrapper.field-type-entityreference,
+.page-node-add form .tabbable {
+  clear: both;
+  width: 60%;
+}
+/* line 79, ../sass/partials/components/_forms.scss */
+.page-node-add form .field-type-registration {
+  visibility: hidden;
+}
+
 /* line 2, ../sass/partials/pages/_intervants.scss */
 .node-type-intervenant .page-header {
   color: #ee9c1b;
