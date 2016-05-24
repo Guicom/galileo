@@ -52,6 +52,35 @@ function ga_field_base_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_adhesion'.
+  $field_bases['field_adhesion'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_adhesion',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'gold' => 'Gold',
+        'silver' => 'Silver',
+        'block' => 'Black',
+        '4invites' => 'Carte 4 invités',
+        '6invites' => 'Carte 6 invités',
+        '10invites' => 'Carte 10 invités',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_basic_image_banniere'.
   $field_bases['field_basic_image_banniere'] = array(
     'active' => 1,

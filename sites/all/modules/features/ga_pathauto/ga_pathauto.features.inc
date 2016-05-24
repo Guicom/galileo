@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * ga_field_base.features.inc
+ * ga_pathauto.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function ga_field_base_ctools_plugin_api($module = NULL, $api = NULL) {
+function ga_pathauto_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }

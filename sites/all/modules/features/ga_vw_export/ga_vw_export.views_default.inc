@@ -202,7 +202,7 @@ function ga_vw_export_views_default_views() {
   $handler->display->display_options['fields']['field_registration_adresse']['field'] = 'field_registration_adresse';
   $handler->display->display_options['fields']['field_registration_adresse']['label'] = 'Adresse';
   $handler->display->display_options['fields']['field_registration_adresse']['exclude'] = TRUE;
-  /* Champ: Inscription : Adresse 2 */
+  /* Champ: Inscription : Adresse ligne 2 */
   $handler->display->display_options['fields']['field_registration_adresse_2']['id'] = 'field_registration_adresse_2';
   $handler->display->display_options['fields']['field_registration_adresse_2']['table'] = 'field_data_field_registration_adresse_2';
   $handler->display->display_options['fields']['field_registration_adresse_2']['field'] = 'field_registration_adresse_2';
@@ -221,34 +221,39 @@ function ga_vw_export_views_default_views() {
   $handler->display->display_options['fields']['field_registration_ville']['table'] = 'field_data_field_registration_ville';
   $handler->display->display_options['fields']['field_registration_ville']['field'] = 'field_registration_ville';
   $handler->display->display_options['fields']['field_registration_ville']['exclude'] = TRUE;
-  /* Champ: Élément Field collection : Nom */
-  $handler->display->display_options['fields']['field_registration_nom']['id'] = 'field_registration_nom';
-  $handler->display->display_options['fields']['field_registration_nom']['table'] = 'field_data_field_registration_nom';
-  $handler->display->display_options['fields']['field_registration_nom']['field'] = 'field_registration_nom';
-  $handler->display->display_options['fields']['field_registration_nom']['relationship'] = 'field_registration_accompagnant_value';
+  /* Champ: Élément Field collection : Adhésion */
+  $handler->display->display_options['fields']['field_adhesion']['id'] = 'field_adhesion';
+  $handler->display->display_options['fields']['field_adhesion']['table'] = 'field_data_field_adhesion';
+  $handler->display->display_options['fields']['field_adhesion']['field'] = 'field_adhesion';
+  $handler->display->display_options['fields']['field_adhesion']['relationship'] = 'field_registration_accompagnant_value';
+  /* Champ: Inscription : Date de création */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'registration';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = 'Inscrit le';
+  $handler->display->display_options['fields']['created']['date_format'] = 'custom';
+  $handler->display->display_options['fields']['created']['custom_date_format'] = 'd/m/Y H:i';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Champ: Élément Field collection : Prénom */
   $handler->display->display_options['fields']['field_registration_prenom']['id'] = 'field_registration_prenom';
   $handler->display->display_options['fields']['field_registration_prenom']['table'] = 'field_data_field_registration_prenom';
   $handler->display->display_options['fields']['field_registration_prenom']['field'] = 'field_registration_prenom';
   $handler->display->display_options['fields']['field_registration_prenom']['relationship'] = 'field_registration_accompagnant_value';
-  /* Champ: Global : Texte personnalisé */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = 'Adresse de facturation';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_registration_adresse]<br>
-[field_registration_adresse_2]<br>
-[field_registration_postal] [field_registration_ville]';
-  /* Champ: Élément Field collection : Fonction */
-  $handler->display->display_options['fields']['field_registration_fonction']['id'] = 'field_registration_fonction';
-  $handler->display->display_options['fields']['field_registration_fonction']['table'] = 'field_data_field_registration_fonction';
-  $handler->display->display_options['fields']['field_registration_fonction']['field'] = 'field_registration_fonction';
-  $handler->display->display_options['fields']['field_registration_fonction']['relationship'] = 'field_registration_accompagnant_value';
+  /* Champ: Élément Field collection : Nom */
+  $handler->display->display_options['fields']['field_registration_nom']['id'] = 'field_registration_nom';
+  $handler->display->display_options['fields']['field_registration_nom']['table'] = 'field_data_field_registration_nom';
+  $handler->display->display_options['fields']['field_registration_nom']['field'] = 'field_registration_nom';
+  $handler->display->display_options['fields']['field_registration_nom']['relationship'] = 'field_registration_accompagnant_value';
   /* Champ: Élément Field collection : Société  */
   $handler->display->display_options['fields']['field_registration_societe']['id'] = 'field_registration_societe';
   $handler->display->display_options['fields']['field_registration_societe']['table'] = 'field_data_field_registration_societe';
   $handler->display->display_options['fields']['field_registration_societe']['field'] = 'field_registration_societe';
   $handler->display->display_options['fields']['field_registration_societe']['relationship'] = 'field_registration_accompagnant_value';
+  /* Champ: Élément Field collection : Fonction */
+  $handler->display->display_options['fields']['field_registration_fonction']['id'] = 'field_registration_fonction';
+  $handler->display->display_options['fields']['field_registration_fonction']['table'] = 'field_data_field_registration_fonction';
+  $handler->display->display_options['fields']['field_registration_fonction']['field'] = 'field_registration_fonction';
+  $handler->display->display_options['fields']['field_registration_fonction']['relationship'] = 'field_registration_accompagnant_value';
   /* Champ: Élément Field collection : Email */
   $handler->display->display_options['fields']['field_registration_mail']['id'] = 'field_registration_mail';
   $handler->display->display_options['fields']['field_registration_mail']['table'] = 'field_data_field_registration_mail';
@@ -260,14 +265,14 @@ function ga_vw_export_views_default_views() {
   $handler->display->display_options['fields']['field_registration_phone']['table'] = 'field_data_field_registration_phone';
   $handler->display->display_options['fields']['field_registration_phone']['field'] = 'field_registration_phone';
   $handler->display->display_options['fields']['field_registration_phone']['relationship'] = 'field_registration_accompagnant_value';
-  /* Champ: Inscription : Date de création */
-  $handler->display->display_options['fields']['created']['id'] = 'created';
-  $handler->display->display_options['fields']['created']['table'] = 'registration';
-  $handler->display->display_options['fields']['created']['field'] = 'created';
-  $handler->display->display_options['fields']['created']['label'] = 'Inscrit le';
-  $handler->display->display_options['fields']['created']['date_format'] = 'custom';
-  $handler->display->display_options['fields']['created']['custom_date_format'] = 'd/m/Y H:i';
-  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
+  /* Champ: Global : Texte personnalisé */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = 'Adresse de facturation';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_registration_adresse]<br>
+[field_registration_adresse_2]<br>
+[field_registration_postal] [field_registration_ville]';
   /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -356,7 +361,7 @@ function ga_vw_export_views_default_views() {
   $handler->display->display_options['fields']['field_registration_adresse']['field'] = 'field_registration_adresse';
   $handler->display->display_options['fields']['field_registration_adresse']['label'] = 'Adresse';
   $handler->display->display_options['fields']['field_registration_adresse']['exclude'] = TRUE;
-  /* Champ: Inscription : Adresse 2 */
+  /* Champ: Inscription : Adresse ligne 2 */
   $handler->display->display_options['fields']['field_registration_adresse_2']['id'] = 'field_registration_adresse_2';
   $handler->display->display_options['fields']['field_registration_adresse_2']['table'] = 'field_data_field_registration_adresse_2';
   $handler->display->display_options['fields']['field_registration_adresse_2']['field'] = 'field_registration_adresse_2';
@@ -375,34 +380,39 @@ function ga_vw_export_views_default_views() {
   $handler->display->display_options['fields']['field_registration_ville']['table'] = 'field_data_field_registration_ville';
   $handler->display->display_options['fields']['field_registration_ville']['field'] = 'field_registration_ville';
   $handler->display->display_options['fields']['field_registration_ville']['exclude'] = TRUE;
-  /* Champ: Élément Field collection : Nom */
-  $handler->display->display_options['fields']['field_registration_nom']['id'] = 'field_registration_nom';
-  $handler->display->display_options['fields']['field_registration_nom']['table'] = 'field_data_field_registration_nom';
-  $handler->display->display_options['fields']['field_registration_nom']['field'] = 'field_registration_nom';
-  $handler->display->display_options['fields']['field_registration_nom']['relationship'] = 'field_registration_accompagnant_value';
+  /* Champ: Élément Field collection : Adhésion */
+  $handler->display->display_options['fields']['field_adhesion']['id'] = 'field_adhesion';
+  $handler->display->display_options['fields']['field_adhesion']['table'] = 'field_data_field_adhesion';
+  $handler->display->display_options['fields']['field_adhesion']['field'] = 'field_adhesion';
+  $handler->display->display_options['fields']['field_adhesion']['relationship'] = 'field_registration_accompagnant_value';
+  /* Champ: Inscription : Date de création */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'registration';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = 'Inscrit le';
+  $handler->display->display_options['fields']['created']['date_format'] = 'custom';
+  $handler->display->display_options['fields']['created']['custom_date_format'] = 'd/m/Y H:i';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Champ: Élément Field collection : Prénom */
   $handler->display->display_options['fields']['field_registration_prenom']['id'] = 'field_registration_prenom';
   $handler->display->display_options['fields']['field_registration_prenom']['table'] = 'field_data_field_registration_prenom';
   $handler->display->display_options['fields']['field_registration_prenom']['field'] = 'field_registration_prenom';
   $handler->display->display_options['fields']['field_registration_prenom']['relationship'] = 'field_registration_accompagnant_value';
-  /* Champ: Global : Texte personnalisé */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = 'Adresse de facturation';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_registration_adresse]<br>
-[field_registration_adresse_2]<br>
-[field_registration_postal] [field_registration_ville]';
-  /* Champ: Élément Field collection : Fonction */
-  $handler->display->display_options['fields']['field_registration_fonction']['id'] = 'field_registration_fonction';
-  $handler->display->display_options['fields']['field_registration_fonction']['table'] = 'field_data_field_registration_fonction';
-  $handler->display->display_options['fields']['field_registration_fonction']['field'] = 'field_registration_fonction';
-  $handler->display->display_options['fields']['field_registration_fonction']['relationship'] = 'field_registration_accompagnant_value';
+  /* Champ: Élément Field collection : Nom */
+  $handler->display->display_options['fields']['field_registration_nom']['id'] = 'field_registration_nom';
+  $handler->display->display_options['fields']['field_registration_nom']['table'] = 'field_data_field_registration_nom';
+  $handler->display->display_options['fields']['field_registration_nom']['field'] = 'field_registration_nom';
+  $handler->display->display_options['fields']['field_registration_nom']['relationship'] = 'field_registration_accompagnant_value';
   /* Champ: Élément Field collection : Société  */
   $handler->display->display_options['fields']['field_registration_societe']['id'] = 'field_registration_societe';
   $handler->display->display_options['fields']['field_registration_societe']['table'] = 'field_data_field_registration_societe';
   $handler->display->display_options['fields']['field_registration_societe']['field'] = 'field_registration_societe';
   $handler->display->display_options['fields']['field_registration_societe']['relationship'] = 'field_registration_accompagnant_value';
+  /* Champ: Élément Field collection : Fonction */
+  $handler->display->display_options['fields']['field_registration_fonction']['id'] = 'field_registration_fonction';
+  $handler->display->display_options['fields']['field_registration_fonction']['table'] = 'field_data_field_registration_fonction';
+  $handler->display->display_options['fields']['field_registration_fonction']['field'] = 'field_registration_fonction';
+  $handler->display->display_options['fields']['field_registration_fonction']['relationship'] = 'field_registration_accompagnant_value';
   /* Champ: Élément Field collection : Email */
   $handler->display->display_options['fields']['field_registration_mail']['id'] = 'field_registration_mail';
   $handler->display->display_options['fields']['field_registration_mail']['table'] = 'field_data_field_registration_mail';
@@ -414,14 +424,12 @@ function ga_vw_export_views_default_views() {
   $handler->display->display_options['fields']['field_registration_phone']['table'] = 'field_data_field_registration_phone';
   $handler->display->display_options['fields']['field_registration_phone']['field'] = 'field_registration_phone';
   $handler->display->display_options['fields']['field_registration_phone']['relationship'] = 'field_registration_accompagnant_value';
-  /* Champ: Inscription : Date de création */
-  $handler->display->display_options['fields']['created']['id'] = 'created';
-  $handler->display->display_options['fields']['created']['table'] = 'registration';
-  $handler->display->display_options['fields']['created']['field'] = 'created';
-  $handler->display->display_options['fields']['created']['label'] = 'Inscrit le';
-  $handler->display->display_options['fields']['created']['date_format'] = 'custom';
-  $handler->display->display_options['fields']['created']['custom_date_format'] = 'd/m/Y H:i';
-  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
+  /* Champ: Global : Texte personnalisé */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = 'Adresse de facturation';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_registration_adresse] [field_registration_adresse_2] [field_registration_postal] [field_registration_ville]';
   /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -463,26 +471,28 @@ function ga_vw_export_views_default_views() {
     t('.'),
     t(','),
     t('Adresse'),
-    t('Adresse 2'),
+    t('Adresse ligne 2'),
     t('Code postal'),
     t('Ville'),
-    t('Nom'),
+    t('Adhésion'),
+    t('Inscrit le'),
     t('Prénom'),
+    t('Nom'),
+    t('Société '),
+    t('Fonction'),
+    t('Courriel'),
+    t('Téléphone portable'),
     t('Adresse de facturation'),
     t('[field_registration_adresse]<br>
 [field_registration_adresse_2]<br>
 [field_registration_postal] [field_registration_ville]'),
-    t('Fonction'),
-    t('Société '),
-    t('Courriel'),
-    t('Téléphone portable'),
-    t('Inscrit le'),
     t('Evènement'),
     t('Utilisateur invité'),
     t('Tout'),
     t('Evènements :'),
     t('Page'),
     t('Data export'),
+    t('[field_registration_adresse] [field_registration_adresse_2] [field_registration_postal] [field_registration_ville]'),
   );
   $export['export_registration'] = $view;
 
