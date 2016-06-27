@@ -104,7 +104,8 @@ function galileo_preprocess_node (&$variables) {
       case '0':
         $variables['theme_hook_suggestions'][] = 'ds_2col_fluid__node_event_next_full';
         $variables['date_mois'] = format_date($date_timestamp, 'evenement_complet_');
-        $variables['date_heure'] = format_date($date_timestamp, 'custom', 'H:i');
+        $date_timestamp = $date_timestamp + 7200;
+        $variables['date_heure'] = date('H:i', $date_timestamp);
         break;
       case '1':
         $variables['theme_hook_suggestions'][] = 'ds_2col_fluid__node_event_past_full';
