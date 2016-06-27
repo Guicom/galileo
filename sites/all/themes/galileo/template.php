@@ -73,7 +73,9 @@ function galileo_preprocess_page(&$variables) {
   if(arg(0) == 'node' &&  arg(2) == 'register') {
     if(arg(1)){
       $node = node_load(arg(1));
-      $variables['title'] = t('Inscription à ').$node->title;
+      $date = date('d/m/Y', strtotime($node->field_event_date['und'][0]['value']));
+      $heure = date('H:i', strtotime($node->field_event_date['und'][0]['value']));
+      $variables['title'] = t('Inscription à l\'évenement :<br>').$node->title.' du '.$date.' à '.$heure;
     }else{
       $variables['title'] = t('Inscription à l\'évènement');
     }
