@@ -1,0 +1,16 @@
+name = Features Extra test feature
+description = Test feature for Features Extra.
+core = 7.x
+package = Testing
+version = 7.x-1.0
+project = features_extra
+dependencies[] = block_class
+dependencies[] = blockcache_alter
+dependencies[] = fe_block
+dependencies[] = fe_nodequeue
+datestamp = 1439376840
+features[fe_block_boxes][] = features_extra_test_block
+features[fe_block_settings][] = block-features_extra_test_block
+features[fe_nodequeue][] = features_extra_test_nodequeue
+features[features_api][] = api:2
+project path = sites/all/modules/contrib/features_extra/tests

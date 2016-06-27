@@ -68,8 +68,9 @@ function ga_field_base_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'gold' => 'Gold',
+        'decouverte' => 'Découverte',
         'silver' => 'Silver',
+        'gold' => 'Gold',
         'block' => 'Black',
         '4invites' => 'Carte 4 invités',
         '6invites' => 'Carte 6 invités',
