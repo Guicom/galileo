@@ -26,7 +26,7 @@
       right: 0;
       top:0;
       bottom: 0;
-      background: rgba($black, .4);
+      background: rgba($black, .1);
       width: initial;
       padding: 20px;
       border: solid 6px transparent;
@@ -50,7 +50,7 @@
         line-height: 21px;
         font-weight: 300;
         color: $white;
-        background: $black;
+        background: rgba($black, .5);
         display: table;
         padding: 0px 2px;
         @include opacity(1);
