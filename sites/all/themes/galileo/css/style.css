@@ -9169,6 +9169,13 @@ hr {
   }
 }
 /* line 2, ../sass/partials/components/_teaser_int.scss */
+.view-intervenants .view-header {
+  color: #000;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 0 30px 14px;
+}
+/* line 8, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser {
   overflow: hidden;
   border-right: 1px solid #fff;
@@ -9187,23 +9194,23 @@ hr {
   padding: 0;
 }
 @media (min-width: 992px) {
-  /* line 2, ../sass/partials/components/_teaser_int.scss */
+  /* line 8, ../sass/partials/components/_teaser_int.scss */
   .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser {
     float: left;
     width: 33.33333%;
   }
 }
 @media (max-width: 480px) {
-  /* line 2, ../sass/partials/components/_teaser_int.scss */
+  /* line 8, ../sass/partials/components/_teaser_int.scss */
   .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser {
     width: 100%;
   }
 }
-/* line 11, ../sass/partials/components/_teaser_int.scss */
+/* line 17, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser:nth-child(3n+3) {
   border-right: 0;
 }
-/* line 14, ../sass/partials/components/_teaser_int.scss */
+/* line 20, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser > .group-left {
   position: relative;
   float: left;
@@ -9214,14 +9221,14 @@ hr {
   position: relative;
   padding: 0;
 }
-/* line 18, ../sass/partials/components/_teaser_int.scss */
+/* line 24, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser > .group-left img {
   width: 100%;
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 23, ../sass/partials/components/_teaser_int.scss */
+/* line 29, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser > .group-right {
   position: absolute;
   left: 0;
@@ -9236,12 +9243,12 @@ hr {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 35, ../sass/partials/components/_teaser_int.scss */
+/* line 41, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser > .group-right .field-name-title {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-/* line 37, ../sass/partials/components/_teaser_int.scss */
+/* line 43, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser > .group-right .field-name-title h2 {
   font-size: 24px;
   color: #fff;
@@ -9252,7 +9259,7 @@ hr {
   width: 200px;
   min-height: 48px;
 }
-/* line 48, ../sass/partials/components/_teaser_int.scss */
+/* line 54, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser > .group-right .field-name-field-int-poste {
   font-size: 16px;
   line-height: 21px;
@@ -9264,7 +9271,7 @@ hr {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-/* line 59, ../sass/partials/components/_teaser_int.scss */
+/* line 65, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser > .group-right .field-name-node-link a {
   position: absolute;
   top: 0;
@@ -9274,7 +9281,7 @@ hr {
   color: transparent;
 }
 @media (max-width: 768px) {
-  /* line 59, ../sass/partials/components/_teaser_int.scss */
+  /* line 65, ../sass/partials/components/_teaser_int.scss */
   .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser > .group-right .field-name-node-link a {
     background: #ee9c1b;
     color: #000;
@@ -9308,7 +9315,7 @@ hr {
     transition: all, 0.3s;
   }
 }
-/* line 85, ../sass/partials/components/_teaser_int.scss */
+/* line 91, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser:hover > .group-left img {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -9318,7 +9325,7 @@ hr {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 90, ../sass/partials/components/_teaser_int.scss */
+/* line 96, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser:hover > .group-right {
   border-color: #ee9c1b;
   background: transparent;
@@ -9326,7 +9333,7 @@ hr {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 94, ../sass/partials/components/_teaser_int.scss */
+/* line 100, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser:hover > .group-right .field-name-title,
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser:hover > .group-right .field-name-field-int-poste {
   visibility: hidden;
@@ -9336,7 +9343,7 @@ hr {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 101, ../sass/partials/components/_teaser_int.scss */
+/* line 107, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser:hover > .group-right .field-name-node-link a {
   background: #ee9c1b;
   color: #000;
@@ -9368,14 +9375,14 @@ hr {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 117, ../sass/partials/components/_teaser_int.scss */
+/* line 123, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser.active > .group-left img {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
   transform: scale(1.05);
 }
-/* line 121, ../sass/partials/components/_teaser_int.scss */
+/* line 127, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser.active > .group-right {
   border-color: #ee9c1b;
   background: transparent;
@@ -9383,25 +9390,25 @@ hr {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 125, ../sass/partials/components/_teaser_int.scss */
+/* line 131, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser.active > .group-right .field-name-title,
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser.active > .group-right .field-name-field-int-poste {
   visibility: hidden;
 }
 @media (max-width: 768px) {
-  /* line 129, ../sass/partials/components/_teaser_int.scss */
+  /* line 135, ../sass/partials/components/_teaser_int.scss */
   .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser.active > .group-right .field-name-node-link {
     display: none;
   }
 }
-/* line 137, ../sass/partials/components/_teaser_int.scss */
+/* line 143, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser.active:hover > .group-left img {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
   transform: scale(1.05);
 }
-/* line 141, ../sass/partials/components/_teaser_int.scss */
+/* line 147, ../sass/partials/components/_teaser_int.scss */
 .view-intervenants .ds-2col-fluid.node-intervenant.node-teaser.active:hover .field-name-node-link {
   display: none;
 }
