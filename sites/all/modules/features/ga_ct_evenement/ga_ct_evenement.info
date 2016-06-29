@@ -17,6 +17,7 @@ dependencies[] = file_entity
 dependencies[] = ga_field_base
 dependencies[] = ga_pathauto
 dependencies[] = image
+dependencies[] = imagefield_crop
 dependencies[] = list
 dependencies[] = media
 dependencies[] = multiupload_imagefield_widget

@@ -111,6 +111,7 @@ function ga_ct_intervenant_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_int_photo',
     'label' => 'Photo',
@@ -128,12 +129,17 @@ function ga_ct_intervenant_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'imagefield_crop',
       'settings' => array(
+        'collapsible' => 2,
+        'croparea' => '500x500',
+        'enforce_minimum' => 0,
+        'enforce_ratio' => 1,
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
+        'resolution' => '400x285',
       ),
-      'type' => 'image_image',
+      'type' => 'imagefield_crop_widget',
       'weight' => 2,
     ),
   );
