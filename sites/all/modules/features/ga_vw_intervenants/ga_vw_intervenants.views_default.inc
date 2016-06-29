@@ -37,6 +37,10 @@ function ga_vw_intervenants_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['links'] = FALSE;
+  /* Entête: Global : Texte non filtré */
+  $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
   /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -74,6 +78,12 @@ function ga_vw_intervenants_views_default_views() {
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Entête: Global : Texte non filtré */
+  $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['header']['area_text_custom']['content'] = 'Des intervenants d’exception pour des expériences uniques';
   $handler->display->display_options['path'] = 'intervenants';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Intervenants';
@@ -109,7 +119,7 @@ function ga_vw_intervenants_views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.';
+  $handler->display->display_options['header']['area']['content'] = 'Des personnalités du monde économique, politique, sportif, intellectuel sur des sujets d’actualité et des expériences de vie.';
   $handler->display->display_options['header']['area']['format'] = 'filtered_html';
   $handler->display->display_options['defaults']['footer'] = FALSE;
   /* Pied de page: Global : Texte non filtré */
@@ -128,8 +138,9 @@ function ga_vw_intervenants_views_default_views() {
     t('Desc'),
     t('Block'),
     t('Page'),
+    t('Des intervenants d’exception pour des expériences uniques'),
     t('Block_slide'),
-    t('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.'),
+    t('Des personnalités du monde économique, politique, sportif, intellectuel sur des sujets d’actualité et des expériences de vie.'),
     t('<a class="more-int" href="intervenants">Tous les intervenants</a>'),
   );
   $export['intervenants'] = $view;

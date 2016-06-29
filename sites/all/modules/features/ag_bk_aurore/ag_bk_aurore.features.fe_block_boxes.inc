@@ -20,9 +20,9 @@ function ag_bk_aurore_default_fe_block_boxes() {
 <h2>Aurore</h2>
 </div>
 
-<h3>Dédié aux entreprises et aux organisations</h3>
+<h3>Du sur-messure pour les entreprises et les organisations</h3>
 
-<p>Galiléo COncept Aurore propose aux dirigeant des grandes entreprises, aux PME de tailles moyennes et aux fédérations en Alsace et en France, de recevoir une personnalité devant le public de leur choix</p>
+<p>Galileo Concept Aurore génère des prises de consciences et des actions pérennes grâce à l’intervention de la personnalité idéale pour cautionner le message du dirigeant, chez lui.</p>
 </div>
 
 <div class="aurore-link"><a class="aurore-link-yellow" href="aurore">En savoir +</a></div>
