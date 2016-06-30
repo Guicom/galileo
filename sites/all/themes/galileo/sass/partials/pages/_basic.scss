@@ -24,5 +24,8 @@
     .field-name-title {
       @include h1-title;
     }
+    .field-name-body {
+      margin-bottom: 20px;
+    }
   }
 }

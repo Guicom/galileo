@@ -11754,3 +11754,7 @@ body.front .node-page.view-mode-full .field-name-title {
   font-weight: 600;
   margin-bottom: 25px;
 }
+/* line 27, ../sass/partials/pages/_basic.scss */
+.node-type-page .content-wrapper .field-name-body {
+  margin-bottom: 20px;
+}
