@@ -124,7 +124,7 @@
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
 
-  <section>
+  <section class="content-wrapper">
     <?php if (!empty($page['highlighted'])): ?>
       <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
     <?php endif; ?>

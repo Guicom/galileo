@@ -1,0 +1,28 @@
+.node-type-page {
+  .page-header {
+    display: none;
+    + .row {
+      margin: 0;
+    }
+  }
+
+  .content-wrapper {
+    > .container {
+      width: 100%;
+      .bg-content {
+        width: 100%;
+        height: 444px;
+        background-size: cover;
+        position: relative;
+
+        .field-name-title {
+          @include h1-title;
+          color: $black;
+        }
+      }
+    }
+    .field-name-title {
+      @include h1-title;
+    }
+  }
+}
