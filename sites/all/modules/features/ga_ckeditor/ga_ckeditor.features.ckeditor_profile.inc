@@ -138,7 +138,7 @@ function ga_ckeditor_ckeditor_profile_defaults() {
     \'/\',
     [\'widgetbootstrapLeftCol\',\'widgetbootstrapRightCol\',\'widgetbootstrapTwoCol\',\'widgetbootstrapThreeCol\',\'widgetbootstrapAlert\',\'widgetbootstrapAccordion\',\'widgetcommonBox\',\'widgetcommonQuotebox\',\'oembed\',\'WidgetTemplateMenu\',\'FontAwesome\'],
     \'/\',
-    [\'Format\',\'Font\',\'FontSize\'],
+    [\'Format\'],
     [\'TextColor\',\'BGColor\'],
     [\'Maximize\',\'ShowBlocks\']
 ]',
@@ -180,7 +180,7 @@ function ga_ckeditor_ckeditor_profile_defaults() {
         'html_entities' => 'f',
         'scayt_autoStartup' => 'f',
         'theme_config_js' => 'f',
-        'js_conf' => '',
+        'js_conf' => 'config.format_tags = \'h2;h3;p\';',
         'loadPlugins' => array(
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',
