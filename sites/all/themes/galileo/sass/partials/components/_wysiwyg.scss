@@ -1,6 +1,9 @@
 .field-name-body {
   font-size: 16px;
   color: $black;
+  img {
+    @include img-responsive;
+  }
   .row {
     .row {
       margin: 0;

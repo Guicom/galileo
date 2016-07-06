@@ -10908,19 +10908,25 @@ form .field-name-field-registration-accompagnant button.form-submit.field-add-mo
   font-size: 16px;
   color: #000;
 }
-/* line 5, ../sass/partials/components/_wysiwyg.scss */
+/* line 4, ../sass/partials/components/_wysiwyg.scss */
+.field-name-body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* line 8, ../sass/partials/components/_wysiwyg.scss */
 .field-name-body .row .row {
   margin: 0;
 }
-/* line 9, ../sass/partials/components/_wysiwyg.scss */
+/* line 12, ../sass/partials/components/_wysiwyg.scss */
 .field-name-body .quotebox {
   margin: 0 0 10px 0 !important;
 }
-/* line 12, ../sass/partials/components/_wysiwyg.scss */
+/* line 15, ../sass/partials/components/_wysiwyg.scss */
 .field-name-body .quotebox .quote > div {
   display: inline-block;
 }
-/* line 15, ../sass/partials/components/_wysiwyg.scss */
+/* line 18, ../sass/partials/components/_wysiwyg.scss */
 .field-name-body .quotebox .quote:before {
   content: "\f100";
   font-family: "FontAwesome";
@@ -10935,7 +10941,7 @@ form .field-name-field-registration-accompagnant button.form-submit.field-add-mo
   display: inline-block;
   color: #000;
 }
-/* line 21, ../sass/partials/components/_wysiwyg.scss */
+/* line 24, ../sass/partials/components/_wysiwyg.scss */
 .field-name-body .quotebox .quote:after {
   content: "\f101";
   font-family: "FontAwesome";
@@ -10950,12 +10956,12 @@ form .field-name-field-registration-accompagnant button.form-submit.field-add-mo
   display: inline-block;
   color: #000;
 }
-/* line 28, ../sass/partials/components/_wysiwyg.scss */
+/* line 31, ../sass/partials/components/_wysiwyg.scss */
 .field-name-body .quotebox .byline {
   color: #666666;
   text-align: right;
 }
-/* line 33, ../sass/partials/components/_wysiwyg.scss */
+/* line 36, ../sass/partials/components/_wysiwyg.scss */
 .field-name-body h2 {
   color: #ee9c1b;
   font-size: 36px;
@@ -10965,19 +10971,19 @@ form .field-name-field-registration-accompagnant button.form-submit.field-add-mo
   font-weight: 300;
   color: #000;
 }
-/* line 38, ../sass/partials/components/_wysiwyg.scss */
+/* line 41, ../sass/partials/components/_wysiwyg.scss */
 .field-name-body h3 {
   color: #000;
   font-size: 14px;
   font-weight: 300;
   font-size: 26px;
 }
-/* line 43, ../sass/partials/components/_wysiwyg.scss */
+/* line 46, ../sass/partials/components/_wysiwyg.scss */
 .field-name-body ul {
   list-style: disc;
   margin-left: 15px;
 }
-/* line 46, ../sass/partials/components/_wysiwyg.scss */
+/* line 49, ../sass/partials/components/_wysiwyg.scss */
 .field-name-body ul li {
   margin-left: 10px;
 }
