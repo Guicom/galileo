@@ -1,9 +1,7 @@
 body {
     &.front {
-        .node-page.view-mode-full {
-            .field-name-title {
-                display: none;
-            }
-        }
+      .field-name-title {
+          display: none;
+      }
     }
 }

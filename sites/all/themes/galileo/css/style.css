@@ -11154,8 +11154,8 @@ form .field-name-field-registration-accompagnant button.form-submit.field-add-mo
   font-weight: 300;
 }
 
-/* line 4, ../sass/partials/pages/_home.scss */
-body.front .node-page.view-mode-full .field-name-title {
+/* line 3, ../sass/partials/pages/_home.scss */
+body.front .field-name-title {
   display: none;
 }
 
