@@ -73,6 +73,7 @@ function galileo_preprocess_page(&$variables) {
   if(arg(0) == 'node' &&  arg(2) == 'register') {
     if(arg(1)){
       $node = node_load(arg(1));
+      //Add 2 hours for manage différence serveur and client our
       $date_timestamp = strtotime($node->field_event_date['und'][0]['value']) + 7200;
       $date = date('d/m/Y', $date_timestamp);
       $heure = date('H:i', $date_timestamp);
