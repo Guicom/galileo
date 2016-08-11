@@ -51,8 +51,11 @@
         font-weight: 300;
         color: $white;
         background: rgba($black, .5);
-        display: table;
         padding: 0px 2px;
+        display: inline-block;
+        width: 180px;
+        position: absolute;
+        bottom: 20px;
         @include opacity(1);
       }
       .field-name-node-link {

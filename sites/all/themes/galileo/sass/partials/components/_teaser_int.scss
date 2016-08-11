@@ -47,7 +47,6 @@
           font-weight: 600;
           text-transform: uppercase;
           margin-top: 0;
-          width: 200px;
           min-height: 48px;
         }
       }
@@ -59,6 +58,9 @@
         background: rgba($black, .5);
         display: inline-block;
         width: 180px;
+        position: absolute;
+        bottom: 20px;
+        padding: 0px 2px;
         @include opacity(1);
       }
       .field-name-node-link {

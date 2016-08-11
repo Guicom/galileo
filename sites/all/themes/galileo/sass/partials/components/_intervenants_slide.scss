@@ -11,6 +11,7 @@
   }
   .view-intervenants {
     .view-header {
+      margin-left: 0;
       p {
         @include p-style;
       }

@@ -7,7 +7,7 @@
   </div>
   <div class="right-side col-md-4 col-xs-12">
     <div class="back-link">
-      <a href="evenemens">Retour à la liste de soirées</a>
+      <a href="/evenements">Retour à la liste de soirées</a>
     </div>
     <?php print render($content['field_event_intervenant']); ?>
   </div>
