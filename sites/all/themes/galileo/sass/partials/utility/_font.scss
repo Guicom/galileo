@@ -44,16 +44,17 @@ $font-icon: 'FontAwesome';
   font-variant: normal;
   text-transform: none;
 
-  @if $icon == 'ampoule' { content: "\e900"; }
-  @if $icon == 'calendar' { content: "\e901"; }
-  @if $icon == 'facebook' { content: "\e902"; }
-  @if $icon == 'heart' { content: "\e903"; }
-  @if $icon == 'linkedin' { content: "\e904"; }
-  @if $icon == 'location' { content: "\e905"; }
-  @if $icon == 'next' { content: "\e906"; }
-  @if $icon == 'previous' { content: "\e907"; }
-  @if $icon == 'refresh' { content: "\e908"; }
-  @if $icon == 'select' { content: "\e909"; }
-  @if $icon == 'viadeo' { content: "\e90a"; }
-  @if $icon == 'youtube' { content: "\e90b"; }
+  @if $icon == 'ampoule' { content: "\e901"; }
+  @if $icon == 'calendar' { content: "\e902"; }
+  @if $icon == 'facebook' { content: "\e903"; }
+  @if $icon == 'heart' { content: "\e904"; }
+  @if $icon == 'linkedin' { content: "\e905"; }
+  @if $icon == 'location' { content: "\e906"; }
+  @if $icon == 'next' { content: "\e907"; }
+  @if $icon == 'previous' { content: "\e908"; }
+  @if $icon == 'refresh' { content: "\e909"; }
+  @if $icon == 'select' { content: "\e90a"; }
+  @if $icon == 'viadeo' { content: "\e90b"; }
+  @if $icon == 'youtube' { content: "\e90c"; }
+  @if $icon == 'twitter' { content: "\e900"; }
 }

@@ -96,6 +96,13 @@ footer {
             @include custom-transition;
           }
         }
+        &.twitter {
+          &:before {
+            @include icons(twitter);
+            color: rgba($white, .5);
+            @include custom-transition;
+          }
+        }
         &.youtube {
           &:before {
             @include icons(youtube);
