@@ -10949,9 +10949,10 @@ form .field-name-field-registration-accompagnant button.form-submit.field-add-mo
 /* line 16, ../sass/partials/components/_wysiwyg.scss */
 .field-name-body .quotebox .quote > div {
   display: inline-block;
+  font-style: italic;
 }
 /* line 19, ../sass/partials/components/_wysiwyg.scss */
-.field-name-body .quotebox .quote:before {
+.field-name-body .quotebox .quote > div:before {
   content: "\f100";
   font-family: "FontAwesome";
   speak: none;
@@ -10964,9 +10965,10 @@ form .field-name-field-registration-accompagnant button.form-submit.field-add-mo
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
   color: #000;
+  margin-right: 5px;
 }
-/* line 25, ../sass/partials/components/_wysiwyg.scss */
-.field-name-body .quotebox .quote:after {
+/* line 26, ../sass/partials/components/_wysiwyg.scss */
+.field-name-body .quotebox .quote > div:after {
   content: "\f101";
   font-family: "FontAwesome";
   speak: none;
@@ -10979,13 +10981,15 @@ form .field-name-field-registration-accompagnant button.form-submit.field-add-mo
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
   color: #000;
+  margin-left: 5px;
 }
-/* line 32, ../sass/partials/components/_wysiwyg.scss */
+/* line 35, ../sass/partials/components/_wysiwyg.scss */
 .field-name-body .quotebox .byline {
   color: #666666;
   text-align: right;
+  font-weight: bold;
 }
-/* line 37, ../sass/partials/components/_wysiwyg.scss */
+/* line 41, ../sass/partials/components/_wysiwyg.scss */
 .field-name-body h2 {
   color: #ee9c1b;
   font-size: 36px;
@@ -10995,19 +10999,19 @@ form .field-name-field-registration-accompagnant button.form-submit.field-add-mo
   font-weight: 300;
   color: #000;
 }
-/* line 42, ../sass/partials/components/_wysiwyg.scss */
+/* line 46, ../sass/partials/components/_wysiwyg.scss */
 .field-name-body h3 {
   color: #000;
   font-size: 14px;
   font-weight: 300;
   font-size: 26px;
 }
-/* line 47, ../sass/partials/components/_wysiwyg.scss */
+/* line 51, ../sass/partials/components/_wysiwyg.scss */
 .field-name-body ul {
   list-style: disc;
   margin-left: 15px;
 }
-/* line 50, ../sass/partials/components/_wysiwyg.scss */
+/* line 54, ../sass/partials/components/_wysiwyg.scss */
 .field-name-body ul li {
   margin-left: 10px;
 }

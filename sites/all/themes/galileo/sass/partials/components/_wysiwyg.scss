@@ -15,23 +15,27 @@
     .quote {
       > div {
         display: inline-block;
-      }
-      &:before {
-        content: "\f100";
-        @include icon;
-        display: inline-block;
-        color: $black;
-      }
-      &:after {
-        content: "\f101";
-        @include icon;
-        display: inline-block;
-        color: $black;
+        font-style: italic;
+        &:before {
+          content: "\f100";
+          @include icon;
+          display: inline-block;
+          color: $black;
+          margin-right: 5px;
+        }
+        &:after {
+          content: "\f101";
+          @include icon;
+          display: inline-block;
+          color: $black;
+          margin-left: 5px;
+        }
       }
     }
     .byline {
       color: #666666;
       text-align: right;
+      font-weight: bold;
     }
   }
   h2 {
